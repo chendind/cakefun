@@ -1,0 +1,90 @@
+[ 2015-03-01T10:45:28+08:00 ] 127.0.0.1 /cakefox/Public/img/main-rulao-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:50:22+08:00 ] 127.0.0.1 /cakefox/Public/img/main-rulao-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:58:30+08:00 ] 127.0.0.1 /cakefox/Public/img/main-rulao-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:58:30+08:00 ] 127.0.0.1 /cakefox/Public/img/main-yueju-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:58:41+08:00 ] 127.0.0.1 /cakefox/Public/img/main-rulao-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:58:41+08:00 ] 127.0.0.1 /cakefox/Public/img/main-yueju-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:58:42+08:00 ] 127.0.0.1 /cakefox/Public/img/main-rulao-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T10:58:42+08:00 ] 127.0.0.1 /cakefox/Public/img/main-yueju-xs.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-01T14:25:19+08:00 ] 127.0.0.1 /cakefox/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+ERR: 无法加载模块:Register
+
+[ 2015-03-01T14:25:22+08:00 ] 127.0.0.1 /cakefox/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Register
+
+[ 2015-03-01T14:29:47+08:00 ] 127.0.0.1 /cakefox/css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+ERR: 无法加载模块:Css
+
+[ 2015-03-01T14:29:47+08:00 ] 127.0.0.1 /cakefox/js/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+ERR: 无法加载模块:Js
+
+[ 2015-03-01T14:29:47+08:00 ] 127.0.0.1 /cakefox/js/home.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Js
+
+[ 2015-03-01T14:29:47+08:00 ] 127.0.0.1 /cakefox/img/cakefoxlogo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Img
+
+[ 2015-03-01T14:29:47+08:00 ] 127.0.0.1 /cakefox/js/home.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+ERR: 无法加载模块:Js
+

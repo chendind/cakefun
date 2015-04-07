@@ -1,0 +1,99 @@
+.col-xs-6,.col-xs-12{
+  padding:0;
+}
+
+.content{
+  width:100%;
+  padding-bottom:50px;
+  border-top:1px solid #eee;
+  overflow:hidden;
+  background:#fff9df;
+}
+.whitebg{
+  background:#fff;
+  border-radius:3px;
+  position:relative;
+  overflow:hidden;
+  padding:0;
+  padding-top:5px;
+  text-align:justify;
+}
+.qaunit{
+  width:100%;
+  border-bottom:1px solid #eee;
+}
+.question,.answer{
+  font-weight:bold;
+  font-size:15px;
+  line-height:25px;
+  width:100%;
+  padding:5px 15px;
+}
+.question:before{
+  content:"· ";
+}
+.answer{
+  font-weight:normal;
+  font-size:14px;
+  width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

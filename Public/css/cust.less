@@ -1,0 +1,112 @@
+@height:650px;//`window.innerHeight+'px'`;
+@navh:200px;
+@goodh : @height - @navh;
+@gold : #daae6c;
+.nav-step{
+  width:100%;
+  padding:10px 0 0;
+  overflow:hidden;
+  
+  li{
+    float:left;
+    height:50px;
+    color:#999;
+    margin-right:80px;
+    a{
+      display: block;
+      padding: 4px;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+  }
+  .stephere{
+    color:#333;
+    border-bottom:2px solid @gold;
+  }
+}
+.tips{
+  padding:10px 0px;
+  span{
+    color:#333;
+  }
+}
+.rightbox{
+  width:55%;
+  float:left;
+}
+.leftbox{
+  width:45%;
+  float:left;
+  position:relative;
+  overflow:hidden;
+}
+.canvas{
+  width:100%;
+  height:500px;
+  border:1px solid @gold;
+  img{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:all 1s ease 0s;
+  }
+}
+.canvas img.fly{
+  top:-100px;
+}
+.controllbox{
+  width:100%;
+  margin-bottom:20px;
+  padding:0 10px;
+}
+
+.checkbox{
+  width:25%;
+  float:left;
+}
+.checkimg{
+  width:70px;
+  height:70px;
+  margin:0 auto;
+  img{
+    width:100%;
+  }
+}
+.text{
+  width:70px;
+  text-align:center;
+  margin:0 auto;
+}
+.button{
+  width:50%;
+  padding:9px 10px 10px;
+  font-size:14px;
+  text-align:center;
+  line-height:17px;
+  float:left;
+}
+.leftbtn{
+  border:1px solid #d8d8d8;
+  border-radius:5px 0 0 5px;
+}
+.rightbtn{
+  border:1px solid #d8d8d8;
+  border-width:1px 1px 1px 0;
+  border-radius:0 5px 5px 0;
+}
+.cont{
+  .selectbar{
+    width:100%;
+    padding:5px 10px;
+    label{
+      cursor:pointer;
+      input{
+        margin-right:10px;
+      }
+    }
+  }
+}
+
+

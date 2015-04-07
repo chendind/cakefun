@@ -1,0 +1,123 @@
+@height:650px;//`window.innerHeight+'px'`;
+@navh:200px;
+@goodh : @height - @navh;
+@gold : #daae6c;
+@orange : #ffc106;
+.ptable{
+  width:100%;
+  border-collapse:collapse;
+  th{
+    border-bottom:1px dashed @gold;
+    height:40px;
+  }
+  td{
+    text-align:center;
+    padding:10px 0;
+  }
+  td.imgtd{
+    width:280px;
+    img{
+      width:40%;
+      display:block;
+      float:left;
+    }
+    a.goodtitle{
+      display:table-cell;
+      vertical-align: middle;
+      height:104px;
+      width:60%;
+      text-align:left;
+      padding-left:10px;
+    }
+  }
+  td.imgtdorder{
+	img{
+		width:40px;
+		height:40px;
+	}
+	a.goodtitle{
+		height:40px;
+	}
+  }
+}
+.couponblock{
+	span{
+		display:block;
+		width:100%;
+		padding:10px 0;
+	}
+	label{
+		width:100%;
+		display:block;
+		input[type="radio"]{
+			margin-right:5px;
+		}
+	}
+}
+.price{
+	font-family: "Lucida Grande";
+	float: right;
+	label{
+		width:auto;
+		display: block;
+		text-align:right;
+		float: right;
+		padding:8px 0;
+		span{
+			margin-left:10px;
+		}
+	}
+	label.total{
+		font-size:18px;
+		span{
+			font-weight: bold;
+		}
+	}
+}
+.paymenttip{
+	width:100%;
+	margin-bottom:10px;
+	span{
+		margin-left:10px;
+		font-weight: bold;
+		font-size:18px;
+	}
+}
+.brand{
+	width:150px;
+	height:80px;
+	margin-right:20px;
+	float:left;
+	div{
+		width:100%;
+		height:60px;
+		display: table-cell;
+		vertical-align: middle;
+		img{
+			width:70%;
+			margin-left:15%;
+		}
+	}
+	span{
+		width:100%;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		height:20px;
+	}
+}
+.introtable{
+	width:100%;
+	.introimg{
+		width:15%;
+		img{
+			width:100%;
+		}
+	}
+	span{
+		width:100%;
+		padding-right:50px;
+		font-size:16px;
+		font-weight: bold;
+	}
+}

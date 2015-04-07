@@ -1,0 +1,64 @@
+<div class="headBar">
+  <div class="head">
+    <div class="head-icon floatleft sm-hide controllIcon" id="head-ul-nav">
+      <!--小 导航菜单-->
+      <i class="fa fa-bars fa-2x"></i>
+      <ul class="head-ul-nav" id="head-ul-nav-menu">
+        <a href="__ROOT__/index.php/Home/Index/index"><li><span>首页</span></li></a>
+        <a href="__ROOT__/index.php/Home/Index/selected"><li><span>蛋糕精选</span></li></a>
+        <a href="__ROOT__/index.php/Home/Index/about"><li><span>关于cakefox</span></li></a>
+      </ul>
+    </div>
+    <empty name="Think.session.user_id">
+    <div class="head-icon floatright sm-hide controllIcon" id="head-ul-login">
+         <!--小 登陆按钮-->
+         <i class="fa fa-sign-in fa-2x"></i>
+         <ul class="head-ul-userbar" id="head-ul-login-menu">
+           <a href="__ROOT__/index.php/Home/Index/login"><li><span>登录</span></li></a>
+           <a href="__ROOT__/index.php/Home/Index/register"><li><span>注册</span></li></a>
+         </ul>
+    </div>
+      <else /> 
+     <div class="head-icon floatright sm-hide controllIcon" style="line-height:57px;" id="head-ul-user">
+         <!--小 用户中心-->
+         <i class="fa fa-birthday-cake" style="font-size:25px;"></i>
+         <ul class="head-ul-userbar" id="head-ul-user-menu">
+           <a href="__ROOT__/index.php/Home/Index/user"><li><span>账户</span></li></a>
+           <a href="__ROOT__/index.php/Home/Index/order"><li><span>订单</span></li></a>
+           <li id="logoutBtn-xs"><span>退出登录</span></li>
+         </ul>
+    </div>
+    </empty>
+    
+        <h1 class="webLogo">cake<span>fun</span></h1>
+    
+    <!--大 导航-->
+    <nav class="xs-hide head-nav floatleft">
+      <a href="__ROOT__/index.php/Home/Index/index">首页</a>
+      <a href="__ROOT__/index.php/Home/Index/selected">蛋糕精选</a>
+      <a href="__ROOT__/index.php/Home/Index/about">关于我们</a>
+    </nav> 
+    <div class="xs-hide head-login floatright">    
+    <empty name="Think.session.user_id">
+       <a class="head-login-btn" ng-init="logInClick=false;" ng-click="logInClick=true">登录</a>
+       <a href="__ROOT__/index.php/Home/Index/register" class="head-login-btn">注册</a>
+    <else /> 
+    <div class="user-bar floatright controllIcon" id="user-bar-order">
+            <i class="fa fa-shopping-cart fa-fw"></i>购物车<i class="fa fa-angle-down fa-fw"></i>
+         <ul class="head-ul-userbar" id="user-bar-order-menu">
+           <li onclick="window.location('__ROOT__/index.php/Home/Index/order')"><span>订单A</span></li>
+           <li onclick="window.location('__ROOT__/index.php/Home/Index/order')"><span>历史订单</span></li>
+         </ul>
+     </div>
+     <div class="user-bar floatright controllIcon" id="user-bar-user" ng-click="openmenu(this)">
+            <i class="fa fa-user fa-fw"></i>用户中心<i class="fa fa-angle-down fa-fw"></i>
+         <ul class="head-ul-userbar" id="user-bar-user-menu">
+           <li onclick="window.location('__ROOT__/index.php/Home/Index/user')"><span>账户</span></li>
+           <li id="logoutBtn"><span>退出登录</span></li>
+         </ul>
+     </div>
+    </empty>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>

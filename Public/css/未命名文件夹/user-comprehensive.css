@@ -1,0 +1,110 @@
+body{
+  background:#fff9df;
+}
+.user-content{
+  width:100%;
+  margin:0 auto;
+}
+ .user-head{
+  width:100%;
+  text-align:center;
+  margin:0 auto;
+}
+.user-title{
+  margin-bottom:20px;
+}
+
+.webLogo{
+  margin:0 auto;
+  font-size:35px;
+  font-weight:1000;
+  float:none;
+}
+.webLogo span{
+  color:#efb06b;
+}
+.user-com-box{
+  padding-bottom:30px;
+  overflow:hidden;
+  border-radius:5px;
+  margin:0px auto;
+  z-index:11;
+  background:#fff;
+  padding-bottom:30px;
+}
+@media(min-device-width:768px){
+   .user-head{
+     padding:30px;
+   }
+   .user-com-box{
+     padding:0 40px 30px;
+     width:400px;
+   }
+   .user-content{
+     width:720px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

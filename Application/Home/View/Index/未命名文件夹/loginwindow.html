@@ -1,0 +1,119 @@
+
+<div class="logIn-box" ng-class="{show:logInClick}">
+  <div class="logIn-head">
+    <button class="logIn-close" ng-click="logInClick=false">
+      <span>x</span>
+    </button>
+    <h4 class="logIn-title">登陆</h4>
+  </div>
+  <div class="logIn-body" ng-controller="formCtrl">
+    <div class="col-md-10 col-sm-12 col-md-push-1">
+      <p class="logIn-form-title">用户登陆</p>
+      <form name="form" novalidate>
+      <include file="form_phone" />
+      <include file="form_password" />
+      <div class="form-group">
+         <div class="clear"></div>
+         <div class="logIn-checkbox" style="float:left;"><label for="remember"><input type="checkbox" id="remember" ng-init="checkbox2=true" ng-model="checkbox2" />记住登陆状态</label></div>
+         <button class="form-btn"  ng-click="submit()">登录</button>
+         <div class="clear"></div>
+       </div>
+       </form>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div class="form-foot" style="padding-top:0;">
+       <a href="__ROOT__/index.php/Home/Index/register.html">注册账号</a>
+       ·
+       <a href="__ROOT__/index.php/Home/Index/forget.html">找回密码</a>
+     </div>
+</div>
+<div class="bg-dialog" ng-class="{show:logInClick}" ng-click="logInClick=false"></div>
+<script>
+if(myapp==undefined){
+var myapp = angular.module('myapp',[]);
+}
+myapp.directive('ngFocus', [function() {
+    var FOCUS_CLASS = "ng-focused";
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function(scope, element, attrs, ctrl) {
+            ctrl.$focused = false;
+            element.bind('focus', function(evt) {
+                element.addClass(FOCUS_CLASS);
+                scope.$apply(function() {
+                    ctrl.$focused = true;
+                    scope.form.submit = false;
+                    scope.form.phone.$error.error1=false;//1
+                    scope.form.phone.$error.error2=false;//2
+                });
+            }).bind('blur', function(evt) {
+                element.removeClass(FOCUS_CLASS);
+                scope.$apply(function() {
+                    ctrl.$focused = false;
+                });
+            });
+        }
+    }
+}]).controller('formCtrl',function($http,$scope){
+    $scope.submit = function(){
+        if($scope.form.$valid){
+         $.ajax({ 
+           type: "post", 
+           url: "__ROOT__/index.php/Home/Index/loginapi", 
+           dataType: "json",
+           data:{phone:$("#phone").val(),password:hex_md5($("#password").val())},
+           success: function (data) { 
+               switch(data.state) {
+                  case "1":window.location.reload(); break ;                     
+                  case "2":$scope.$apply(function(){
+                              $scope.form.submit = true;
+                              $scope.form.phone.$error.error1=true;
+                              });break;
+                  case "3":$scope.$apply(function(){
+                               $scope.form.submit = true;
+                               $scope.form.phone.$error.error2=true;
+                               });break;
+               }
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+        });
+        }
+        else{
+          $scope.form.submit = true;
+        }
+        
+    };
+});
+/*
+$("#form-btn").click(function(){
+ $.ajax({ 
+           type: "post", 
+           url: "__ROOT__/index.php/Home/Index/loginapi", 
+           dataType: "json",
+           data:{phone:$("#phone").val(),password:hex_md5($("#password").val())},
+           success: function (data) { 
+               switch(data.state) {
+                  case "1":window.location.reload(); break                      
+                  case "2":alert("账号或密码错误");break;
+                  case "3":alert("非法手机号");break;
+               }
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+    });  
+});
+*/
+$("#logoutBtn,#logoutBtn-xs").click(function(){
+ $.ajax({ 
+           type: "post", 
+           url: "__ROOT__/index.php/Home/Index/logoutapi", 
+           dataType: "json",
+           data:{phone:$("#phone").val()},
+           success: function (data) { 
+                     window.location.reload();                       
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+    });
+});
+</script>

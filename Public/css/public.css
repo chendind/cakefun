@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "cakefox";
+    src: url('./font/cakefox.min.ttf');
+}
+@font-face {
+  font-family:"lantingqianhei";
+  src:url("./font/lantingqianhei.ttf");
+}
+body,div,a,h3,p,dd,dl,dt,ul{padding:0;margin:0;}
+body,input,button{
+  background-color: #fff;
+  color: #333;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,STHeiti,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  position:relative;
+  margin:0 auto;
+}
+input[type="submit"],input[type="reset"],input[type="button"]{-webkit-appearance:none;}
+img{border:0;}
+label{
+  display:inline-block;
+  font-weight:bold;
+  margin-bottom:5px;
+  max-width:100%;
+}
+/*
+chrome自动填充bug
+*/
+*{
+  box-sizing:border-box;
+}
+a{text-decoration:none;outline:none;color:inherit}
+a:hover{text-decoration:none;cursor:pointer;}
+a:visited {color: inherit} 
+.clear{clear:both;}
+.floatleft{float:left;}
+.floatright{float:right;}
+input:-webkit-autofill {
+background-color: none;
+background-image: none;
+ -webkit-box-shadow: 0 0 0px 1000px white inset;
+color: #000;
+}
+.p-fullbox{
+  width:100%;
+}
+.p-centerbox{
+  width:1000px;
+  margin:0 auto;
+}
+.nav{
+  width:100%;
+}
+.nav td{
+  font-size:20px;
+}
+.logo{
+  width:170px;
+}
+/* 
+logIn code
+*/
+.logIn-box{
+  display:none;
+  padding:0 0 30px;
+  overflow:hidden;
+  border-radius:5px;
+  margin:0px auto;
+  z-index:11;
+  background:#fff;
+  position:fixed;
+  top:30px;
+  left:0;
+  right:0;
+}
+.logIn-head{
+  background-color:#f3f3f3;
+  padding:10px 20px;
+  border-bottom:1px solid #e5e5e5;
+  min-height:16px;
+}
+.logIn-close{
+  cursor:pointer;
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  padding: 0;
+  background:none;
+  color: #000;
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.2;
+  text-shadow: 0 1px 0 #fff;
+}
+.logIn-form-title{
+  font-size:18px;
+  color:#777;
+  margin-bottom:30px;
+}
+.verifyCode{
+  height:35px;
+  width:112px;
+  margin-top:5px;
+}
+.verifyCode img{
+  height:inherit;
+  width:inherit;
+}
+.form-input {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #555;
+  display: block;
+  font-size: 14px;
+  height: 35px;
+  line-height: 1.5;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+}
+.form-group{
+  margin-bottom:15px;
+}
+.form-btn{
+  height:35px;
+  width:100%;
+  border:0px;
+  border-radius:3px;
+  background-color:#efb06b;
+  float:right;
+  color:#fff;
+}
+.form-checkbox{
+  margin:10px 0;
+  line-height:12px;
+}
+.form-checkbox label{
+  font-weight:normal;
+  cursor:pointer;
+}  
+.logIn-title{
+  font-size:18px;
+  margin:0;
+}
+.findback{
+  display:block;
+  float:right;
+}
+.bg-dialog{
+  display:none;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:10;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.error{
+  display:none;
+  color:#efb06b;
+}
+.errorshow{
+  display:block;
+}

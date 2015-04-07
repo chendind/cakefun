@@ -1,0 +1,143 @@
+.goodbox{
+  width:100%;
+  overflow:hidden;
+  border-top:1px solid #eee;
+}
+   .goodname{
+      width:100%;
+      font-size:18px;
+   }
+    .gooddescribe{
+       color:#666;
+       font-size:12px;
+       text-align:justify;
+       float:left;
+       padding-left:5px;
+       padding-top:5px;
+   }
+   .goodbtn{
+     display:block;
+   }
+   .goodbtn button{
+     width:100px;
+     border:1px solid;
+     border-radius:35px;
+     height:35px;
+     cursor:pointer;
+   }
+    .goodunit{
+     border-bottom:1px solid #eee;
+     position:relative;
+   }
+   .goodright{
+     text-align:right;
+     position:absolute;
+     top:0;
+     right:0;
+     padding-right:2px;
+   }
+@media(max-device-width:767px){
+   .goodunit{
+     min-height:50px;
+   }
+   .goodview{
+      width:30%;
+      height:auto;
+      float:left;
+    }
+   .goodname{
+       width:45%;
+      padding-top:5px;
+      padding-left:5px;
+      padding-bottom:10px;
+      float:left;
+       font-size:14px;
+       height:20px;
+       line-height:20px;
+   }
+   .gooddescribe{
+       line-height:15px;
+       width:70%;
+   }
+   .describe{
+     display:none;
+   }
+   .goodright{
+       float:right;
+       width:25%;
+       font-size:12px;
+       padding-top:5px;
+       line-height:20px;
+   }
+
+   .goodbtn{
+     display:none;
+   }
+}
+@media(min-device-width:768px){
+   .goodunit{
+     min-height:200px;
+   }
+   .goodview{
+      width:200px;
+      height:200px;
+      float:left;
+    }
+   .goodname,.gooddescribe{
+       width:370px;
+      padding-top:10px;
+      padding-left:20px;
+      float:left;
+      padding-right:10px;
+   }
+   .goodname{
+       height:40px;
+       line-height:40px;
+   }
+   .gooddescribe{
+       line-height:20px;
+   }
+   .goodright{
+       float:left;
+       width:120px;
+   }
+}
+@media(min-width:992px){
+    .gooddescribe{
+       line-height:25px;
+       width:640px;
+   }
+    .goodinfo{
+       width:640px;
+   }
+}
+@media(min-width:1200px){
+    .goodinfo{
+       width:800px;
+   }
+   .gooddescribe{
+       width:800px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
+     <title>cakefox</title>
+     <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
+      
+     <link href="__PUBLIC__/css/mediaQuery.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/public.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+     <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+     <link href="__PUBLIC__/css/customize.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/cart.css" rel="stylesheet" />
+  </head>
+  <body>
+      <include file="head" />
+      <div class="content">
+<div class="clear"></div>
+ <div class="goodbox" controller="cartCtrl">
+     <div class="publicbox">
+       <div class="goodunit">
+         <div class="goodimg">
+         <img class="goodview" ng-src="__PUBLIC__/img/top-hetao.png" />
+       </div>
+         <div class="goodname">定制蛋糕</div>
+       <div class="gooddescribe">
+         <span class="abstract">规格：1磅</span>
+         <br />
+         <span class="describe">一些描述</span>
+         </div>
+       <div class="goodright">
+         <div class="goodprice">￥{{number}}</div>
+         <div class="carttrash"><i class="fa fa-trash-o"></i>删除</div>
+         <div class="numbercontrol">
+             <i class="fa fa-plus-square-o"></i><input class="number" type="text" ng-model="number" /><i class="fa fa-minus-square-o"></i>
+         </div>
+       </div>
+       <div class="clear"></div>
+       </div>
+     </div>
+</div>
+ </div>
+      <div class="shopbar" style="display:none;">
+        <p class="col-md-push-1">1磅蛋糕，共计<span>198元</span></p>
+        <a href="__ROOT__/index.php/Home/Index/order"><button class="col-md-pull-1">提交订单</button></a>
+      </div>
+      <include file="foot" />
+ 
+<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+ <script src="__PUBLIC__/js/cart.js"></script>
+<script src="__PUBLIC__/js/public.js"></script>
+<script src="__PUBLIC__/js/md5.js"></script>
+<include file="loginwindow" />
+<script>
+  $('.fa-plus-square-o').click(function(){
+    var v = parseInt($(".number").val());
+    if (v<10){
+      $(this).siblings(".number").val(v+1)
+      }
+  });
+  $('.fa-minus-square-o').click(function(){
+    var v = parseInt($(".number").val());
+    if (v>1){
+      $(this).siblings(".number").val(v-1)
+      }
+  });
+</script>
+ </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

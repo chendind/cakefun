@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html lang="zh-CN" ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
+     <title>cakefox</title>
+     <link href="__PUBLIC__/css/mediaQuery.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/public.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+     <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+     <link href="__PUBLIC__/css/address.css" rel="stylesheet">
+  </head>
+  <body>
+      <include file="head" />
+      <div class="content">
+        <div class="publicbox title">用户中心-送货地址</div>
+        <div class="publicbox whitebg">
+           <div id="web-address-title" class="add-unit col-xs-12 col-sm-12">
+              <div class="up-unit col-xs-1 col-sm-1">序号</div>
+              <div class="add-unit-s col-xs-12 col-sm-5">
+                <div class="up-unit col-xs-12 col-sm-12">收货地址</div>
+              </div>
+              <div class="add-unit-s col-xs-12 col-sm-3">
+                <div class="up-unit col-xs-6 col-sm-6">收货人</div>
+                <div class="up-unit col-xs-6 col-sm-6">联系电话</div>
+              </div>
+              <div class="add-unit-s col-xs-12 col-sm-3">
+                <div class="up-unit col-xs-12 col-sm-12">操作</div>
+              </div>
+          </div>
+          <div class="add-unit col-xs-12 col-sm-12" id="add">
+              <div class="idnumber col-xs-1 col-sm-1">1</div>
+              <div class="add-unit-s col-xs-11 col-sm-5">
+                <div class="sub-unit col-xs-12 col-sm-12">杭州市西湖区西溪路478号C座6楼602</div>
+                <div class="sub-unit col-xs-12 col-sm-12"><input type="text"></div>
+              </div>
+              <div class="add-unit-s col-xs-11 col-sm-3">
+                <div class="sub-unit col-xs-6 col-sm-6">陈先生</div>
+                <div class="sub-unit col-xs-6 col-sm-6">13303339072</div>
+              </div>
+              <div class="add-unit-s col-xs-12 col-sm-3">
+                <div class="add-btn col-xs-6 col-sm-6"><button id="add-btn-edit-1" date-add="add-1" class="add-btn-edit">编辑</button></div>
+                <div class="add-btn col-xs-6 col-sm-6"><button class="add-btn-set">设为默认</button></div>
+              </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="foot"></div>
+      
+<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+ <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
+ <script src="__PUBLIC__/js/public.js"></script>
+ <script src="__PUBLIC__/js/address.js"></script>
+<script src="__PUBLIC__/js/md5.js"></script>
+<include file="loginwindow" />
+<script>
+  $("#edit-1").click(function(){
+      var obj = $("#"+$(this).attr("date-add"))
+  })
+</script>
+  </body>
+  </html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
+     <title>cakefox</title>
+     <link href="__PUBLIC__/css/mediaQuery.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/public.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+     <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+     <link href="__PUBLIC__/css/customize.css" rel="stylesheet">
+      <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
+      
+  </head>
+  <body>
+      <include file="head" />
+      <div class="content">
+<div class="cust-choose-bar xs-hide">
+      <nav class="cust-choose">
+        <a href="#/1pound" style="margin-left:0;">1磅蛋糕</a>
+        <a href="#/2pounds" class="nav-selected">2磅蛋糕</a>
+        <a href="#/3pounds">3磅蛋糕</a>
+        <a href="#/5pounds">5磅蛋糕</a>
+        <a href="#/selected" style="margin-right:0;">精选蛋糕</a>
+      </nav>
+</div>
+<div class="clear"></div>
+ <div class="cust-content-bar" ng-controller="Option_Ctrl">
+    <div class="center">
+      <div class="cake-view-box">
+          <div class="cust-img-box" id="main">
+              <img ng-show="main==1" src="__PUBLIC__/img/main-musi.png" />
+              <img ng-show="main==2" src="__PUBLIC__/img/main-ice.png" />
+              <img ng-show="main==3" src="__PUBLIC__/img/main-naiyou.png" />
+              <img ng-show="main==4" src="__PUBLIC__/img/main-zhishi.png" />
+          </div>
+          <div class="cust-img-box"></div>
+          <div class="cust-img-box"></div>
+          <div class="cust-img-box"></div>
+          <div class="cust-img-box" id="decoration">
+              <img ng-show="decoration==1" src="__PUBLIC__/img/top-lirong2.png" />
+              <img ng-show="decoration==2" src="__PUBLIC__/img/top-caomei.png" />
+              <img ng-show="decoration==3" src="__PUBLIC__/img/top-rulao.png" />
+              <img ng-show="decoration==4" src="__PUBLIC__/img/top-zhishi.png" />
+              <img ng-show="decoration==5" src="__PUBLIC__/img/top-yueju.png" />
+          </div>
+      </div>
+       <div class="controll-bar">
+         <div class="controll-bar-select-unit">
+           <p class="controll-bar-select-title">主要材料</p>
+           <div class="selectbox floatleft">
+              <div class="option" ng-click="$parent.main=option.num" ng-repeat="option in options_main">
+                 <div class="option-img" ng-class="{imgborder:main==option.num}"><img ng-src="__PUBLIC__/img/{{option.src}}" /></div>
+                 <div class="option-word">{{option.name}}</div>
+              </div>
+           </div>
+           <div class="clear"></div>
+           <div class="selecttips" ng-show="main>0">
+               <span ng-show="$parent.main=={{option.num}}" ng-repeat="option in options_main">{{option.describe}}</span>
+           </div>
+        </div>
+   <div class="controll-bar-select-unit">
+      <p class="controll-bar-select-title">夹心材料</p>
+      <div class="selectbox floatleft">
+        <select ng-model="fill_value_1" ng-options="option.name for option in fill_material_1">
+           <option value="">--请选择--</option>
+        </select>
+      </div>
+      <div class="selectbox floatleft">
+        <select ng-model="fill_value_2" ng-options="option.name for option in fill_material_2">
+           <option value="">--请选择--</option>
+        </select>
+      </div>
+   </div>
+  <div class="controll-bar-select-unit">
+      <p class="controll-bar-select-title">顶层材料</p>
+      <div class="selectbox floatleft">
+        <select ng-model="top_value" ng-options="option.name for option in top_material">
+           <option value="">--请选择--</option>
+        </select>
+      </div>
+   </div>
+   <div class="controll-bar-select-unit">
+      <p class="controll-bar-select-title">选择A</p>
+      <div class="selectbox floatleft">
+        <select ng-model="exp_value" ng-options="option.name for option in exp_material">
+           <option value="">--请选择--</option>
+        </select>
+      </div>
+   </div>
+  <div class="controll-bar-select-unit">
+      <p class="controll-bar-select-title">裱花样式</p>
+      <div class="selectbox floatleft">
+              <div class="option" ng-click="$parent.decoration=option.num" ng-repeat="option in options_decoration">
+                 <div class="option-img" ng-class="{imgborder:decoration==option.num}"><img ng-src="__PUBLIC__/img/{{option.src}}" /></div>
+                 <div class="option-word">{{option.name}}</div>
+              </div>
+           </div>
+           <div class="clear"></div>
+           <div class="selecttips" ng-show="decoration>0">
+               <span ng-show="$parent.decoration=={{option.num}}" ng-repeat="option in options_decoration">{{option.describe}}</span>
+           </div>
+   </div>
+   </div>
+       <div class="clear"></div>
+       <div class="controll-bar controll-bar-btn">
+        <div class="pro-btn" ng-click="$parent.logInClick=true">加入购物车</div>
+         <div class="pro-btn" ng-click="$parent.logInClick=true">立即购买</div>
+        </div>
+     </div>
+</div>
+ </div>
+ <div class="shopbar" style="display:none;">
+        <p class="col-md-push-1">1磅蛋糕，共计<span>198元</span></p>
+        <!--<a href="__ROOT__/index.php/Home/Index/order">--><button class="col-md-pull-1"  ng-click="logInClick=true">立即付款</button><!--</a>-->
+      </div>
+      <include file="foot" />
+      
+<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/js/cust-controller.js"></script>
+  <script src="__PUBLIC__/js/angular-route.min.js"></script>
+<script src="__PUBLIC__/js/public.js"></script>
+<script src="__PUBLIC__/js/md5.js"></script>
+
+<script src="__PUBLIC__/js/customize.js"></script>
+<include file="loginwindow" />
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

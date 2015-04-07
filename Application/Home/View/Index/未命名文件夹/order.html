@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="description" content="蛋糕坊在线蛋糕DIY，现做蛋糕送货上门">
+     <title>cakefox</title>
+     <link href="__PUBLIC__/css/mediaQuery.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/public.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+     <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+     <link href="__PUBLIC__/css/order.css" rel="stylesheet">
+  </head>
+  <body>
+      <include file="head" />
+      <div class="content">
+      <div class="publicbox title">我的订单</div>
+        <div class="publicbox whitebg">
+          <div class="main-order col-xs-12 col-sm-12">
+          <div class="good-view floatleft col-xs-12">
+            <img class="good-img" src="__PUBLIC__/img/top-hetao.png" />
+          </div>
+          <div class="good-info floatright col-xs-12">
+            <div class="good-title col-xs-12 col-sm-12">1磅蛋糕</div>
+            <div class="clear"></div>
+            <div class="detail col-xs-12 col-sm-12">
+              <p class="col-xs-6  col-sm-6 col-md-4">主要材料：慕斯</p>
+              <p class="col-xs-6  col-sm-6 col-md-4">夹心层：冰淇淋、蓝莓</p>
+              <p class="col-xs-6  col-sm-6 col-md-4">顶层：巧克力</p>
+              <p class="col-xs-6  col-sm-6 col-md-4">某某材料：冰淇淋、蓝莓</p>
+              <p class="col-xs-6  col-sm-6 col-md-4">裱花样式：100005-黑森林</p>
+            </div>
+            <div class="word col-xs-12 col-sm-12">
+              免费贺卡 <input id="card" type="text" placeholder="请在此填写贺卡内容，不超过30个字" />
+            </div>
+            <div class="send col-xs-12 col-sm-12">
+            <div class="col-xs-12 col-sm-6 col-lg-2">
+              选择送货日期
+              <select id="date" autocomplete="off">
+                <option value="1" selected>明天</option>
+                <option value="2">后天</option>
+                <option value="3">大后天</option>
+                <option value="4">4天后</option>
+                <option value="5">5天后</option>
+                <option value="6">6天后</option>
+                <option value="7">7天后</option>
+              </select>
+              </div>
+              <div id="sendtime" class="col-xs-12 col-sm-6 col-lg-4"></div>
+              <div class="col-xs-12 col-sm-6 col-lg-2">
+              选择送货时间
+              <select id="date" autocomplete="off">
+                <option value="1" selected>不限</option>
+                <option value="2">上午8点-11点</option>
+                <option value="3">下午1点-5点</option>
+              </select>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-lg-4">请提前24小时预定</div>
+            </div>
+            <div class="word col-xs-12 col-sm-12">
+              送货地址 <input id="address" type="text" placeholder="目前只能配送杭州市区，敬请谅解" />
+            </div>
+            <div class="word col-xs-12 col-sm-12">
+              手机号码 <input id="address" type="text" placeholder="送货时联系您的号码" />
+            </div>
+            <div class="clear"></div>
+            <div class="sum floatright col-xs-12">
+              总计 <span>RMB 198</span>
+            </div>
+            <div class="clear"></div>
+            <div class="floatright col-xs-12">
+              <button class="btn" id="pay-btn">结账</button>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="publicbox title">为您推荐</div>
+        <div class="publicbox whitebg">
+           <div class="recommand col-xs-12 col-sm-12">
+             <div class="good-view floatleft col-xs-12">
+             <img class="good-img" src="__PUBLIC__/img/redwire.png" />
+           </div>
+             <div class="good-info floatright col-xs-12">
+            <div class="good-title col-xs-12 col-sm-12">拉菲红葡萄酒</div>
+            <div class="clear"></div>
+            <div class="detail col-xs-12 col-sm-12">
+              2014年3月26日法国总统奥朗德在爱丽舍宫为习近平和夫人彭丽媛举行了盛大国宴，前道菜就是佐以1997年的吕萨吕斯酒堡葡萄酒，
+              主菜则配以这瓶1997年拉菲酒庄红葡萄酒。<br />
+              现在购买即赠送cakefun特制檀木花盒外包装。<br/>
+              若您购买，我们会将本品和蛋糕包装在特制包装盒中，一齐送货上门。
+            </div>
+            <div class="sum floatright">
+              <span>RMB 668</span>
+            </div>
+            <div class="clear"></div>
+            <div class="floatright col-xs-12">
+              <button class="btn" id="add-this">添加到订单</button>
+            </div>
+        </div>
+           </div>
+           <div class="recommand col-xs-12 col-sm-12">
+             <div class="good-view floatleft col-xs-12">
+             <img class="good-img" src="__PUBLIC__/img/snake.png" />
+           </div>
+             <div class="good-info floatright col-xs-12">
+            <div class="good-title col-xs-12 col-sm-12">cakefun零食套装</div>
+            <div class="clear"></div>
+            <div class="detail col-xs-12 col-sm-12">
+              由cakefun特级蛋糕师傅精心制作的糕点零食，营养丰富，好吃又健康。<br />
+              约428克，内含桂花糕×2、草莓甜甜圈×2、糖蒸酥酪×2、鸡蛋布丁×4、天鹅泡芙×4、法式煎薄饼×4、杏仁条×4、红樱桃曲奇×4。<br />
+              若您购买，我们会将本品和蛋糕分开包装，一齐送货上门。
+            </div>
+            <div class="sum floatright">
+              <span>RMB 98</span>
+            </div>
+            <div class="clear"></div>
+            <div class="floatright col-xs-12">
+              <button class="btn" id="add-this">添加到订单</button>
+            </div>
+        </div>
+           </div>
+      </div>
+     </div>
+      <div class="foot"></div>
+      
+<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+ <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
+<script src="__PUBLIC__/js/public.js"></script>
+<script src="__PUBLIC__/js/order.js"></script>
+<include file="loginwindow" />
+<script>
+    $("#pay-btn").click(function(){
+ $.ajax({ 
+           type: "post", 
+           url: "__ROOT__/index.php/Home/Index/push_order", 
+           dataType: "json",
+           data:{order_type:$("#registerPhone").val()},
+           success: function (data) { 
+               switch(data.state) {
+                  case "1":window.location.reload(); break; 
+                  case "2":alert("注册失败");break;
+                  case "3":alert("非法手机号");break;
+                  case "4":alert("该号码已被注册");break;
+               }
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+    });
+  });
+</script>
+  </body>
+  </html>

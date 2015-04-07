@@ -1,0 +1,96 @@
+.col-xs-6,.col-xs-12{
+  padding:0;
+}
+.content{
+  width:100%;
+  padding-bottom:50px;
+  border-top:1px solid #eee;
+  overflow:hidden;
+}
+.add-unit{
+  text-align:center;
+  border-bottom:1px solid #eee;
+}
+.up-unit{
+  background:#f4f4f4;
+}
+.add-btn-edit,.add-btn-set{
+  border:0;
+  border-radius:3px;
+  width:75%;
+  height:30px;
+  background:#efb06b;
+  color:#fff;
+}
+@media(max-device-width:767px){
+  .idnumber{
+    height:100px;
+    line-height:100px;
+    font-size:25px;
+  }
+  .sub-unit{
+    text-align:left;
+  }
+  #web-address-title{
+    display:none;
+  }
+  .add-btn{
+  border-top:1px solid #eee;
+  text-align:center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

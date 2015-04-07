@@ -1,0 +1,30 @@
+[ 2015-03-29T10:56:51+08:00 ] ::1 /cakefox/Public/img/main-musi-xs.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-29T10:56:51+08:00 ] ::1 /cakefox/Public/img/main-ice-xs.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-29T10:56:51+08:00 ] ::1 /cakefox/Public/img/main-zhishi-xs.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-29T10:56:51+08:00 ] ::1 /cakefox/Public/img/main-naiyou-xs.png.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+ERR: 无法加载模块:Public
+
+[ 2015-03-29T19:08:18+08:00 ] ::1 /cakefox/Public/img/down-zhshi.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+ERR: 无法加载模块:Public
+

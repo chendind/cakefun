@@ -1,0 +1,12 @@
+[ 2015-04-05T15:38:24+08:00 ] ::1 /cakefox/index.php/Index/Home/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+ERR: 无法加载模块:Index
+
+[ 2015-04-05T15:38:37+08:00 ] ::1 /cakefox/index.php/Index/Home/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+ERR: 无法加载模块:Index
+

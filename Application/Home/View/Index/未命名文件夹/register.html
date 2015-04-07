@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
+     <title>创建新账号-cakefox</title>
+     <link href="__PUBLIC__/css/mediaQuery.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/public.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/user-comprehensive.css" rel="stylesheet">
+  </head>
+  <body ng-controller="formCtrl">
+  <div class="user-content">
+     <div class="user-head">
+         <h1 class="webLogo">cake<span>fun</span></h1>
+         <p>欢迎来到最美味的蛋糕定制平台</p>
+     </div>
+     <div class="user-com-box">
+       <h4 class="logIn-form-title user-title">
+         创建新账户
+       </h4>
+       <form name="form" novalidate>
+         <include file="form_phone" />
+         <include file="form_password" />
+         <include file="form_verifycode" />
+         <div class="form-group">
+           <div class="clear"></div>
+           <div class="form-checkbox" style="float:left;"><label for="clause"><input type="checkbox" id="clause" ng-init="checkbox=true" ng-model="checkbox" />同意并接受<a href="#" style="color:#efb06b">服务条款</a></label></div>
+           <button class="form-btn"  ng-click="submit()">下一步</button>
+           <div class="clear"></div>
+         </div>
+       </form>
+     </div>
+     <div class="clear"></div>
+     <div class="form-foot">
+       <a href="__ROOT__/index.php/Home/Index/forget.html">找回密码</a>
+       |
+       <a href="__ROOT__/index.php/Home/Index/index.html">首页</a>
+       |
+       <a href="__ROOT__/index.php/Home/Index/login.html">用户登录</a>
+     </div>
+  </div>
+<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+ <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
+ <script src="__PUBLIC__/js/public.js"></script>
+ <script src="__PUBLIC__/js/md5.js"></script>
+<script>
+var myapp = angular.module('myapp',[]);
+myapp.directive('ngFocus', [function() {
+    var FOCUS_CLASS = "ng-focused";
+    return {
+        restrict: 'A',
+        require: 'ngModel',
+        link: function(scope, element, attrs, ctrl) {
+            ctrl.$focused = false;
+            element.bind('focus', function(evt) {
+                element.addClass(FOCUS_CLASS);
+                scope.$apply(function() {
+                    ctrl.$focused = true;
+                    scope.form.submit = false;
+                    scope.form.phone.$error.error2=false;//2
+                    scope.form.verifyCode.$error.error1=false;//3
+                    scope.form.phone.$error.error3=false;//4
+                    scope.form.verifyCode.$error.error2=false;//5
+                });
+            }).bind('blur', function(evt) {
+                element.removeClass(FOCUS_CLASS);
+                scope.$apply(function() {
+                    ctrl.$focused = false;
+                });
+            });
+        }
+    }
+}]).controller('formCtrl',function($http,$scope){
+    $scope.submit = function(){
+        if($scope.form.$valid){
+         $.ajax({ 
+           type: "post", 
+           url: "__ROOT__/index.php/Home/Index/registerapi", 
+           dataType: "json",
+           data:{phone:$("#phone").val(),password:hex_md5($("#password").val()),verifycode:$("#verifyCode").val()},
+           success: function (data) { 
+               switch(data.state) {
+                  case "1":window.location=("register_verify/phone/"+$("#phone").val()); break ;                     
+                  case "2":$scope.$apply(function(){
+                              $scope.form.submit = true;
+                              $scope.form.phone.$error.error2=true;
+                              });break;
+                  case "3":$scope.$apply(function(){
+                               $scope.form.submit = true;
+                               $scope.form.verifyCode.$error.error1=true;
+                               });break;
+                  case "4":$scope.$apply(function(){
+                               $scope.form.submit = true;
+                               $scope.form.phone.$error.error3=true;
+                               });break;
+                  case "5":$scope.$apply(function(){
+                               $scope.form.submit = true;
+                               $scope.form.verifyCode.$error.error2=true;
+                               });break;   
+               }
+               fleshVerify();  
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");fleshVerify();  } 
+        });
+        }
+        else{
+          $scope.form.submit = true;
+        }
+        
+    };
+});
+/*
+ $("#form-btn").click(function(){
+ $.ajax({ 
+           type: "post", 
+           url: "__ROOT__/index.php/Home/Index/registerapi", 
+           dataType: "json",
+           data:{phone:$("#phone").val(),password:hex_md5($("#password").val()),verifycode:$("#verifyCode").val()},
+           success: function (data) { 
+               switch(data.state){
+                  case "1":window.location=("register_verify/phone/"+$("#phone").val());break;
+                  case "2":alert("手机号不合法");break;
+                  case "3":alert("验证码错误");break;
+                  case "4":alert("手机号码已被使用");break;
+                  case "5":alert("24小时内发送次数不能大于5");break;                   
+               }
+               fleshVerify();
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");fleshVerify();} 
+    });
+});
+*/
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="zh-CN" ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
+     <title>cakefox</title>
+     <link href="__PUBLIC__/css/mediaQuery.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/public.css" rel="stylesheet">
+     <link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+     <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+     <link href="__PUBLIC__/css/product.css" rel="stylesheet">
+  </head>
+  <body>
+      <include file="head" />
+      <div class="content">
+        <div class="publicbox title">商城-商品名</div>
+        <div class="center">
+             <div class="carousel">
+                 <div class="viewbox">
+                    <img src="__PUBLIC__/img/main-musi.png" />
+                    <img src="__PUBLIC__/img/main-zhishi.png" />
+                    <img src="__PUBLIC__/img/top-hetao.png" />
+                    <img src="__PUBLIC__/img/top-lirong1.png" />
+                    <img src="__PUBLIC__/img/top-lirong2.png" />
+                 </div>
+                 <div class="thumbnailbox">
+                    <div class="thumbnail addborder"><img src="__PUBLIC__/img/main-musi.png" /></div>
+                    <div class="thumbnail"><img src="__PUBLIC__/img/main-zhishi.png" /></div>
+                    <div class="thumbnail"><img src="__PUBLIC__/img/top-hetao.png" /></div>
+                    <div class="thumbnail"><img src="__PUBLIC__/img/top-lirong1.png" /></div>
+                    <div class="thumbnail"><img src="__PUBLIC__/img/top-lirong2.png" /></div>
+                 </div>
+             </div>
+             <div class="product">
+                 <div class="pro-name">Wall&Tree东方蓉栗</div>
+                 <div class="pro-price">价格：<span>￥198</span></div>
+                 <div class="pro-size-box" ng-init="choose=1">
+                   <div class="pro-size" ng-click="choose=1" ng-class="{chooseborder:choose==1}">1磅<i class="fa fa-check" ng-show="choose==1"></i></div>
+                   <div class="pro-size" ng-click="choose=2" ng-class="{chooseborder:choose==2}">2磅<i class="fa fa-check" ng-show="choose==2"></i></div>
+                   <div class="pro-size" ng-click="choose=3" ng-class="{chooseborder:choose==3}">3磅<i class="fa fa-check" ng-show="choose==3"></i></div>
+                   <div class="pro-size" ng-click="choose=4" ng-class="{chooseborder:choose==4}">5磅<i class="fa fa-check" ng-show="choose==4"></i></div>
+                 </div>
+                 <div class="clear"></div>
+                 <div class="pro-num" ng-init="number=1">
+                   <div class="icon" ng-click="number=(number-1)?(number-1):1;">-</div>
+                   <div class="numbox">{{number}}</div>
+                   <div class="icon" ng-click="number=(10-number)?(number+1):10;">+</div>
+                 </div>
+                 <div class="clear"></div>
+                 <div class="pro-btn">立即购买</div>
+                 <div class="pro-btn">加入购物车</div>
+                 <div class="clear"></div>
+                 <div class="pro-info">
+                     需要提前24小时订购，请您注意修改成相应的送货时间。
+/明長城時期種植的栗樹，直徑超過1米，枝繁葉茂，正值壯年。/
+/500年生·油栗，專供：21cake東方栗融蛋糕。/
+Chinese chestnut trees were planted during the construction of the Great Wall in Ming Dynasty. Now the trees have matured and flourishing with trunks over 1 meter in diameter. Chestnuts from 500 years old trees are used exclusively for 21cake’s exquisite Wall & Tree Chestnut Cake.
+                 </div>
+             </div>
+        </div>
+      </div>
+<include file="foot" />      
+<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+<script src="__PUBLIC__/js/product.js"></script>
+ <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
+ <script src="__PUBLIC__/js/public.js"></script>
+<script src="__PUBLIC__/js/md5.js"></script>
+<include file="loginwindow" />
+<script>
+
+</script>
+  </body>
+  </html>
