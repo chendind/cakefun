@@ -40,19 +40,19 @@
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-musi-xs.png" />
                   </div>
-                  <div class="text">慕斯</div>
+                  <div class="text">慕斯<i class="fa fa-check" ng-show="a[0]==2"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(1,3)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-zhishi-xs.png" />
                   </div>
-                  <div class="text">芝士</div>
+                  <div class="text">芝士<i class="fa fa-check" ng-show="a[0]==3"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(1,4)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                   </div>
-                  <div class="text">海绵面包</div>
+                  <div class="text">海绵面包<i class="fa fa-check" ng-show="a[0]==4"></i></div>
                 </div>
               </div>
             </div>
@@ -69,19 +69,19 @@
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-musi-xs.png" />
                   </div>
-                  <div class="text">慕斯</div>
+                  <div class="text">慕斯<i class="fa fa-check" ng-show="a[1]==2"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(2,3)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-zhishi-xs.png" />
                   </div>
-                  <div class="text">芝士</div>
+                  <div class="text">芝士<i class="fa fa-check" ng-show="a[1]==3"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(2,4)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                   </div>
-                  <div class="text">海绵面包</div>
+                  <div class="text">海绵面包<i class="fa fa-check" ng-show="a[1]==4"></i></div>
                 </div>
               </div>
             </div>
@@ -92,25 +92,25 @@
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-ice-xs.png" />
                   </div>
-                  <div class="text">冰淇淋</div>
+                  <div class="text">冰淇淋<i class="fa fa-check" ng-show="a[2]==1"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(3,2)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-musi-xs.png" />
                   </div>
-                  <div class="text">慕斯</div>
+                  <div class="text">慕斯<i class="fa fa-check" ng-show="a[2]==2"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(3,3)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-zhishi-xs.png" />
                   </div>
-                  <div class="text">芝士</div>
+                  <div class="text">芝士<i class="fa fa-check" ng-show="a[2]==3"></i></div>
                 </div>
                 <div class="checkbox" ng-click="seta(3,4)">
                   <div class="checkimg">
                     <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                   </div>
-                  <div class="text">海绵面包<i class="fa fa-check" ng-show="a[3]==4"></i></div>
+                  <div class="text">海绵面包<i class="fa fa-check" ng-show="a[2]==4"></i></div>
                 </div>
               </div>
             </div>

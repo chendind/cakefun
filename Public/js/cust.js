@@ -34,23 +34,23 @@ cust.config(['$routeProvider', function($routeProvider) {
         $scope.d = ($routeParams.d)?$routeParams.d.split(','):[0,0,0];
     $scope.seta = function(p,i){
         switch(p){
-            case 1: $scope.a[0] = i;break;
-            case 2: $scope.a[1] = i;break;
-            case 3: $scope.a[2] = i;break;
+            case 0: $scope.a[0] = i;break;
+            case 1: $scope.a[1] = i;break;
+            case 2: $scope.a[2] = i;break;
         }
     }
     $scope.setb = function(p,i){
         switch(p){
-            case 1: $scope.b[0] = i;break;
-            case 2: $scope.b[1] = i;break;
-            case 3: $scope.b[2] = i;break;
+            case 0: $scope.b[0] = i;break;
+            case 1: $scope.b[1] = i;break;
+            case 2: $scope.b[2] = i;break;
         }
     }
     $scope.setc = function(p,i){
         switch(p){
-            case 1: $scope.c = [i,0,0];break;
-            case 2: $scope.c[1] = i;break;
-            case 3: $scope.c[2] = i;break;
+            case 0: $scope.c = [i,0,0];break;
+            case 1: $scope.c[1] = i;break;
+            case 2: $scope.c[2] = i;break;
         }
     }
 

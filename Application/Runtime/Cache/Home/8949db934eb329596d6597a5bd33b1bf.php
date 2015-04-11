@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
-<html lang="zh-CN" ng-app="cust">
+<html lang="zh-CN">
   <head> 
     <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/cart.less">
+     <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/bootstrap-datepicker.css">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
   </head>
   <body>
@@ -21,7 +22,7 @@
       <ul class="header-nav">
         <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
         <li><a href="/cakefox/index.php/Home/Index/customize.html">定制</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/towndown.html">商城</a></li>
+        <li><a href="/cakefox/index.php/Home/Index/mall.html">商城</a></li>
         <li><a>关于我们</a></li>
       </ul>
       <ul class="header-nav" style="float:right;">
@@ -75,8 +76,16 @@
             <td>白马湖大道388号星源文化广场星缘大厦B幢6楼623</td>
           </tr>
         </table>
+        <h4>配送日期</h4>
+        <div>
+          <input id="date" class="pinput date start" type="text">
+        </div>
         <h4>配送时间</h4>
-        <div><input class="pinput" type="text"></div>
+        <select>
+            <option>10:00-12:00</option>
+            <option>12:00-15:00</option>
+            <option>15:00-17:00</option>
+          </select>
         <h4>开具发票<input type="checkbox" style="margin-left:5px;" /></h4>
         <div>
           <input class="pinput" type="text" style="width:30%;" placeholder="请输入发票抬头" />
@@ -133,7 +142,7 @@
         </table>
         </div>
         <div class="column one-third couponblock">
-          <span>可使用的优惠券</span>
+          <span>可以使用的优惠券</span>
           <label><input type="radio" id="couponid0" name="coupon" />不使用优惠</label>
           <label><input type="radio" id="couponid1" name="coupon" checked />定制蛋糕满200-25</label>
           <label><input type="radio" id="couponid2" name="coupon" />新人满100-10</label>
@@ -153,17 +162,20 @@
     </div>
   </div>
 <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
-<!--<script src="/cakefox/Public/js/slide.js"></script>-->
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
- <script src="/cakefox/Public/js/angular-animate.min.js"></script>
- <script src="/cakefox/Public/js/angular-route.min.js"></script>
  <script src="/cakefox/Public/js/public.js"></script>
-<script src="/cakefox/Public/js/cust.js"></script>
+  <script src="/cakefox/Public/js/bootstrap-datepicker.min.js"></script>
 <script src="/cakefox/Public/js/md5.js"></script>
 <!--  -->
 
 <script>
-
+var startdate = new Date();
+startdate.setDate(startdate.getDate()+1);
+$('#date').datepicker({
+        'format': 'yyyy年m月d日',
+        'autoclose': true,
+        'startDate':startdate,
+    });
 </script>
 
   </body>

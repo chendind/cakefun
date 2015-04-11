@@ -21,7 +21,7 @@
       <ul class="header-nav">
         <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
         <li><a href="/cakefox/index.php/Home/Index/customize.html">定制</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/towndown.html">商城</a></li>
+        <li><a href="/cakefox/index.php/Home/Index/mall.html">商城</a></li>
         <li><a>关于我们</a></li>
       </ul>
       <ul class="header-nav" style="float:right;">
