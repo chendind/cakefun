@@ -9,9 +9,13 @@
      <link href="/cakefox/Public/css/public.css" rel="stylesheet">
      <link href="/cakefox/Public/css/font-awesome.min.css" rel="stylesheet">
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+     <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
+    
+    <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/jquery.Jcrop.css">
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/userinfo.less">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
+     
   </head>
   <body>
   <div class="header">
@@ -46,19 +50,14 @@
       <div class="column three-fourth" ng-view></div>
     </div>
   </div>
-  
-<script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
+  <div id="dialogbox" class="dialogbox" style="display:none;">
+    
+  </div>
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
  <script src="/cakefox/Public/js/angular-route.min.js"></script>
  <script src="/cakefox/Public/js/userinfo.js"></script>
  <script src="/cakefox/Public/js/public.js"></script>
- <!--<script src="/cakefox/Public/js/md5.js"></script> -->
-<!--  -->
-
-<script>
-
-</script>
-
+<script src="/cakefox/Public/js/ajaxfileupload.js"></script>
   </body>
   </html>

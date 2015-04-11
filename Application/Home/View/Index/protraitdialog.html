@@ -1,0 +1,63 @@
+<script src="__PUBLIC__/js/jquery.color.js"></script>
+     <script src="__PUBLIC__/js/jquery.Jcrop.min.js"></script>
+<div class="dialog">
+      <div class="head">调整头像</div>
+      <div id="dialogbody" class="body" style="padding:5px;">
+            <img id="target" src="__ROOT__/Uploads/{$img}" style="max-height:173px;max-width:443px" />
+      </div>
+      <div class="foot">
+        <a id="uploadbtn" class="btn greenbtn">确定</a>
+      </div>
+    </div>
+ <script type="text/javascript">
+  jQuery(function($){
+      var api;
+
+    $("#target").Jcrop({
+      // start off with jcrop-light class
+      bgOpacity: 0.5,
+      bgColor: 'white',
+      aspectRatio: 1
+    },function(){
+      api = this;
+      api.setSelect([0,0,173,173]);
+      api.setOptions({ bgFade: true });
+      api.ui.selection.addClass('jcrop-selection');
+    });
+
+  });
+$("#uploadbtn").click(function(){
+  var x = $(".jcrop-selection").position().left,
+      y = $(".jcrop-selection").position().top,
+      l = parseInt($(".jcrop-selection").css("width")),
+      radio = {$width}/{$height},
+      k = 1;
+      // console.log(x);
+      // console.log(y);
+      // console.log(l);
+      if({$width}>443||{$height}>173){
+        if(radio>2.56){
+          k = {$width}/443;
+        }
+        else{
+          k = {$height}/173;
+        }
+      }
+       // console.log(k);   
+  $.ajax({
+      type: "post", 
+           url: "__ROOT__/index.php/Home/Index/changmyimgsize", 
+           dataType: "json",
+           data:{x:x*k,y:y*k,width:l*k},
+           success: function (data) { 
+               switch(data.state) {
+                  case "1":alert("修改成功");$("#dialogbox").html("").hide();break;                     
+                  case "0":alert("您还未登录");break;
+               }
+
+                
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+  })
+})
+</script>

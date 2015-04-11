@@ -168,7 +168,7 @@ $(window).load(function() {
 	$('#upload-file').on('change', function(){
 		var reader = new FileReader();
 		reader.onload = function(e) {
-			options.imgSrc = e.target.result;
+			options.imgSrc = e.target.result;//在这里写入imgSrc属性
 			cropper = $('.imageBox').cropbox(options);
 			getImg();
 		}

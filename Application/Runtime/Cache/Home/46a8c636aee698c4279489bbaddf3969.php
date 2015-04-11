@@ -1,11 +1,12 @@
-<?php if (!defined('THINK_PATH')) exit();?><h3 class="title" style="margin-top:20px;">个人资料</h3>
+<?php if (!defined('THINK_PATH')) exit();?>
+<h3 class="title" style="margin-top:20px;">个人资料</h3>
 	<div class="cont">
 		<div class="two-third column">
 			<dl class="dlitem">
 				<dt><span>头像</span></dt>
 				<dd>
 					<img src="/cakefox/Public/img/portrait.jpg" />
-					<a class="btn">上传新头像<input type="file" /></a>
+					<a id="trigger" class="btn">上传新头像</a><input name="photo" id="photo" type="file" />
 					<span>头像尺寸请小于10M，支持jpg、jpeg、png、gif格式</span>
 				</dd>
 			</dl>
@@ -62,6 +63,40 @@
 					</div>
 				</dd>
 			</dl>
+			<script>
+$("#trigger").click(function(){
+    $("#photo").trigger('click');
+    
+})
+  $("#photo").on("change",function(){
+    var file = this.files[0];
+    if(file){
+    	jQuery.ajaxFileUpload({ 
+			url : "/cakefox/index.php/Home/Index/uploadmyimg", 
+			secureuri : false, 
+			fileElementId : "photo", 
+			dataType : 'json',
+			success : function(data){ 
+					switch(data){
+			           			case "2":alert("上传失败");break;
+			           			case "1":alert("上传成功！");break;
+			           			case "3":alert("数据库失败");break;
+			           			case "0":alert("您还未登录");break;
+			           		}
+			           		$("#dialogbox").load("/cakefox/index.php/Home/Index/protraitdialog.html");
+			           		$("#dialogbox").show();
+			}, 
+			error : function(data, status, e){ 
+			console.log(data);
+			console.log(status);
+			console.log(e);
+			} 
+		}) 
+    }
+
+  })
+
+</script>
 			<dl class="dlitem">
 				<dt><span>心愿清单</span></dt>
 				<dd>
