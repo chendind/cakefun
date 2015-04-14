@@ -17,7 +17,6 @@
   <body>
   <div class="header">
     <div class="centerbox">
-
       <div class="logo-sm"><img src="/cakefox/Public/img/logo@2x.png" /></div>
       <ul class="header-nav">
         <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>

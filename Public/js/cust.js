@@ -21,6 +21,10 @@ cust.config(['$routeProvider', function($routeProvider) {
                 templateUrl: 'step3.html',
                 controller:'StepCtrl'
             })
+            .when('/step0/:e/step1/:a/step2/:b/step3/:c/nowstep4/:d', {
+                templateUrl: 'step4.html',
+                controller:'StepCtrl'
+            })
         .otherwise({
             redirectTo: '/'
         });

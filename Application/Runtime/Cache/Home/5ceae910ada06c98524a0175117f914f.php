@@ -31,7 +31,7 @@
             <h3 class="title" ng-click="test()">水果</h3>
             <div class="cont">
               <div class="checkbox">
-                <div class="checkimg" ng-click="setb(1,1)">
+                <div class="checkimg" ng-click="setb(0,1)">
                   <img src="/cakefox/Public/img/mangguo.png" />
                 </div>
                 <div class="text">芒果<i class="fa fa-check" ng-show="b[0]==1"></i></div>
@@ -59,7 +59,7 @@
           <div class="controllbox">
             <h3 class="title">要来点冰淇淋吗，喜欢什么口味？</h3>
             <div class="cont">
-              <div class="checkbox" ng-click="setb(2,1)">
+              <div class="checkbox" ng-click="setb(1,1)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/iceball2.jpg" />
                 </div>
@@ -82,25 +82,25 @@
           <div class="controllbox">
             <h3 class="title">层间夹心</h3>
             <div class="cont">
-              <div class="checkbox" ng-click="setb(3,1)">
+              <div class="checkbox" ng-click="setb(2,1)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/main-ice-xs.png" />
                 </div>
                 <div class="text">冰淇淋<i class="fa fa-check" ng-show="b[2]==1"></i></div>
               </div>
-              <div class="checkbox" ng-click="setb(3,2)">
+              <div class="checkbox" ng-click="setb(2,2)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/main-musi-xs.png" />
                 </div>
                 <div class="text">慕斯<i class="fa fa-check" ng-show="b[2]==2"></i></div>
               </div>
-              <div class="checkbox" ng-click="setb(3,3)">
+              <div class="checkbox" ng-click="setb(2,3)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/main-zhishi-xs.png" />
                 </div>
                 <div class="text">芝士<i class="fa fa-check" ng-show="b[2]==3"></i></div>
               </div>
-              <div class="checkbox" ng-click="setb(3,4)">
+              <div class="checkbox" ng-click="setb(2,4)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                 </div>

@@ -8,6 +8,7 @@
         <li><a>第四步</a></li>
         <li><a>完成！</a></li>
       </ul>
+      
   </div>
 </div>
 <div class="fullbox">
@@ -28,7 +29,7 @@
       </div>
       <div class="leftbox">
             <div class="controllbox">
-              <h3 class="title">蛋糕形状</h3>
+              <h3 class="title">蛋糕样式</h3>
               <div class="cont">
                 <div class="selectbar">
                   <label for="shape-1"><input type="radio" name="shape" ng-model="e[0]" id="shape-1"  ng-value="0" />方形</label>
@@ -37,7 +38,7 @@
                   <label for="shape-2"><input type="radio" name="shape" ng-model="e[0]" id="shape-2" ng-value="1" />圆形</label>
                 </div>
               </div>
-            </div>
+              </div>
             <div class="controllbox">
               <h3 class="title" ng-click="test()">蛋糕尺寸选择</h3>
               <div class="cont">

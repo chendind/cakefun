@@ -18,17 +18,17 @@
      
   </head>
   <body>
-  <div class="header">
+  <div class="header" style="">
     <div class="centerbox">
-
-      <div class="logo-sm"><img src="/cakefox/Public/img/logo@2x.png" /></div>
-      <ul class="header-nav">
+      <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
+      <ul class="header-nav" style="margin-left:200px;">
         <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/customize.html">定制</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/towndown.html">商城</a></li>
+        <li><a href="/cakefox/index.php/Home/Index/customize.html">定制蛋糕</a></li>
+        <li><a href="/cakefox/index.php/Home/Index/mall.html">商城</a></li>
         <li><a>关于我们</a></li>
       </ul>
       <ul class="header-nav" style="float:right;">
+        
         <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
         <li><a href="/cakefox/index.php/Home/Index/cart.html">购物车</a></li>
       </ul>

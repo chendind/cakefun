@@ -1,4 +1,4 @@
-<div class="fullbox" style="border-bottom:1px solid #e5e5e5;">
+<?php if (!defined('THINK_PATH')) exit();?><div class="fullbox" style="border-bottom:1px solid #e5e5e5;">
     <div class="centerbox">
       <ul class="nav-step">
         <li><a>初始化</a></li>
@@ -21,7 +21,7 @@
     <div class="centerbox">
       <div class="rightbox">
         <div class="canvas" style="border:1px solid #eee;padding:20px;">
-          <img src="__PUBLIC__/img/top-hetao.png" alt="">
+          <img src="/cakefox/Public/img/top-hetao.png" alt="">
           <div class="canvastable">
             <div class="tr">
               <div class="td"></div>
@@ -113,25 +113,25 @@
             <div class="cont">
               <div class="checkbox">
                 <div class="checkimg" ng-click="setc(1,1)">
-                  <img src="__PUBLIC__/img/caomei.png" />
+                  <img src="/cakefox/Public/img/caomei.png" />
                 </div>
                 <div class="text">草莓<i class="fa fa-check" ng-show="b[1]==1"></i></div>
               </div>
               <div class="checkbox" ng-click="setc(1,2)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/lanmei.png" />
+                  <img src="/cakefox/Public/img/lanmei.png" />
                 </div>
                 <div class="text">蓝莓</div>
               </div>
               <div class="checkbox" ng-click="setc(1,3)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/yingtao.png" />
+                  <img src="/cakefox/Public/img/yingtao.png" />
                 </div>
                 <div class="text">樱桃</div>
               </div>
               <div class="checkbox" ng-click="setc(1,4)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-naiyou-xs.png" />
+                  <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                 </div>
                 <div class="text">蓝莓</div>
               </div>
@@ -142,13 +142,13 @@
             <div class="cont">
               <div class="checkbox" ng-click="setc(2,1)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/iceball2.jpg" />
+                  <img src="/cakefox/Public/img/iceball2.jpg" />
                 </div>
                 <div class="text">黑</div>
               </div>
               <div class="checkbox" ng-click="setc(2,2)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/iceball3.jpg" />
+                  <img src="/cakefox/Public/img/iceball3.jpg" />
                 </div>
                 <div class="text">白</div>
               </div>
@@ -159,25 +159,25 @@
             <div class="cont">
               <div class="checkbox" ng-click="setc(2,1)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-ice-xs.png" />
+                  <img src="/cakefox/Public/img/main-ice-xs.png" />
                 </div>
                 <div class="text">经典白</div>
               </div>
               <div class="checkbox" ng-click="setc(2,2)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-musi-xs.png" />
+                  <img src="/cakefox/Public/img/main-musi-xs.png" />
                 </div>
                 <div class="text">绅士黑</div>
               </div>
               <div class="checkbox" ng-click="setc(2,3)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-zhishi-xs.png" />
+                  <img src="/cakefox/Public/img/main-zhishi-xs.png" />
                 </div>
                 <div class="text">草莓粉</div>
               </div>
               <div class="checkbox" ng-click="setc(2,4)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-naiyou-xs.png" />
+                  <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                 </div>
                 <div class="text">抹茶绿</div>
               </div>
@@ -188,25 +188,25 @@
             <div class="cont">
               <div class="checkbox" ng-click="setc(2,1)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-ice-xs.png" />
+                  <img src="/cakefox/Public/img/main-ice-xs.png" />
                 </div>
                 <div class="text">青苹果</div>
               </div>
               <div class="checkbox" ng-click="setc(2,2)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-musi-xs.png" />
+                  <img src="/cakefox/Public/img/main-musi-xs.png" />
                 </div>
                 <div class="text">柠檬</div>
               </div>
               <div class="checkbox" ng-click="setc(2,3)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-zhishi-xs.png" />
+                  <img src="/cakefox/Public/img/main-zhishi-xs.png" />
                 </div>
                 <div class="text">抹茶</div>
               </div>
               <div class="checkbox" ng-click="setc(2,4)">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-naiyou-xs.png" />
+                  <img src="/cakefox/Public/img/main-naiyou-xs.png" />
                 </div>
                 <div class="text">椰果</div>
               </div>

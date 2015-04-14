@@ -1,6 +1,7 @@
 var app = angular.module("cakefun",['ngAnimate']);
 app.controller("homeCtrl",["$scope","$interval",function($scope,$interval){
   $scope.tumbimg = 0;
+  var num = 2;//这里定义图片的个数
   //图片轮播开始
   var tumbtimeout;
 function beginflash(){
@@ -9,7 +10,7 @@ function beginflash(){
   },5000);
 }
   function tumbflash(dir){
-  	    var num = 4;//这里定义图片的个数
+  	    
   		var a = ($scope.tumbimg + dir)%num;
   		$scope.tumbimg = a;
   }
@@ -20,8 +21,8 @@ beginflash();
       $interval.cancel(tumbtimeout);
     }
     var t = parseInt($scope.tumbimg);
-    if(i>0&&t<3)$scope.tumbimg = t+i;
-    if(i<0&&t>0)$scope.tumbimg = t+i;
+    if(i>0)$scope.tumbimg = (t+i)%num;
+    if(i<0)$scope.tumbimg = (t+num+i)%num;//i小于0时就减1
     beginflash();
   }
   //图片轮播结束

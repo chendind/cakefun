@@ -66,7 +66,6 @@
 			<script>
 $("#trigger").click(function(){
     $("#photo").trigger('click');
-    
 })
   $("#photo").on("change",function(){
     var file = this.files[0];
@@ -77,14 +76,14 @@ $("#trigger").click(function(){
 			fileElementId : "photo", 
 			dataType : 'json',
 			success : function(data){ 
-					switch(data){
+					switch(data.state){
 			           			case "2":alert("上传失败");break;
 			           			case "1":alert("上传成功！");break;
 			           			case "3":alert("数据库失败");break;
 			           			case "0":alert("您还未登录");break;
 			           		}
-			           		$("#dialogbox").load("/cakefox/index.php/Home/Index/protraitdialog.html");
-			           		$("#dialogbox").show();
+
+			           		$("#dialogbox").load("/cakefox/index.php/Home/Index/protraitdialog.html").show();
 			}, 
 			error : function(data, status, e){ 
 			console.log(data);

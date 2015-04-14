@@ -17,31 +17,30 @@
      <script>
      $(window).load(function(){
       $(".loading").hide();
-
      })
      </script>
      <style>
       .loading{
-        width:1000px;
-        height:1000px;
+        width:100%;
+        height:100%;
         background:red;
       }
      </style>
   </head>
   <body ng-controller="homeCtrl">
     <div class="loading"></div>
-    <div class="fullbox homepageblock" style="z-index:10;">
+    <include file="head" />
+    
+    <div class="fullbox tumbbox" style="z-index:10;">
       <div class="tumb">
-        <img ng-hide="tumbimg != 0" src="__PUBLIC__/tumb/tumb-pic-1.jpg" alt="" class="tumbimg fadeout">
+        <img ng-hide="tumbimg != 0" src="__PUBLIC__/tumb/tumb-pic-2.jpg" alt="" class="tumbimg fadeout">
         <img ng-hide="tumbimg != 1" src="__PUBLIC__/tumb/tumb-pic-2.jpg" alt="" class="tumbimg fadeout">
-        <img ng-hide="tumbimg != 2" src="__PUBLIC__/tumb/tumb-pic-3.jpg" alt="" class="tumbimg fadeout">
-        <img ng-hide="tumbimg != 3" src="__PUBLIC__/tumb/tumb-pic-4.jpg" alt="" class="tumbimg fadeout">
         <div class="tumbctrl">
           <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
           <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
         </div>
       </div>
-      <div class="p-centerbox">
+      <!-- <div class="p-centerbox">
         <div class="navbox">
           <table class="nav">
             <tr>
@@ -53,92 +52,58 @@
             </tr>
           </table>
         </div>
-      </div> 
-    </div>
-    <div class="fullbox homepageblock">
+      </div> -->
+    </div> 
+    <div class="fullbox goodpadbox">
       <div class="tumbctrl">
           <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
           <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
         </div>
-      <div class="centerbox homepageblock">
-        <table class="goodtable">
-          <tr class="uprow">
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/top-hetao.png" />
-              </div>
-              <div class="goodimgtitle">
-                核桃心酥
-              </div>
-            </td>
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/top-lirong1.png" />
-              </div>
-              <div class="goodimgtitle">
-                融栗暗香
-              </div>
-            </td>
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/main-ice.png" />
-              </div>
-              <div class="goodimgtitle">
-                红枣冰淇淋
-              </div>
-            </td>
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/main-zhishi.png" />
-              </div>
-              <div class="goodimgtitle">
-                红枣冰淇淋
-              </div>
-            </td>
-          </tr>
-          <tr class="downrow">
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/redwire.png" />
-              </div>
-              <div class="goodimgtitle">
-                索菲葡萄酒
-              </div>
-            </td>
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/main-musi.png" />
-              </div>
-              <div class="goodimgtitle">
-                红枣冰淇淋
-              </div>
-            </td>
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/snake.png" />
-              </div>
-              <div class="goodimgtitle">
-                红枣冰淇淋
-              </div>
-            </td>
-            <td>
-              <div class="goodimgbox">
-                <img src="__PUBLIC__/img/top-lirong2.png" />
-              </div>
-              <div class="goodimgtitle">
-                红枣冰淇淋
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="fullbox homepageblock">
       <div class="centerbox">
-        
+        <div class="goodpad">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/top-hetao.png" alt="核桃心酥"></div>
+          <span>核桃心酥</span>
+          <span>kiss the hetao</span>
+          <span>2磅·￥179</span>
+        </div>
+        <div class="goodpad">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/top-lirong1.png" alt="核桃心酥"></div>
+          <span>开心棉花糖</span>
+          <span>hobby de'happy</span>
+          <span>2磅·￥179</span>
+        </div>
+        <div class="goodpad">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/main-ice.png" alt="核桃心酥"></div>
+          <span>曼城果心</span>
+          <span>man dur' hotheart</span>
+          <span>2磅·￥179</span>
+        </div>
       </div>
     </div>
-
+    <div class="fullbox goodpadbox">
+      <div class="tumbctrl">
+          <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
+          <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
+        </div>
+      <div class="centerbox">
+        <div class="goodpad">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/gaodian1.jpg" alt="核桃心酥"></div>
+          <span>果酪</span>
+          <span>￥12</span>
+        </div>
+        <div class="goodpad">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/gaodian2.jpg" alt="核桃心酥"></div>
+          <span>柠檬片</span>
+          <span>￥12</span>
+        </div>
+        <div class="goodpad">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/gaodian3.jpg" alt="核桃心酥"></div>
+          <span>老婆饼</span>
+          <span>￥15</span>
+        </div>
+      </div>
+    </div>
+<include file="foot" />
 
 <!--<script src="__PUBLIC__/js/slide.js"></script>-->
  <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
@@ -186,12 +151,19 @@ $("#registerBtn").click(function(){
            error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
     });
 });
-
-
 */
-
-     
-
+var h = document.documentElement.clientHeight ;
+$(".tumbbox").css("height",h);
+$(".header").css({"position":"fixed","padding":"20px 0","border":"0"});
+$(window).scroll(function(){
+  var t = parseInt($(this).scrollTop());
+  if(t>parseInt(h)){
+    $(".header").css({"background":"rgba(255,255,255,0.8)"});
+  }
+  if(t<parseInt(h)){
+    $(".header").css({"background":"rgba(255,255,255,0.2)"});
+  }
+})
 </script>
 
   </body>
