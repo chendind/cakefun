@@ -24,9 +24,9 @@
           <img src="__PUBLIC__/img/top-hetao.png" alt="">
           <div class="canvastable">
             <div class="tr">
+              <div class="td">0000</div>
               <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
+              <div class="td">1111</div>
               <div class="td"></div>
               <div class="td"></div>
               <div class="td"></div>
@@ -129,14 +129,42 @@
                 </div>
                 <div class="text">樱桃</div>
               </div>
-              <div class="checkbox" ng-click="setc(1,4)">
+              <div id="s4" data-imgsrc="__PUBLIC__/img/naiyouqiu.png" class="checkbox">
                 <div class="checkimg">
-                  <img src="__PUBLIC__/img/main-naiyou-xs.png" />
+                  <img src="__PUBLIC__/img/naiyouqiu.png" />
                 </div>
-                <div class="text">蓝莓</div>
+                <div class="text">奶油球</div>
               </div>
             </div>
           </div>
+          <script>
+          var s4i = document.createElement("img");
+            $("#s4").click(function(e){
+              var x = e.pageX,
+                  y = e.pageY;
+              
+              $(s4i).attr("src",$(this).attr("data-imgsrc"));
+              $(s4i).css({"position":"absolute","left":x,"top":y,"display":"block","width":"20px","z-index":"999"});
+              $("body").append($(s4i));
+              $(document).mousemove(function(ev){
+                var x = ev.pageX,
+                  y = ev.pageY;
+                $(s4i).css({"left":x,"top":y});
+              });
+
+            });
+            $(".canvastable .td").click(function(){
+              console.log($(this).children().length);
+                if($(this).children().length){
+                   $(this).empty();
+                   console.log($(this).children().length);
+              }
+              else {
+                $(this).append($(s4i).clone().css({"width":"50px","position":"static","display":"inline"}));
+                console.log("2");
+              }
+              });
+          </script>
           <div class="controllbox" ng-show="c[0]==1">
             <h3 class="title">您喜欢哪种颜色的巧克力？</h3>
             <div class="cont">
