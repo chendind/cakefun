@@ -13,59 +13,30 @@
      <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/mall.less">
      <script src="__PUBLIC__/less/dist/less.js" type="text/javascript"></script>
   </head>
-  <body>
+  <body ng-controller="MallController">
   <include file="head" />
-  <div class="fullbox" style="margin-top:20px;">
+  <div class="fullbox" style="border-bottom:1px solid #eee;">
      <div class="centerbox">
-       <div class="column one-fourth">
-         <div class="researchbox">
-          <input type="text" class="research" placeholder="搜索">
-        </div>
-        <ul class="category">
-          <span><a>全部商品</a></span>
-          <li>
-            <ul class="category">
-              <span><a>蛋糕</a></span>
-              <li><a>慕斯蛋糕</a></li>
-              <li><a>戚风蛋糕</a></li>
-              <li><a>芝士蛋糕</a></li>
-              <li><a>冰淇淋蛋糕</a></li>
-            </ul>
-          </li>
-          <li><a>甜点</a></li>
-          <li><a>零食</a></li>
-          <li>
-            <ul class="category">
-              <span><a>酒水</a></span>
-              <li><a>葡萄酒</a></li>
-              <li><a>果汁</a></li>
-              <li><a>鲜奶</a></li>
-              <li><a>茶</a></li>
-              <li><a>咖啡</a></li>
-            </ul>
-          </li>
-        </ul>
+       <div class="catagory" style="float:left;">
+         <div class="item" style="text-align:left;"><span id="itemall" ng-click="kind = ''">显示全部</span></div>
        </div>
-       <div class="column three-fourth">
-         <ul class="goodlist">
-           <li>
-             <img src="__PUBLIC__/img/top-lirong1.png" alt="商品图片">
-             <div class="describe">
-               <h2>粒蓉暗香</h2>
-               <p>慕斯、板栗、巧克力、爱尔兰咖啡豆、杏仁</p>
-               <p>口感：味香、微甜</p>
-               <p>现货供应，2磅、4磅可选</p>
-             </div>
-             <div class="control">
-               <div><a class="btn">加入收藏</a></div>
-               <div><a class="btn">加入购物车</a></div>
-               <div><a class="btn greenbtn">立即购买</a></div>
-             </div>
-           </li>
-           <li></li>
-         </ul>
+       <div class="catagory" style="float:right;">
+         <div class="item"><span id="item1" ng-click="kind = {'kind' : 'cake'}">生日蛋糕</span></div>
+         <div class="item"><span id="item2" ng-click="kind = {'kind' : 'desert'}">甜点</span></div>
+         <div class="item"><span id="item3" ng-click="kind = {'kind' : 'drink'}">酒水</span></div>
        </div>
      </div>
+   </div>
+   <div class="fullbox">
+     <div class="centerbox">
+         <a class="goodpad" ng-repeat="good in goods | filter:kind" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+          <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+          <div class="goodms">
+            <span>{{good.name}}</span>
+            <span>{{good.price}}</span>
+          </div>
+        </a>
+      </div>
    </div> 
 <script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
 <!--<script src="__PUBLIC__/js/slide.js"></script>-->
@@ -78,7 +49,7 @@
 <!-- <include file="loginwindow" /> -->
 
 <script>
-
+ 
 </script>
 
   </body>

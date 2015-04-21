@@ -24,9 +24,9 @@
           <img src="/cakefox/Public/img/top-hetao.png" alt="">
           <div class="canvastable">
             <div class="tr">
-              <div class="td">0000</div>
               <div class="td"></div>
-              <div class="td">1111</div>
+              <div class="td"></div>
+              <div class="td"></div>
               <div class="td"></div>
               <div class="td"></div>
               <div class="td"></div>
@@ -138,27 +138,37 @@
             </div>
           </div>
           <script>
+          var s4i = document.createElement("img");
             $("#s4").click(function(e){
               var x = e.pageX,
                   y = e.pageY;
-              var s4i = document.createElement("img");
+              
               $(s4i).attr("src",$(this).attr("data-imgsrc"));
               $(s4i).css({"position":"absolute","left":x,"top":y,"display":"block","width":"20px","z-index":"999"});
               $("body").append($(s4i));
               $(document).mousemove(function(ev){
                 var x = ev.pageX,
                   y = ev.pageY;
-                $(s4i).css({"left":x,"top":y});
+                $(s4i).css({"left":x+10,"top":y});
               });
-              $(".canvastable .td").click(function(){
+
+            });
+            $(".td").click(function(){
                 if($(this).children().length){
                    $(this).empty();
-              }
-              else {
-                $(this).append($(s4i).clone().css({"width":"50px","position":"static","display":"inline"}));
-              }
-              })
-            })
+                   console.log("if");
+                }
+              else{
+                $(this).append(function(){
+                     var obj = $(s4i).clone().css({"width":"50px","position":"static"});
+                     return obj;
+                   });
+                }
+              // var top = $(this).offset().top,
+              //     left = $(this).offset().left;
+
+              // console.log("top = "+top+" , left = "+left);
+               });
           </script>
           <div class="controllbox" ng-show="c[0]==1">
             <h3 class="title">您喜欢哪种颜色的巧克力？</h3>

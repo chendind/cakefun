@@ -190,7 +190,7 @@ $("#registerBtn").click(function(){
 */
 var h = document.documentElement.clientHeight ;
 $(".tumbbox").css("height",h);
-$(".header").css({"position":"fixed","padding":"20px 0","border":"0"});
+$(".header").css({"position":"fixed","border":"0"});
 $(window).scroll(function(){
   var t = parseInt($(this).scrollTop());
   if(t>parseInt(h)){

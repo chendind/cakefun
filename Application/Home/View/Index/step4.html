@@ -24,9 +24,9 @@
           <img src="__PUBLIC__/img/top-hetao.png" alt="">
           <div class="canvastable">
             <div class="tr">
-              <div class="td">0000</div>
               <div class="td"></div>
-              <div class="td">1111</div>
+              <div class="td"></div>
+              <div class="td"></div>
               <div class="td"></div>
               <div class="td"></div>
               <div class="td"></div>
@@ -149,21 +149,26 @@
               $(document).mousemove(function(ev){
                 var x = ev.pageX,
                   y = ev.pageY;
-                $(s4i).css({"left":x,"top":y});
+                $(s4i).css({"left":x+10,"top":y});
               });
 
             });
-            $(".canvastable .td").click(function(){
-              console.log($(this).children().length);
+            $(".td").click(function(){
                 if($(this).children().length){
                    $(this).empty();
-                   console.log($(this).children().length);
-              }
-              else {
-                $(this).append($(s4i).clone().css({"width":"50px","position":"static","display":"inline"}));
-                console.log("2");
-              }
-              });
+                   console.log("if");
+                }
+              else{
+                $(this).append(function(){
+                     var obj = $(s4i).clone().css({"width":"50px","position":"static"});
+                     return obj;
+                   });
+                }
+              // var top = $(this).offset().top,
+              //     left = $(this).offset().left;
+
+              // console.log("top = "+top+" , left = "+left);
+               });
           </script>
           <div class="controllbox" ng-show="c[0]==1">
             <h3 class="title">您喜欢哪种颜色的巧克力？</h3>

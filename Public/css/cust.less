@@ -2,38 +2,12 @@
 @navh:200px;
 @goodh : @height - @navh;
 @gold : #daae6c;
-.nav-step{
-  width:100%;
-  padding:10px 0 0;
-  overflow:hidden;
-  
-  li{
-    float:left;
-    height:50px;
-    color:#999;
-    margin-right:80px;
-    a{
-      display: block;
-      padding: 4px;
-      font-size: 18px;
-      font-weight: normal;
-      line-height: 30px;
-    }
-  }
-  .stephere{
-    color:#333;
-    border-bottom:2px solid @gold;
-  }
-}
-.tips{
-  padding:10px 0px;
-  span{
-    color:#333;
-  }
-}
+
 .rightbox{
   width:55%;
   float:left;
+  perspective: 10100px;
+    perspective-origin: 52% 75%;
 }
 .leftbox{
   width:45%;
@@ -44,6 +18,7 @@
 .canvas{
   width:100%;
   height:500px;
+  transform-style: preserve-3d;
   img{
     display:block;
     position:absolute;
@@ -113,18 +88,23 @@
 .canvastable{
   width:330px;
   height:330px;
-  transform: rotateX(64deg) rotateZ(37deg) translate(80px,10px);
+  position:absolute;
+  z-index:999;
   cursor:pointer;
+  transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(218deg) skew(0deg, 0deg);
   .tr{
     width:100%;
-    height:12.5%;
+    height: 12.5%;
     .td{
       width:12.5%;
       height:100%;
       float:left;
-      
+      border: 1px solid #333;
       &:hover{
         background-color:rgba(0,0,0,0.3);
+      }
+      img{
+        // transform: rotateX(116deg) rotateZ(143deg) translate(0px,0px);
       }
     }
   }

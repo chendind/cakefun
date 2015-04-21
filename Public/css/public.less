@@ -22,7 +22,6 @@ ul{
   width:980px;
   margin:0 auto;
   overflow:hidden;
-  z-index:1;
   position:relative;
 }
 .navbox{
@@ -107,6 +106,10 @@ ul{
   float: left; 
   min-height:400px;
   overflow: hidden;
+  cursor:pointer;
+  display: block;
+  // transition: all 1s linear;
+  // -webkit-transition: all 1s linear ;
   .goodimgbox{
     width:100%;
     min-height:350px;
@@ -116,12 +119,27 @@ ul{
       width:100%;
     }
   }
-  span{
+  .goodms{
     width:100%;
-    text-align: center;
-    display: block;
+    height:50px;
+    opacity:0;
+    transition: opacity 600ms ease;
+    span{
+      width:100%;
+      text-align: center;
+      display: block;
       font-family:lantingqianhei;
-  }
+    }
+
+  } 
+}
+.goodpad.ng-animate {
+    -webkit-transition-delay:200ms;
+     transition-delay:200ms;
+
+     /* 防止意外CSS继承的保护措施 */
+     -webkit-transition-duration:0;
+     transition-duration:0;
 }
 .borderl{
   border-left:1px dashed @gold;
@@ -137,7 +155,7 @@ ul{
 }
 .header{
   min-width:1000px;
-  padding:10px 0;
+  padding:20px 0;
   background-color: rgba(255, 255, 255, 0.2);
   color: #333;
   border-bottom:1px solid #eee;
@@ -166,7 +184,35 @@ ul{
   margin-right:10px;
   float:left;
 }
-
+.nav-step{
+  width:100%;
+  padding:10px 0 0;
+  overflow:hidden;
+  
+  li{
+    float:left;
+    height:50px;
+    color:#999;
+    margin-right:80px;
+    a{
+      display: block;
+      padding: 4px;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+  }
+  .stephere{
+    color:#333;
+    border-bottom:2px solid @gold;
+  }
+}
+.tips{
+  padding:10px 0px;
+  span{
+    color:#333;
+  }
+}
 .title{
   width:100%;
   border:1px solid #d8d8d8;
