@@ -18,24 +18,53 @@
   <div class="fullbox" style="border-bottom:1px solid #eee;">
      <div class="centerbox">
        <div class="catagory" style="float:left;">
-         <div class="item" style="text-align:left;"><span id="itemall" ng-click="kind = ''">显示全部</span></div>
+         <div class="item" style="text-align:left;"><span id="itemall" ng-click="goodshow='all'">显示全部</span></div>
        </div>
        <div class="catagory" style="float:right;">
-         <div class="item"><span id="item1" ng-click="kind = {'kind' : 'cake'}">生日蛋糕</span></div>
-         <div class="item"><span id="item2" ng-click="kind = {'kind' : 'desert'}">甜点</span></div>
-         <div class="item"><span id="item3" ng-click="kind = {'kind' : 'drink'}">酒水</span></div>
+         <div class="item"><span id="item1" ng-click="goodshow='cake'">生日蛋糕</span></div>
+         <div class="item"><span id="item2" ng-click="goodshow='desert'">甜点</span></div>
+         <div class="item"><span id="item3" ng-click="goodshow='drink'">酒水</span></div>
        </div>
      </div>
    </div>
-   <div class="fullbox">
+   <div class="fullbox" ng-init="goodshow='all'">
      <div class="centerbox">
-         <a class="goodpad" ng-repeat="good in goods | filter:kind" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+      <div class="goodbox" ng-class="{show:goodshow=='cake'}">
+         <a class="goodpad" ng-repeat="good in goods | filter:{'kind' : 'cake'}" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
           <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
           <div class="goodms">
             <span>{{good.name}}</span>
             <span>{{good.price}}</span>
           </div>
         </a>
+      </div>
+      <div class="goodbox" ng-class="{show:goodshow=='desert'}">
+        <a class="goodpad" ng-repeat="good in goods | filter:{'kind' : 'desert'}" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+          <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+          <div class="goodms">
+            <span>{{good.name}}</span>
+            <span>{{good.price}}</span>
+          </div>
+        </a>
+        </div>
+      <div class="goodbox" ng-class="{show:goodshow=='drink'}">
+        <a class="goodpad" ng-repeat="good in goods | filter:{'kind' : 'drink'}" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+          <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+          <div class="goodms">
+            <span>{{good.name}}</span>
+            <span>{{good.price}}</span>
+          </div>
+        </a>
+        </div>
+      <div class="goodbox" ng-class="{show:goodshow=='all'}">
+        <a class="goodpad" ng-repeat="good in goods" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+          <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+          <div class="goodms">
+            <span>{{good.name}}</span>
+            <span>{{good.price}}</span>
+          </div>
+        </a>
+        </div>
       </div>
    </div> 
 <script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>

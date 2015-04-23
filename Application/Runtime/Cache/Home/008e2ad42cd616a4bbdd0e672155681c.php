@@ -88,12 +88,18 @@
           <a><i class="fa fa-angle-right"></i></a>
         </div>
         <div class="clear"></div>
-        <div id="timeaxis">
-          <div class="point"></div>
-          <div class="point" style="left:230.5px"></div>
-          <div class="point" style="left:353.5px"></div>
-          <div class="point" style="left:476.5px"></div>
-          <div class="point" style="left:599.5px"></div>
+        <div class="storyboard">
+
+          <div id="timeaxis">
+            <div class="point"></div>
+            <div class="point" style="left:230.5px"></div>
+            <div class="point" style="left:353.5px"></div>
+            <div class="point" style="left:476.5px"></div>
+            <div class="point" style="left:599.5px"></div>
+          </div>
+          <div class="storycont">
+            您的账户等级为0；定制第一款蛋糕后，您的账户将升级为lv1会员；成为lv1会员，我们会在每年您生日时，赠送您20元Cakewith.ME优惠券。
+          </div>
         </div>
         <h3 class="title" style="margin-top:20px;">我的优惠券</h3>
         <div class="cont">

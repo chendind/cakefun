@@ -10,13 +10,12 @@
      <link href="/cakefox/Public/css/public.css" rel="stylesheet">
      <link href="/cakefox/Public/css/font-awesome.min.css" rel="stylesheet">
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
-     <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
-     <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
-
+     <link rel="stylesheet" type="text/css" href="/cakefox/Public/css/cakepublic.css">
      <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
      <script>
      $(window).load(function(){
       $(".loading").hide();
+      $("body").css({"height":"","overflow":""});
      })
      </script>
      <style>
@@ -24,11 +23,21 @@
         width:100%;
         height:100%;
         background:red;
+        position: fixed;
+        top:0;
+        z-index:999;
       }
      </style>
   </head>
   <body ng-controller="homeCtrl">
-    <div class="loading"></div>
+    <div class="loading">
+
+    </div>
+    <script>
+    var h = $(window).height();
+        $(".loading").css("height",h);
+        $("body").css({"height":h,"overflow":"hidden"});
+    </script>
     <div class="header" style="">
     <div class="centerbox">
       <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
@@ -78,9 +87,10 @@
       <div class="centerbox">
         <div class="goodpad">
           <div class="goodimgbox"><img src="/cakefox/Public/img/top-hetao.png" alt="核桃心酥"></div>
-          <span>核桃心酥</span>
-          <span>kiss the hetao</span>
-          <span>2磅·￥179</span>
+          <div class="goodms">
+            <span>核桃心酥</span>
+            <span>2磅·￥179</span>
+          </div>
         </div>
         <div class="goodpad">
           <div class="goodimgbox"><img src="/cakefox/Public/img/top-lirong1.png" alt="核桃心酥"></div>
@@ -188,7 +198,7 @@ $("#registerBtn").click(function(){
     });
 });
 */
-var h = document.documentElement.clientHeight ;
+
 $(".tumbbox").css("height",h);
 $(".header").css({"position":"fixed","border":"0"});
 $(window).scroll(function(){

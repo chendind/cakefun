@@ -1,0 +1,379 @@
+ul {
+  list-style: none;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fullbox {
+  width: 100%;
+  min-width: 1000px;
+  position: relative;
+  overflow: hidden;
+}
+.centerbox {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.navbox {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0px;
+}
+.nav {
+  margin: 0 auto;
+  width: 80%;
+  height: 200px;
+}
+.nav td {
+  font-size: 25px;
+  width: 20%;
+  text-align: center;
+  color: #daae6c;
+}
+.nav td a {
+  z-index: 2;
+}
+.logo {
+  width: 170px;
+}
+.tumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+.tumb .tumbimg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.fadeout {
+  opacity: 1;
+  transition: 1000ms ease all;
+}
+.ng-hide {
+  opacity: 0;
+}
+.goodpadbox {
+  padding: 100px 0;
+  border-bottom: 1px solid #eee;
+}
+.tumbctrl {
+  font-size: 80px;
+  color: rgba(225, 225, 225, 0.5);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.angle-left {
+  position: absolute;
+  top: 200px;
+  cursor: pointer;
+  left: 0;
+}
+.angle-right {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 200px;
+}
+.angle-right:hover,
+.angle-left:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.tumbbox,
+.goopadbox {
+  min-height: 650px;
+}
+.goodpad {
+  width: 33%;
+  padding: 0px 35px;
+  float: left;
+  min-height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+}
+.goodpad .goodimgbox {
+  width: 100%;
+  min-height: 350px;
+  overflow: hidden;
+}
+.goodpad .goodimgbox img {
+  display: block;
+  width: 100%;
+}
+.goodpad .goodms {
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+.goodpad .goodms span {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-family: lantingqianhei;
+}
+.borderl {
+  border-left: 1px dashed #daae6c;
+}
+.borderr {
+  border-right: 1px dashed #daae6c;
+}
+.bordert {
+  border-top: 1px dashed #daae6c;
+}
+.borderb {
+  border-bottom: 1px dashed #daae6c;
+}
+.header {
+  min-width: 1000px;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #333;
+  border-bottom: 1px solid #eee;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+.header .header-nav {
+  list-style: none;
+  float: left;
+}
+.header .header-nav li {
+  float: left;
+}
+.header .header-nav li a {
+  display: block;
+  padding: 4px 8px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.logo-sm {
+  height: 28px;
+  margin-right: 10px;
+  float: left;
+}
+.logo-sm img {
+  height: 100%;
+}
+.nav-step {
+  width: 100%;
+  padding: 10px 0 0;
+  overflow: hidden;
+}
+.nav-step li {
+  float: left;
+  height: 50px;
+  color: #999;
+  margin-right: 80px;
+}
+.nav-step li a {
+  display: block;
+  padding: 4px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.nav-step .stephere {
+  color: #333;
+  border-bottom: 2px solid #daae6c;
+}
+.tips {
+  padding: 10px 0px;
+}
+.tips span {
+  color: #333;
+}
+.title {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  padding: 9px 10px 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  line-height: 17px;
+}
+.cont {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #d8d8d8;
+  border-radius: 0 0 5px 5px;
+  border-width: 0 1px 1px;
+  padding: 10px 0;
+}
+.cont .menuitem {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  line-height: 17px;
+  padding: 9px 10px 10px;
+  color: #4183c4;
+}
+.cont .menuitem:last-child {
+  border: 0;
+}
+.cont .menuitem:hover {
+  background: #f8f8f8;
+}
+.title2 {
+  width: 100%;
+}
+.cont2 {
+  width: 100%;
+}
+.cont2 h4 {
+  margin-bottom: 5px;
+}
+.column {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+.one-fourth {
+  width: 25%;
+}
+.one-third {
+  width: 33%;
+}
+.two-third {
+  width: 67%;
+}
+.three-fourth {
+  width: 75%;
+}
+.line {
+  width: 100%;
+  height: 0px;
+  border-bottom: 1px solid #d8d8d8;
+  margin: 10px 0px;
+}
+a.btn {
+  height: 34px;
+  width: 100px;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #d5d5d5;
+  background: #eee;
+  border-radius: 3px;
+  line-height: 30px;
+  background-image: -webkit-linear-gradient(#fcfcfc, #eeeeee);
+  background-image: linear-gradient(#fcfcfc, #eeeeee);
+  background-repeat: repeat-x;
+}
+a.greenbtn {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  background-color: #60b044;
+  background-image: -webkit-linear-gradient(#8add6d, #60b044);
+  background-image: linear-gradient(#8add6d, #60b044);
+  background-repeat: repeat-x;
+  border-color: #5ca941;
+}
+.pinput {
+  border: 1px solid #d5d5d5;
+  height: 34px;
+  width: 100%;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  background: #fafafa;
+  border-radius: 3px;
+  font-size: 13px;
+  text-indent: 10px;
+}
+.dialogbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.dialogbox .dialog {
+  width: 455px;
+  height: 287px;
+  overflow: hidden;
+  margin: 50px auto 0;
+  border-radius: 3px;
+  border: 1px solid #999;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.dialogbox .dialog .dia-head {
+  width: 100%;
+  height: 50px;
+  padding: 18px 10px 10px;
+  background-color: #fafafa;
+  font-size: 14px;
+  line-height: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+.dialogbox .dialog .dia-body {
+  width: 453px;
+  height: 183px;
+  position: relative;
+  overflow: hidden;
+  display: table-cell;
+  vertical-align: middle;
+}
+.dialogbox .dialog .dia-body .jcrop-holder {
+  margin: 0 auto;
+}
+.dialogbox .dialog .dia-foot {
+  width: 100%;
+  height: 54px;
+  border-top: 1px solid #eee;
+  background-color: #fafafa;
+  padding: 8px 10px;
+}
+.dialogbox .dialog .dia-foot a {
+  float: right;
+}
+.foot {
+  background: #666;
+}
+.foot ul.footleft {
+  width: 30%;
+  padding: 40px 0;
+  color: #ddd;
+}
+.foot ul.footleft li {
+  padding: 4px 0;
+}
+.foot .shareiconbox {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: auto;
+}
+.foot .shareiconbox div {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: #eee;
+  margin-right: 10px;
+  float: left;
+}
