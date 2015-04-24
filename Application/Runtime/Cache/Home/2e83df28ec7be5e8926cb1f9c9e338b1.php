@@ -1,5 +1,5 @@
 <?php if (!defined('THINK_PATH')) exit();?> <!DOCTYPE html>
-<html lang="zh-CN" ng-app="userinfo">
+<html lang="zh-CN" ng-app="cakefun">
   <head> 
     <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,15 +9,11 @@
      <link href="/cakefox/Public/css/public.css" rel="stylesheet">
      <link href="/cakefox/Public/css/font-awesome.min.css" rel="stylesheet">
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
-     <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
-    
-    <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/jquery.Jcrop.css">
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
-     <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/userinfo.less">
+     <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/mall.less">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
-     
   </head>
-  <body>
+  <body ng-controller="homeCtrl">
   <div class="header" style="">
     <div class="centerbox">
       <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
@@ -35,25 +31,47 @@
       </div>
     </div>
 </div>
-  <div class="fullbox" style="margin-top:20px;">
-    <div class="centerbox">
-      <div class="column one-fourth">
-        <h3 class="title" style="margin-top:20px;">账户设置</h3>
-        <div class="cont" style="padding:0;">
-          <a class="menuitem" href="#/baseinfo.html">个人资料</a>
-          <a class="menuitem" href="#/account">账户设置</a>
-          <a class="menuitem" href="#/address">送货地址</a>
-          <a class="menuitem" href="#/myorder">我的订单</a>
-          <a class="menuitem" href="#/coupon">优惠码信息</a>
+  <div class="fullbox" style="border-bottom:1px solid #eee;">
+     <div class="centerbox">
+       <div class="catagory" style="float:left;">
+         <div class="item" style="text-align:left;"><span id="itemall" ng-click="goodshow='all'">返回商城</span></div>
+       </div>
+       <div class="catagory" style="float:right;">
+         <div class="item"><span id="item3" ng-click="goodshow='drink'">商品名</span></div>
+       </div>
+     </div>
+   </div>
+    <div class="fullbox">
+      <div class="centerbox">
+        <div class="column two-third" style="height:400px;display:table;">
+          <div class="goodtumb">
+            <img ng-hide="tumbimg != 0" src="/cakefox/Public/img/top-lirong1.png" alt="" class="tumbimg fadeout">
+            <img ng-hide="tumbimg != 1" src="/cakefox/Public/img/main-ice.png" alt="" class="tumbimg fadeout">
+          </div>
+          <div class="tumbctrl">
+              <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
+              <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
+            </div>
+        </div>
+        <div class="column one-third goodinfo" style="height:400px;">
+          <h3>商品名</h3>
+          <span>RMB 100</span>
+          <p>一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述</p>
+          <span style="font-size:13px;color:#d0021b;">*请提前24小时订购</span>
+          <div class="selectbox" ng-init="chicun=9">
+            <span>尺寸：{{chicun}}寸</span>
+            <select name="" id="" ng-model="chicun">
+              <option value="6">6寸</option>
+              <option value="9">9寸</option>
+              <option value="13">13寸</option>
+              <option value="18">18寸</option>
+            </select>
+          </div>
+          <label>数量<input type="number" value="1" /><a class="btn greenbtn">加入购物车</a></label>
         </div>
       </div>
-      <div class="column three-fourth" ng-view></div>
     </div>
-  </div>
-  <div id="dialogbox" class="dialogbox" style="display:none;">
-    
-  </div>
-  <div class="fullbox foot" style="margin-top:20px;">
+    <div class="fullbox foot" style="margin-top:20px;">
 	<div class="centerbox">
 			<ul class="footleft">
 				<li>回到顶部</li>
@@ -74,11 +92,16 @@
 			</div>
 	</div>
 </div>
+<script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
  <script src="/cakefox/Public/js/angular-route.min.js"></script>
- <script src="/cakefox/Public/js/userinfo.js"></script>
+ <script src="/cakefox/Public/js/tumbflash.js"></script>
  <script src="/cakefox/Public/js/public.js"></script>
-<script src="/cakefox/Public/js/ajaxfileupload.js"></script>
+
+<script>
+ 
+</script>
+
   </body>
   </html>

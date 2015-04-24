@@ -115,6 +115,27 @@
       
     </div>
   </div>
+  <div class="fullbox foot" style="margin-top:20px;">
+	<div class="centerbox">
+			<ul class="footleft">
+				<li>回到顶部</li>
+				<li>关于购买</li>
+				<li>关于配送</li>
+				<li>商业合作</li>
+				<li>条款协议</li>
+				<li>招贤纳士</li>
+				<li></li>
+				<li></li>
+				<li>浙ICP备12036459号-2</li>
+			</ul>
+			<div class="shareiconbox">
+				<div><i class="fa fa-weibo"></i></div>
+				<div><i class="fa fa-weixin"></i></div>
+				<div><i class="fa fa-tencent-weibo"></i></div>
+				<div><i class="fa fa-tumblr"></i></div>
+			</div>
+	</div>
+</div>
 <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
 <!--<script src="/cakefox/Public/js/slide.js"></script>-->
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
