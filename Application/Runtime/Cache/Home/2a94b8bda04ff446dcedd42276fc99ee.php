@@ -38,8 +38,8 @@
         $(".loading").css("height",h);
         $("body").css({"height":h,"overflow":"hidden"});
     </script>
-    <div class="header" style="">
-    <div class="centerbox">
+    <div class="header" style="" controller="HeaderController">
+    <div class="centerbox" style="height:28px;overflow:visible;">
       <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
       <ul class="header-nav" style="margin-left:200px;">
         <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
@@ -50,11 +50,20 @@
       <ul class="header-nav" style="float:right;">
         
         <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/cart.html">购物车</a></li>
+        <li id="cartli" ng-init="cartdialogshow=0;" ng-mouseenter="cartdialogshow=1;" ng-mouseleave="cartdialogshow=0;">
+          <a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>
+          <div id="cartdialogbox" ng-if="cartdialogshow==1" ng-hide="cartdialogshow==0;">
+            <div class="loadingbox">
+              <i class="fa fa-spinner fa-spin"></i>
+            </div>
+            <div class="cartdialog"></div>
+          </div>
+        </li>
       </ul>
       </div>
     </div>
 </div>
+
     
     <div class="fullbox tumbbox" style="z-index:10;">
       <div class="tumb">
@@ -129,7 +138,7 @@
         </div>
       </div>
     </div>
-<div class="fullbox foot">
+<div class="fullbox foot" style="margin-top:20px;">
 	<div class="centerbox">
 			<ul class="footleft">
 				<li>回到顶部</li>

@@ -6,11 +6,13 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
      <meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
      <title>cakefun</title>
+
      <link href="/cakefox/Public/css/public.css" rel="stylesheet">
      <link href="/cakefox/Public/css/font-awesome.min.css" rel="stylesheet">
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/mall.less">
+
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
   </head>
   <body ng-controller="homeCtrl">
@@ -59,7 +61,7 @@
           <p>一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述一段商品描述</p>
           <span style="font-size:13px;color:#d0021b;">*请提前24小时订购</span>
           <div class="selectbox" ng-init="chicun=9">
-            <span>尺寸：{{chicun}}寸</span>
+            <span>尺寸：<a ng-bind="chicun">--</a>寸</span>
             <select name="" id="" ng-model="chicun">
               <option value="6">6寸</option>
               <option value="9">9寸</option>
@@ -67,7 +69,7 @@
               <option value="18">18寸</option>
             </select>
           </div>
-          <label>数量<input type="number" value="1" /><a class="btn greenbtn">加入购物车</a></label>
+          <label>数量：<input type="number" value="1" /><a class="btn greenbtn">加入购物车</a></label>
         </div>
       </div>
     </div>
@@ -93,6 +95,7 @@
 	</div>
 </div>
 <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
+<script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
  <script src="/cakefox/Public/js/angular-route.min.js"></script>

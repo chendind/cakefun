@@ -66,10 +66,16 @@ ul{
 }
 .fadeout{
   opacity:1;
-  transition: 1000ms ease all;
+  transition:opacity 1000ms ease;
 }
 .ng-hide{
   opacity:0;
+}
+.ng-hide-add-active{
+  display: none;
+}
+.ng-hide-remove{
+  display: block;
 }
 .goodpadbox{
   padding:100px 0;
@@ -106,19 +112,22 @@ ul{
   width:33%;
   padding:0px 35px;
   float: left; 
-  min-height:400px;
+  height:330px;
   overflow: hidden;
   cursor:pointer;
   display: block;
+  padding-top:30px;
   // transition: all 1s linear;
   // -webkit-transition: all 1s linear ;
+
   .goodimgbox{
     width:100%;
-    min-height:350px;
+    height:253px;
     overflow: hidden;
     img{
       display: block;
       width:100%;
+      height:100%;
     }
   }
   .goodms{
@@ -126,6 +135,7 @@ ul{
     height:50px;
     opacity:0;
     transition: opacity 600ms ease;
+    display: none;
     span{
       width:100%;
       text-align: center;
@@ -169,11 +179,101 @@ ul{
     float:left;
     li{
       float:left;
+      position:relative;
       a{
           display: block;
           padding: 4px 8px;
           font-size: 15px;
           line-height: 20px;
+      }
+      #cartdialogbox{
+        position:absolute;
+        top:28px;
+        width:270px;
+        overflow:hidden;
+        border:1px solid #d8d8d8;
+        right:0;
+        background-color: #fff;
+        padding:5px 0px;
+        z-index: 999;
+        opacity: 0;
+        .loadingbox{
+          width:100%;
+          height:100px;
+          line-height:100px;
+          text-align: center;
+          font-size: 30px;
+          color: #999;
+        }
+        h4{
+          margin:0;
+          padding:0 10px;
+        }
+        .cartitem{
+          width:100%;
+          height:48px;
+            font-size:12px;
+            padding:0 10px;
+          img{
+            width:48px;
+            height:100%;
+            display: block;
+            float: left;
+          }
+          .cartcont{
+            width:200px;
+            height:100%;
+            display: block;
+            float: left;
+
+            .carttitle{
+              width:80%;
+              height:50%;
+              float:left;
+              padding:4px 4px;
+              text-overflow:ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+            .cartprice{
+              width:20%;
+              height:50%;
+              float:left;
+              padding:4px 0px;
+              text-align: center;
+            }
+            .cartspecs{
+              width:80%;
+              height:50%;
+              float:left;
+              padding-left:4px;
+              color:#999;
+            }
+            .cartcount{
+              width:20%;
+              height:50%;
+              float:left;
+              text-align: center;
+            }
+          }
+        }
+        .checkbox{
+          width:100%;
+          border-top:1px solid #eee;
+          span{
+            display: block;
+            text-align: right;
+            font-size: 12px;
+            color:#d0021b;
+            padding:5px;
+            width:100%;
+
+          }
+          a.btn{
+            float:right;
+            margin-right:5px;
+          }
+        }
       }
     }
   }
@@ -397,4 +497,3 @@ a.greenbtn{
           }
     }
 }
-

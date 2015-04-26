@@ -38,7 +38,43 @@ myapp.directive('ngFocus', [function() {
     }
 }]);
 */
+var cartdialogtimeout;
+$("#cartli").on({"mouseenter":function(){
+    cartdialogshow();
+},"mouseleave":function(){
+    cartdialoghide();
+}
+});
+$(".addtocartbtn").click(function(){
+    cartdialogshow();
+    cartdialogtimeout = setTimeout(function(){
+        cartdialoghide();
+    },2000);
+})
+function cartdialogshow(){
+    if(typeof cartdialogtimeout){clearTimeout(cartdialogtimeout);}
+    $("#cartdialogbox").show().animate({"opacity":"1"}, 600);
+    $(".cartdialog").load("./cartdialog.html",function(){
+        $(".loadingbox").hide();
+    });
+}
+function cartdialoghide(){
+    if(typeof cartdialogtimeout){clearTimeout(cartdialogtimeout);}
+    $("#cartdialogbox").animate({"opacity":"0"}, 600,function(){
+        $(this).hide();
+        $(".loadingbox").show();
+    $(".cartdialog").empty();
+    });
+    
+}
 function fleshVerify(){
 var time = new Date().getTime();
 document.getElementById('yzm').src= '/index.php/Home/Index/verify/'+time;
 } ;
+// if(app){
+//     app.controller("HeaderController",function($scope){
+//         $scope.cartshow = function(){
+//             $scope.cartdialogshow = 1;
+//         }
+//     })
+// }

@@ -5,7 +5,7 @@
 			<dl class="dlitem">
 				<dt><span>头像</span></dt>
 				<dd>
-					<img src="__PUBLIC__/img/portrait.jpg" />
+					<img src="__ROOT__/Uploads/{$detail.user_img}" />
 					<a id="trigger" class="btn">上传新头像</a><input name="photo" id="photo" type="file" />
 					<span>头像尺寸请小于10M，支持jpg、jpeg、png、gif格式</span>
 				</dd>
@@ -13,57 +13,52 @@
 			<dl class="dlitem">
 				<dt><span>账号</span></dt>
 				<dd>
-					<input class="pinput" type="text" disabled value="152****9653" />
+					<input class="pinput" type="text" disabled value="{$detail.user_phone}" />
 				</dd>
 			</dl>
 			<dl class="dlitem">
-				<dt><span>昵称</span></dt>
+				<dt><span>姓名</span></dt>
 				<dd>
-					<input class="pinput" type="text" />
+					<input id="name" class="pinput" type="text" value="{$detail.user_name}" />
 				</dd>
 			</dl>
-			<dl class="dlitem">
+			<dl id="sexbox" class="dlitem" ng-init="sex={$detail.user_gender}" data-gender="{{sex}}">
 				<dt><span>性别</span></dt>
 				<dd>
-					<label for="answer-man"><input type="radio" name="sex" id="answer-man" />男</label>
-					<label for="answer-woman"><input type="radio" name="sex" id="answer-women" />女</label>
-					<label for="answer-secret"><input type="radio" name="sex" id="answer-secret" checked />保密</label>
+					<label for="answer-man"><input type="radio" name="sex" id="answer-man" value="0" ng-model="sex"  />男</label>
+					<label for="answer-woman"><input type="radio" name="sex" id="answer-women" value="1" ng-model="sex"  />女</label>
+					<label for="answer-secret"><input type="radio" name="sex" id="answer-secret" value="2" ng-model="sex"  />保密</label>
 				</dd>
 			</dl>
 			<dl class="dlitem">
 				<dt><span>我的生日</span></dt>
 				<dd>
-					您还未设置生日，点击这里<a style="color:#4183c4;">设置</a>
-					<div style="display:none;">
-						<select>
-							<option>1970</option>
-							<option>1971</option>
-							<option>1972</option>
-							<option>1973</option>
-							<option>1974</option>
-							<option>1975</option>
-						</select>年
-						<select>
-							<option>1月</option>
-							<option>1月</option>
-							<option>1月</option>
-							<option>1月</option>
-							<option>1月</option>
-							<option>1月</option>
-						</select>月
-						<select>
-							<option>1日</option>
-							<option>1日</option>
-							<option>1日</option>
-							<option>1日</option>
-							<option>1日</option>
-							<option>1日</option>
-						</select>日
-						<!-- <span>生日设置后不能修改。</span> -->
-					</div>
+					<input id="date" class="pinput start data" type="text" value="{$detail.user_birth}" placeholder="点击此处设置生日">
 				</dd>
 			</dl>
-			<script>
+			
+			<dl class="dlitem">
+				<dt><span>心愿清单</span></dt>
+				<dd>
+					<input id="wish1" class="pinput hope" type="text" value="{$detail.user_wish1}" placeholder="心愿1" />
+					<input id="wish2" class="pinput hope" type="text" value="{$detail.user_wish2}" placeholder="心愿2" />
+					<input id="wish3" class="pinput hope" type="text" value="{$detail.user_wish3}" placeholder="心愿3" style="margin-bottom:0;" />
+					<div class="clear"></div>
+					<span>请填写几种您偏爱的食材，以便我们更好地为您服务</span>
+				</dd>
+				
+			</dl>
+			<dl class="dlitem">
+				<dd>
+					<a id="bcbtn" class="btn greenbtn">保存</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+</h3>
+
+<script src="__PUBLIC__/js/bootstrap-datepicker.min.js"></script>
+<script>
 $("#trigger").click(function(){
     $("#photo").trigger('click');
 })
@@ -82,7 +77,6 @@ $("#trigger").click(function(){
 			           			case "3":alert("数据库失败");break;
 			           			case "0":alert("您还未登录");break;
 			           		}
-
 			           		$("#dialogbox").load("__ROOT__/index.php/Home/Index/protraitdialog.html").show();
 			}, 
 			error : function(data, status, e){ 
@@ -94,25 +88,27 @@ $("#trigger").click(function(){
     }
 
   })
-
+var startdate = new Date();
+startdate.setDate(startdate.getDate());
+$('#date').datepicker({
+        'format': 'yyyy年m月d日',
+        'autoclose': true,
+        'endDate':startdate,
+    });
+$("#bcbtn").click(function(){
+	$.ajax({
+		type: "post", 
+           url: "__ROOT__/index.php/Home/Index/editmydetail", 
+           dataType: "json",
+           data:{gender:$("#sexbox").attr("data-gender"),birth:$("#date").val(),name:$("#name").val(),wish1:$("#wish1").val(),wish2:$("#wish2").val(),wish3:$("#wish3").val()},
+           success: function (data) { 
+                switch(data.state){
+                  case "1":alert("修改成功");window.location.reload();break;
+                  case "2":alert("修改失败");break;
+                  case "0":alert("您未登录");break;
+                }   
+           }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+	})
+})
 </script>
-			<dl class="dlitem">
-				<dt><span>心愿清单</span></dt>
-				<dd>
-					<input class="pinput hope" type="text" placeholder="心愿1" />
-					<input class="pinput hope" type="text" placeholder="心愿2" />
-					<input class="pinput hope" type="text" placeholder="心愿3" style="margin-bottom:0;" />
-					<div class="clear"></div>
-					<span>请填写几种您偏爱的食材，以便我们更好地为您服务</span>
-				</dd>
-				
-			</dl>
-			<dl class="dlitem">
-				<dd>
-					<a class="btn greenbtn">保存</a>
-				</dd>
-			</dl>
-		</div>
-	</div>
-</h3>
-

@@ -1,5 +1,5 @@
-var cust = angular.module('cust',['ngRoute','ngAnimate']);
-cust.config(['$routeProvider', function($routeProvider) {
+var app = angular.module('cust',['ngRoute','ngAnimate']);
+app.config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: './step0.html',

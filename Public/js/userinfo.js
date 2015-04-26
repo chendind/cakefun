@@ -1,5 +1,5 @@
-var userinfo = angular.module('userinfo',['ngRoute','ngAnimate']);
-userinfo.config(['$routeProvider', function($routeProvider) {
+var app = angular.module('userinfo',['ngRoute','ngAnimate']);
+app.config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: './baseinfo.html',
