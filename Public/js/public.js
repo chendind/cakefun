@@ -53,14 +53,14 @@ $(".addtocartbtn").click(function(){
 })
 function cartdialogshow(){
     if(typeof cartdialogtimeout){clearTimeout(cartdialogtimeout);}
-    $("#cartdialogbox").show().animate({"opacity":"1"}, 600);
-    $(".cartdialog").load("./cartdialog.html",function(){
+    $("#cartdialogbox").stop(true).show().animate({"opacity":"1"}, 600);
+    $(".cartdialog").load("__ROOT__/index.php/Home/Index/cartdialog.html",function(){
         $(".loadingbox").hide();
     });
 }
 function cartdialoghide(){
     if(typeof cartdialogtimeout){clearTimeout(cartdialogtimeout);}
-    $("#cartdialogbox").animate({"opacity":"0"}, 600,function(){
+    $("#cartdialogbox").stop(true).animate({"opacity":"0"}, 600,function(){
         $(this).hide();
         $(".loadingbox").show();
     $(".cartdialog").empty();

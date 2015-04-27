@@ -10,14 +10,9 @@
      <link href="/cakefox/Public/css/public.css" rel="stylesheet">
      <link href="/cakefox/Public/css/font-awesome.min.css" rel="stylesheet">
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
-     <link rel="stylesheet" type="text/css" href="/cakefox/Public/css/cakepublic.css">
+     <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
+     <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
      <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
-     <script>
-     $(window).load(function(){
-      $(".loading").hide();
-      $("body").css({"height":"","overflow":""});
-     })
-     </script>
      <style>
       .loading{
         width:100%;
@@ -34,9 +29,14 @@
 
     </div>
     <script>
+    //加载loading界面，完成后使loading消失
     var h = $(window).height();
         $(".loading").css("height",h);
         $("body").css({"height":h,"overflow":"hidden"});
+    $(window).load(function(){
+      $(".loading").hide();
+      $("body").css({"height":"","overflow":""});
+     })
     </script>
     <div class="header" style="" controller="HeaderController">
     <div class="centerbox" style="height:28px;overflow:visible;">
@@ -52,12 +52,22 @@
         <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
         <li id="cartli" ng-init="cartdialogshow=0;" ng-mouseenter="cartdialogshow=1;" ng-mouseleave="cartdialogshow=0;">
           <a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>
-          <div id="cartdialogbox" ng-if="cartdialogshow==1" ng-hide="cartdialogshow==0;">
+           <div id="cartdialogbox" style="display:none;">
             <div class="loadingbox">
               <i class="fa fa-spinner fa-spin"></i>
             </div>
             <div class="cartdialog"></div>
-          </div>
+            <script>
+              //   if(typeof jQuery == "function"){
+              //     $("#cartdialogbox").show();
+              //      if($(".cartdialog").children().length==0){
+              //         $(".cartdialog").load("cartdialog.html",function(){
+              //             $(".loadingbox").hide();
+              //          });
+              //      }
+              // }
+            </script>
+          </div> 
         </li>
       </ul>
       </div>
@@ -68,7 +78,8 @@
     <div class="fullbox tumbbox" style="z-index:10;">
       <div class="tumb">
         <img ng-hide="tumbimg != 0" src="/cakefox/Public/tumb/tumb-pic-2.jpg" alt="" class="tumbimg fadeout">
-        <img ng-hide="tumbimg != 1" src="/cakefox/Public/tumb/tumb-pic-2.jpg" alt="" class="tumbimg fadeout">
+        <img ng-hide="tumbimg != 1" src="/cakefox/Public/tumb/tumb-pic-6.jpg" alt="" class="tumbimg fadeout">
+        <img ng-hide="tumbimg != 2" src="/cakefox/Public/tumb/tumb-pic-7.jpg" alt="" class="tumbimg fadeout">
         <div class="tumbctrl">
           <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
           <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
@@ -89,10 +100,6 @@
       </div> -->
     </div> 
     <div class="fullbox goodpadbox">
-      <div class="tumbctrl">
-          <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
-          <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
-        </div>
       <div class="centerbox">
         <div class="goodpad">
           <div class="goodimgbox"><img src="/cakefox/Public/img/top-hetao.png" alt="核桃心酥"></div>
@@ -116,10 +123,6 @@
       </div>
     </div>
     <div class="fullbox goodpadbox">
-      <div class="tumbctrl">
-          <div class="angle-left" ng-click="flashgoto(-1)"><i class="fa fa-angle-left"></i></div>
-          <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
-        </div>
       <div class="centerbox">
         <div class="goodpad">
           <div class="goodimgbox"><img src="/cakefox/Public/img/gaodian1.jpg" alt="核桃心酥"></div>
@@ -209,6 +212,7 @@ $("#registerBtn").click(function(){
 */
 
 $(".tumbbox").css("height",h);
+$(".angle-left,.angle-right").css("top",h/2-40)
 $(".header").css({"position":"fixed","border":"0"});
 $(window).scroll(function(){
   var t = parseInt($(this).scrollTop());

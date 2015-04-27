@@ -28,23 +28,22 @@
         <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
         <li id="cartli" ng-init="cartdialogshow=0;" ng-mouseenter="cartdialogshow=1;" ng-mouseleave="cartdialogshow=0;">
           <a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>
-          <div id="cartdialogbox" style="display:none;" ng-if="cartdialogshow==1">
+           <div id="cartdialogbox" style="display:none;">
             <div class="loadingbox">
               <i class="fa fa-spinner fa-spin"></i>
             </div>
             <div class="cartdialog"></div>
             <script>
-
-                if(typeof jQuery == "function"){
-                  $("#cartdialogbox").show();
-                   if($(".cartdialog").children().length==0){
-                      $(".cartdialog").load("cartdialog.html",function(){
-                          $(".loadingbox").hide();
-                       });
-                   }
-              }
+              //   if(typeof jQuery == "function"){
+              //     $("#cartdialogbox").show();
+              //      if($(".cartdialog").children().length==0){
+              //         $(".cartdialog").load("cartdialog.html",function(){
+              //             $(".loadingbox").hide();
+              //          });
+              //      }
+              // }
             </script>
-          </div>
+          </div> 
         </li>
       </ul>
       </div>

@@ -19,10 +19,10 @@
 </div>
 <div class="fullbox">
     <div class="centerbox">
-      <div class="rightbox">
-        <div class="canvas" style="border:1px solid #eee;padding:20px;">
+      <div id="canvas" class="rightbox">
+        <div class="canvas" style="border:1px solid #eee;">
           <img src="__PUBLIC__/img/top-hetao.png" alt="">
-          <div class="canvastable">
+          <div id="canvastable" class="canvastable">
             <div class="tr">
               <div class="td"></div>
               <div class="td"></div>
@@ -248,8 +248,45 @@
           
         <div class="controllbox">
           <div class="button leftbtn" ng-click="tostep2()">上一步</div>
-          <div class="button rightbtn" ng-click="tostep4()">下一步</div>
+          <div id="laststep" class="button rightbtn">下一步</div>
         </div>
       </div>
     </div>
 </div>
+<!-- 页面截图插件 -->
+<script src="__PUBLIC__/js/html2canvas.min.js"></script>
+<script>
+$("#laststep").click(function(){
+  html2canvas(document.getElementById("canvas")).then(function(canvas) {
+        // document.body.appendChild(canvas);
+          var pic = canvas.toDataURL("image/png");
+          pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
+          $.ajax({
+            type: 'POST',
+            url: '__ROOT__/index.php/Home/Index/savebase64img',
+            data: {diyimg:pic},
+            dataType: 'json',
+            success: function (msg) {
+            }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+        });
+      })
+})
+  // $("#laststep").click(function(){
+  //   var window = require('window/utils').getMostRecentBrowserWindow();
+  // var tab = require('tabs/utils').getActiveTab(window);
+  // var thumbnail = window.document.createElementNS("http://www.w3.org/1999/xhtml", "canvas");
+  // thumbnail.mozOpaque = true;
+  // window = tab.linkedBrowser.contentWindow;
+  // thumbnail.width = Math.ceil(window.screen.availWidth / 5.75);
+  // var aspectRatio = 0.5625; // 16:9
+  // thumbnail.height = Math.round(thumbnail.width * aspectRatio);
+  // var ctx = thumbnail.getContext("2d");
+  // var snippetWidth = window.innerWidth * .6;
+  // var scale = thumbnail.width / snippetWidth;
+  // ctx.scale(scale, scale);
+  // ctx.drawWindow(window, window.scrollX, window.scrollY, snippetWidth, snippetWidth * aspectRatio, "rgb(255,255,255)");
+  // // thumbnail now represents a thumbnail of the tab
+  // document.body.appendChild(ctx);
+  // })
+</script>

@@ -20,7 +20,7 @@
 <div class="fullbox">
     <div class="centerbox">
       <div class="rightbox">
-        <div class="canvas" style="border:1px solid #eee;padding:20px;">
+        <div id="canvas" class="canvas" style="border:1px solid #eee;padding:20px;">
           <img src="/cakefox/Public/img/top-hetao.png" alt="">
           <div class="canvastable">
             <div class="tr">
@@ -248,8 +248,33 @@
           
         <div class="controllbox">
           <div class="button leftbtn" ng-click="tostep2()">上一步</div>
-          <div class="button rightbtn" ng-click="tostep4()">下一步</div>
+          <div id="laststep" class="button rightbtn">下一步</div>
         </div>
       </div>
     </div>
 </div>
+<!-- 页面截图插件 -->
+<script src="/cakefox/Public/js/html2canvas.min.js"></script>
+<script>
+$("#laststep").click(function(){
+  html2canvas(document.getElementById("canvas"), {
+      onrendered: function(canvas) {
+        // document.body.appendChild(canvas);
+          var pic = canvas.toDataURL("image/png");
+          pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
+          console.log(pic);
+        //   $.ajax({
+        //     type: 'POST',
+        //     url: 'Save_Picture.aspx/UploadPic',
+        //     data: '{ "imageData" : "' + Pic + '" }',
+        //     contentType: 'application/json; charset=utf-8',
+        //     dataType: 'json',
+        //     success: function (msg) {
+        //         alert("Done, Picture Uploaded.");
+        //     }
+        // });
+      }
+  });
+})
+  
+</script>
