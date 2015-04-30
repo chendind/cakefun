@@ -30,7 +30,6 @@ app.config(['$routeProvider', function($routeProvider) {
         });
     }])
 .controller("StepCtrl",["$scope","$routeParams","$log","$location","$timeout",function($scope,$routeParams,$log,$location,$timeout){
-        
         $scope.e = ($routeParams.e)?$routeParams.e.split(','):[0,0,0,""];
         $scope.a = ($routeParams.a)?$routeParams.a.split(','):[0,0,0];
         $scope.b = ($routeParams.b)?$routeParams.b.split(','):[0,0,0];
@@ -57,7 +56,14 @@ app.config(['$routeProvider', function($routeProvider) {
             case 2: $scope.c[2] = i;break;
         }
     }
-
+    $scope.setd = function(p,i){
+        switch(p){
+            case 0: $scope.d[0] = i;break;
+            case 1: $scope.d[1] = i;break;
+            case 2: $scope.d[2] = i;break;
+            case 3: $scope.d[3] = i;break;
+        }
+    }
     $scope.tostep0 = function(){
             $location.path('/nowstep0/'+$scope.e+'/step1/'+$scope.a+'/step2/'+$scope.b+'/step3/'+$scope.c+'/step4/'+$scope.d);
     }
@@ -79,5 +85,6 @@ app.config(['$routeProvider', function($routeProvider) {
     $timeout(function(){
         $scope.onscroll = true;
     },200)
+
 }])
 

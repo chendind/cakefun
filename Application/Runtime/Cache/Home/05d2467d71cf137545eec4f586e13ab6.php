@@ -19,89 +19,93 @@
 </div>
 <div class="fullbox">
     <div class="centerbox">
-      <div class="rightbox">
-        <div id="canvas" class="canvas" style="border:1px solid #eee;padding:20px;">
-          <img src="/cakefox/Public/img/top-hetao.png" alt="">
-          <div class="canvastable">
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-            </div>
-            <div class="tr">
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
-              <div class="td"></div>
+      <div class="rightbox" id="rightbox">
+        <div id="upload" style="width:500px;height:500px;">
+          <!-- <img id="bgimg" class="bgimg" src="/cakefox/Public/img/top-hetao.png" alt=""> -->
+          
+          <div class="canvas" style="border:1px solid #eee;">
+            <canvas id="canvas" width="500" height="500"></canvas>
+            <div data-d="{{d[0]}}" class="canvastable">
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
+              <div class="tr">
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+                <div class="td"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -112,28 +116,28 @@
             <h3 class="title" ng-click="test()">水果</h3>
             <div class="cont">
               <div class="checkbox">
-                <div class="checkimg" ng-click="setc(1,1)">
+                <div class="checkimg" ng-click="setd(0,1)">
                   <img src="/cakefox/Public/img/caomei.png" />
                 </div>
-                <div class="text">草莓<i class="fa fa-check" ng-show="b[1]==1"></i></div>
+                <div class="text">草莓<i class="fa fa-check" ng-show="d[0]==1"></i></div>
               </div>
-              <div class="checkbox" ng-click="setc(1,2)">
+              <div class="checkbox" ng-click="setd(0,2)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/lanmei.png" />
                 </div>
-                <div class="text">蓝莓</div>
+                <div class="text">蓝莓<i class="fa fa-check" ng-show="d[0]==2"></i></div>
               </div>
-              <div class="checkbox" ng-click="setc(1,3)">
+              <div class="checkbox" ng-click="setd(0,3)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/yingtao.png" />
                 </div>
-                <div class="text">樱桃</div>
+                <div class="text">樱桃<i class="fa fa-check" ng-show="d[0]==3"></i></div>
               </div>
-              <div id="s4" data-imgsrc="/cakefox/Public/img/naiyouqiu.png" class="checkbox">
+              <div id="s4" data-imgsrc="/cakefox/Public/img/naiyouqiu.png" class="checkbox" ng-click="setd(0,4)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/naiyouqiu.png" />
                 </div>
-                <div class="text">奶油球</div>
+                <div class="text">奶油球<i class="fa fa-check" ng-show="d[0]==4"></i></div>
               </div>
             </div>
           </div>
@@ -153,101 +157,26 @@
               });
 
             });
-            $(".td").click(function(){
-                if($(this).children().length){
-                   $(this).empty();
-                   console.log("if");
-                }
-              else{
-                $(this).append(function(){
-                     var obj = $(s4i).clone().css({"width":"50px","position":"static"});
-                     return obj;
-                   });
-                }
-              // var top = $(this).offset().top,
-              //     left = $(this).offset().left;
+            // $(".td").click(function(){
+            //     if($(this).children().length){
+            //        $(this).empty();
+            //        console.log("if");
+            //     }
+            //   else{
+            //     $(this).append(function(){
+            //          var obj = $(s4i).clone().css({"width":"50px","position":"static"});
+            //          return obj;
+            //        });
+            //     }
+            //   // var top = $(this).offset().top,
+            //   //     left = $(this).offset().left;
 
-              // console.log("top = "+top+" , left = "+left);
-               });
+            //   // console.log("top = "+top+" , left = "+left);
+            //    });
           </script>
-          <div class="controllbox" ng-show="c[0]==1">
-            <h3 class="title">您喜欢哪种颜色的巧克力？</h3>
-            <div class="cont">
-              <div class="checkbox" ng-click="setc(2,1)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/iceball2.jpg" />
-                </div>
-                <div class="text">黑</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,2)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/iceball3.jpg" />
-                </div>
-                <div class="text">白</div>
-              </div>
-            </div>
-          </div>
-          <div class="controllbox" ng-show="c[0]==2">
-            <h3 class="title">您想要哪种颜色的奶油？</h3>
-            <div class="cont">
-              <div class="checkbox" ng-click="setc(2,1)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-ice-xs.png" />
-                </div>
-                <div class="text">经典白</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,2)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-musi-xs.png" />
-                </div>
-                <div class="text">绅士黑</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,3)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-zhishi-xs.png" />
-                </div>
-                <div class="text">草莓粉</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,4)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-naiyou-xs.png" />
-                </div>
-                <div class="text">抹茶绿</div>
-              </div>
-            </div>
-          </div>
-          <div class="controllbox" ng-show="c[0]==3">
-            <h3 class="title">您想要哪种口味的布丁？</h3>
-            <div class="cont">
-              <div class="checkbox" ng-click="setc(2,1)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-ice-xs.png" />
-                </div>
-                <div class="text">青苹果</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,2)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-musi-xs.png" />
-                </div>
-                <div class="text">柠檬</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,3)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-zhishi-xs.png" />
-                </div>
-                <div class="text">抹茶</div>
-              </div>
-              <div class="checkbox" ng-click="setc(2,4)">
-                <div class="checkimg">
-                  <img src="/cakefox/Public/img/main-naiyou-xs.png" />
-                </div>
-                <div class="text">椰果</div>
-              </div>
-            </div>
-          </div>
           
         <div class="controllbox">
-          <div class="button leftbtn" ng-click="tostep2()">上一步</div>
+          <div class="button leftbtn" ng-click="tostep3()">上一步</div>
           <div id="laststep" class="button rightbtn">下一步</div>
         </div>
       </div>
@@ -257,24 +186,47 @@
 <script src="/cakefox/Public/js/html2canvas.min.js"></script>
 <script>
 $("#laststep").click(function(){
-  html2canvas(document.getElementById("canvas"), {
-      onrendered: function(canvas) {
+  html2canvas(document.getElementById("rightbox")).then(function(canvas) {
         // document.body.appendChild(canvas);
           var pic = canvas.toDataURL("image/png");
           pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
-          console.log(pic);
-        //   $.ajax({
-        //     type: 'POST',
-        //     url: 'Save_Picture.aspx/UploadPic',
-        //     data: '{ "imageData" : "' + Pic + '" }',
-        //     contentType: 'application/json; charset=utf-8',
-        //     dataType: 'json',
-        //     success: function (msg) {
-        //         alert("Done, Picture Uploaded.");
-        //     }
-        // });
-      }
-  });
-})
-  
+          $.ajax({
+            type: 'POST',
+            url: '/cakefox/index.php/Home/Index/savebase64img',
+            data: {diyimg:pic},
+            dataType: 'json',
+            success: function (msg) {
+            }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+        });
+      });
+});
+</script>
+<script>
+var     canvas = document.getElementById("canvas"),
+        ctx = canvas.getContext('2d');
+        var bgimg = new Image();
+        bgimg.src="/cakefox/Public/img/top-hetao.png";
+        bgimg.onload = function(){
+          ctx.drawImage(bgimg,0,0,500,500);
+        }
+  $(".canvastable .td").click(function(){
+    var position = $(this).position(),
+        src = $(".canvastable").attr("data-d");
+        img = new Image();
+
+        switch(src){
+          case "1": src="/cakefox/Public/img/caomei.png";break;
+          case "2": src="/cakefox/Public/img/lanmei.png";break;
+          case "3": src="/cakefox/Public/img/yingtao.png";break;
+          case "4": src="/cakefox/Public/img/naiyouqiu.png";break;
+        }
+        img.src = src;
+        img.onload = function(){
+          ctx.drawImage(img,position.left+40,position.top+100,30,30);
+          console.log(position.top);
+        }
+
+        
+  })
 </script>

@@ -22,9 +22,8 @@
     <div class="centerbox">
       <div class="rightbox">
         <div class="canvas">
-          <img ng-show="a[0]==1" src="/cakefox/Public/img/down-zhishi.png" />
-          <img ng-show="a[1]==1" src="/cakefox/Public/img/up-musi.png" />
-
+          <img ng-show="e[0]==0" src="/cakefox/Public/img/rect.png" />
+          <img ng-show="e[0]==1" src="/cakefox/Public/img/circle.png" />
         </div>
       </div>
       <div class="leftbox">

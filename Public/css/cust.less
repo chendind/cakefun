@@ -15,19 +15,34 @@
   overflow:hidden;
 }
 .canvas{
-  width:100%;
+  width:500px;
   height:500px;
   position:relative;
   perspective: 10100px;
     perspective-origin: 52% 75%;
-  transform-style: preserve-3d;
   img{
     display:block;
     position:absolute;
     top:0;
     left:0;
+    width:100%;
+    height:100%;
     transition:all 1s ease 0s;
   }
+}
+#canvas{
+    position:absolute;
+    top:0;
+    left:0;
+  }
+.bgimg{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:500px;
+    height:500px;
+    transition:all 1s ease 0s;
 }
 .canvas img.fly{
   top:-100px;
@@ -92,9 +107,9 @@
   z-index:999;
   cursor:pointer;
   position:absolute;
-  top:0;
-  left:0;
-  transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(218deg) skew(0deg, 0deg);
+  top:20px;
+  left:20px;
+  transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(38deg) skew(0deg, 0deg);
   .tr{
     width:100%;
     height: 12.5%;
@@ -102,7 +117,7 @@
       width:12.5%;
       height:100%;
       float:left;
-      border: 1px solid #333;
+      //border: 1px solid #333;
       &:hover{
         background-color:rgba(0,0,0,0.3);
       }
