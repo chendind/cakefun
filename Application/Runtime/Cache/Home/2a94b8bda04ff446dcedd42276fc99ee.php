@@ -7,37 +7,24 @@
      <meta name="description" content="在线蛋糕DIY，现做蛋糕送上门">
      <title>cakefox</title>
      <link href="" rel="icon">
+     <link rel="stylesheet" href="/cakefox/Public/css/fakeloader.css">
      <link href="/cakefox/Public/css/public.css" rel="stylesheet">
      <link href="/cakefox/Public/css/font-awesome.min.css" rel="stylesheet">
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
      <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
-     <style>
-      .loading{
-        width:100%;
-        height:100%;
-        background:red;
-        position: fixed;
-        top:0;
-        z-index:999;
-      }
-     </style>
+     <script src="/cakefox/Public/js/fakeloader.js"></script>
   </head>
   <body ng-controller="homeCtrl">
-    <div class="loading">
-
-    </div>
+    <!-- <div class="loading"></div> -->
+    <div id="fakeloader"></div>
     <script>
-    //加载loading界面，完成后使loading消失
-    var h = $(window).height();
-        $(".loading").css("height",h);
-        $("body").css({"height":h,"overflow":"hidden"});
-    $(window).load(function(){
-      $(".loading").hide();
-      $("body").css({"height":"","overflow":""});
-     })
-    </script>
+        $("#fakeloader").fakeLoader({
+            zIndex:"9999",//
+            bgColor:"#2ecc71", //加载时的背景颜色
+          });
+     </script>
     <div class="header" style="" controller="HeaderController">
     <div class="centerbox" style="height:28px;overflow:visible;">
       <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
@@ -74,7 +61,6 @@
     </div>
 </div>
 
-    
     <div class="fullbox tumbbox" style="z-index:10;">
       <div class="tumb">
         <img ng-hide="tumbimg != 0" src="/cakefox/Public/tumb/tumb-pic-2.jpg" alt="" class="tumbimg fadeout">
@@ -169,48 +155,11 @@
  <script src="/cakefox/Public/js/public.js"></script>
 <script src="/cakefox/Public/js/tumbflash.js"></script>
 <script src="/cakefox/Public/js/md5.js"></script>
+
 <!--  -->
 
 <script>
-
-/*
-$("#sendPhoneCode").click(function(){
- $.ajax({ 
-           type: "post", 
-           url: "/cakefox/index.php/Home/Index/sendcodetoregisterphone", 
-           dataType: "json",
-           data:{phone:$("#registerPhone").val()},
-           success: function (data) { 
-               switch(data.state) {
-                  case "1":window.location.reload(); break; 
-                  case "2":alert("注册失败");break;
-                  case "3":alert("非法手机号");break;
-                  case "4":alert("该号码已被注册");break;
-               }
-           }, 
-           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
-    });
-  });
-$("#registerBtn").click(function(){
- $.ajax({ 
-           type: "post", 
-           url: "/cakefox/index.php/Home/Index/registerapi", 
-           dataType: "json",
-           data:{phone:$("#registerPhone").val(),password:hex_md5($("#registerPassword").val()),verifycode:$("#registerCode").val()},
-           success: function (data) { 
-               switch(data.state){
-                  case "1":window.location.reload();break;
-                  case "2":alert("手机号不合法");break;
-                  case "3":alert("验证码错误");break;
-                  case "4":alert("验证码时间过期");break;
-                  case "5":alert("注册失败");break;                   
-               }
-           }, 
-           error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
-    });
-});
-*/
-
+var h = $(window).height();
 $(".tumbbox").css("height",h);
 $(".angle-left,.angle-right").css("top",h/2-40)
 $(".header").css({"position":"fixed","border":"0"});

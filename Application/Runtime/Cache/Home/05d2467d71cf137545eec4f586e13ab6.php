@@ -20,10 +20,9 @@
 <div class="fullbox">
     <div class="centerbox">
       <div class="rightbox" id="rightbox">
-        <div id="upload" style="width:500px;height:500px;">
           <!-- <img id="bgimg" class="bgimg" src="/cakefox/Public/img/top-hetao.png" alt=""> -->
           
-          <div class="canvas" style="border:1px solid #eee;">
+          <div id="upload" class="canvas" style="border:1px solid #eee;">
             <canvas id="canvas" width="500" height="500"></canvas>
             <div data-d="{{d[0]}}" class="canvastable">
               <div class="tr">
@@ -108,7 +107,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       <div class="leftbox">
         
@@ -185,12 +183,26 @@
 <!-- 页面截图插件 -->
 <script src="/cakefox/Public/js/html2canvas.min.js"></script>
 <script>
+// $("#laststep").click(function(){
+//   html2canvas(document.getElementById("upload")).then(function(canvas) {
+//         // document.body.appendChild(canvas);
+//           var pic = canvas.toDataURL("image/png");
+//           pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
+//           $.ajax({
+//             type: 'POST',
+//             url: '/cakefox/index.php/Home/Index/savebase64img',
+//             data: {diyimg:pic},
+//             dataType: 'json',
+//             success: function (msg) {
+//             }, 
+//            error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+//         });
+//       });
+// });
 $("#laststep").click(function(){
-  html2canvas(document.getElementById("rightbox")).then(function(canvas) {
-        // document.body.appendChild(canvas);
-          var pic = canvas.toDataURL("image/png");
-          pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
-          $.ajax({
+  var pic = document.getElementById("canvas").toDataURL("image/png");
+  pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
+    $.ajax({
             type: 'POST',
             url: '/cakefox/index.php/Home/Index/savebase64img',
             data: {diyimg:pic},
@@ -199,8 +211,7 @@ $("#laststep").click(function(){
             }, 
            error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
         });
-      });
-});
+  })
 </script>
 <script>
 var     canvas = document.getElementById("canvas"),

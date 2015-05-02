@@ -181,38 +181,7 @@
     </div>
 </div>
 <!-- 页面截图插件 -->
-<script src="__PUBLIC__/js/html2canvas.min.js"></script>
-<script>
-// $("#laststep").click(function(){
-//   html2canvas(document.getElementById("upload")).then(function(canvas) {
-//         // document.body.appendChild(canvas);
-//           var pic = canvas.toDataURL("image/png");
-//           pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
-//           $.ajax({
-//             type: 'POST',
-//             url: '__ROOT__/index.php/Home/Index/savebase64img',
-//             data: {diyimg:pic},
-//             dataType: 'json',
-//             success: function (msg) {
-//             }, 
-//            error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
-//         });
-//       });
-// });
-$("#laststep").click(function(){
-  var pic = document.getElementById("canvas").toDataURL("image/png");
-  pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
-    $.ajax({
-            type: 'POST',
-            url: '__ROOT__/index.php/Home/Index/savebase64img',
-            data: {diyimg:pic},
-            dataType: 'json',
-            success: function (msg) {
-            }, 
-           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
-        });
-  })
-</script>
+<!-- <script src="__PUBLIC__/js/html2canvas.min.js"></script> -->
 <script>
 var     canvas = document.getElementById("canvas"),
         ctx = canvas.getContext('2d');
@@ -239,5 +208,18 @@ var     canvas = document.getElementById("canvas"),
         }
 
         
+  })
+  $("#laststep").click(function(){
+  var pic = document.getElementById("canvas").toDataURL("image/png");
+  pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
+    $.ajax({
+            type: 'POST',
+            url: '__ROOT__/index.php/Home/Index/savebase64img',
+            data: {diyimg:pic},
+            dataType: 'json',
+            success: function (msg) {
+            }, 
+           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+        });
   })
 </script>
