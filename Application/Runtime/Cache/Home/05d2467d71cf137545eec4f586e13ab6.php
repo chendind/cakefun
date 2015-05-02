@@ -23,7 +23,10 @@
           <!-- <img id="bgimg" class="bgimg" src="/cakefox/Public/img/top-hetao.png" alt=""> -->
           
           <div id="upload" class="canvas" style="border:1px solid #eee;">
-            <canvas id="canvas" width="500" height="500"></canvas>
+            <div id="canvasbox">
+              <canvas id="bgcanvas" width="500" height="500"></canvas>
+            </div>
+            
             <div data-d="{{d[0]}}" class="canvastable">
               <div class="tr">
                 <div class="td"></div>
@@ -113,25 +116,25 @@
           <div class="controllbox">
             <h3 class="title" ng-click="test()">水果</h3>
             <div class="cont">
-              <div class="checkbox">
+              <div data-imgsrc="/cakefox/Public/img/caomei.png" class="checkbox puticon">
                 <div class="checkimg" ng-click="setd(0,1)">
                   <img src="/cakefox/Public/img/caomei.png" />
                 </div>
                 <div class="text">草莓<i class="fa fa-check" ng-show="d[0]==1"></i></div>
               </div>
-              <div class="checkbox" ng-click="setd(0,2)">
+              <div data-imgsrc="/cakefox/Public/img/lanmei.png" class="checkbox puticon" ng-click="setd(0,2)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/lanmei.png" />
                 </div>
                 <div class="text">蓝莓<i class="fa fa-check" ng-show="d[0]==2"></i></div>
               </div>
-              <div class="checkbox" ng-click="setd(0,3)">
+              <div data-imgsrc="/cakefox/Public/img/yingtao.png" class="checkbox puticon" ng-click="setd(0,3)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/yingtao.png" />
                 </div>
                 <div class="text">樱桃<i class="fa fa-check" ng-show="d[0]==3"></i></div>
               </div>
-              <div id="s4" data-imgsrc="/cakefox/Public/img/naiyouqiu.png" class="checkbox" ng-click="setd(0,4)">
+              <div data-imgsrc="/cakefox/Public/img/naiyouqiu.png" class="checkbox puticon" ng-click="setd(0,4)">
                 <div class="checkimg">
                   <img src="/cakefox/Public/img/naiyouqiu.png" />
                 </div>
@@ -140,18 +143,18 @@
             </div>
           </div>
           <script>
-          var s4i = document.createElement("img");
-            $("#s4").click(function(e){
+          var mouseicon = document.createElement("img");
+            $(".puticon").click(function(e){
               var x = e.pageX,
                   y = e.pageY;
               
-              $(s4i).attr("src",$(this).attr("data-imgsrc"));
-              $(s4i).css({"position":"absolute","left":x,"top":y,"display":"block","width":"20px","z-index":"999"});
-              $("body").append($(s4i));
+              $(mouseicon).attr("src",$(this).attr("data-imgsrc"));
+              $(mouseicon).css({"position":"absolute","left":x,"top":y,"display":"block","width":"20px","z-index":"999"});
+              $("body").append($(mouseicon));
               $(document).mousemove(function(ev){
                 var x = ev.pageX,
                   y = ev.pageY;
-                $(s4i).css({"left":x+10,"top":y});
+                $(mouseicon).css({"left":x+10,"top":y});
               });
 
             });
@@ -181,51 +184,31 @@
     </div>
 </div>
 <!-- 页面截图插件 -->
-<script src="/cakefox/Public/js/html2canvas.min.js"></script>
+<!-- <script src="/cakefox/Public/js/html2canvas.min.js"></script> -->
 <script>
-// $("#laststep").click(function(){
-//   html2canvas(document.getElementById("upload")).then(function(canvas) {
-//         // document.body.appendChild(canvas);
-//           var pic = canvas.toDataURL("image/png");
-//           pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
-//           $.ajax({
-//             type: 'POST',
-//             url: '/cakefox/index.php/Home/Index/savebase64img',
-//             data: {diyimg:pic},
-//             dataType: 'json',
-//             success: function (msg) {
-//             }, 
-//            error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
-//         });
-//       });
-// });
-$("#laststep").click(function(){
-  var pic = document.getElementById("canvas").toDataURL("image/png");
-  pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
-    $.ajax({
-            type: 'POST',
-            url: '/cakefox/index.php/Home/Index/savebase64img',
-            data: {diyimg:pic},
-            dataType: 'json',
-            success: function (msg) {
-            }, 
-           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
-        });
-  })
-</script>
-<script>
-var     canvas = document.getElementById("canvas"),
-        ctx = canvas.getContext('2d');
+var     bgcanvas = document.getElementById("bgcanvas"),
+        ctx = bgcanvas.getContext('2d');
         var bgimg = new Image();
         bgimg.src="/cakefox/Public/img/top-hetao.png";
         bgimg.onload = function(){
-          ctx.drawImage(bgimg,0,0,500,500);
+           ctx.drawImage(bgimg,0,0,500,500);
         }
   $(".canvastable .td").click(function(){
+    
     var position = $(this).position(),
         src = $(".canvastable").attr("data-d");
-        img = new Image();
-
+        img = new Image(),  
+        cox = $(this).index(),
+        coy = $(this).parent().index(),
+        coordinate = "x"+cox+"y"+coy,
+        size = 30;
+    if($("#"+coordinate).length){
+      $("#"+coordinate).remove();
+    }
+    else{
+      var newcanvas = "<canvas id="+coordinate+" width="+500+" height="+500+"></canvas>";
+      $("#canvasbox").append(newcanvas);
+      var newctx = document.getElementById(coordinate).getContext('2d');
         switch(src){
           case "1": src="/cakefox/Public/img/caomei.png";break;
           case "2": src="/cakefox/Public/img/lanmei.png";break;
@@ -233,11 +216,57 @@ var     canvas = document.getElementById("canvas"),
           case "4": src="/cakefox/Public/img/naiyouqiu.png";break;
         }
         img.src = src;
-        img.onload = function(){
-          ctx.drawImage(img,position.left+40,position.top+100,30,30);
-          console.log(position.top);
+        var addnum = 5;
+        switch(parseInt(cox)+parseInt(coy)){
+          case 0:size = 22+addnum;break;
+          case 1:size = 22.4+addnum;break;
+          case 2:size = 23+addnum;break;
+          case 3:size = 23.7+addnum;break;
+          case 4:size = 24.5+addnum;break;
+          case 5:size = 25.4+addnum;break;
+          case 6:size = 26.4+addnum;break;
+          case 7:size = 27.3+addnum;break;
+          case 8:size = 28.2+addnum;break;
+          case 9:size = 29.1+addnum;break;
+          case 10:size = 30+addnum;break;
+          case 11:size = 30.7+addnum;break;
+          case 12:size = 31.1+addnum;break;
+          case 13:size = 31.5+addnum;break;
+          case 14:size = 32+addnum;break;
         }
-
-        
+        img.onload = function(){
+          newctx.drawImage(img,position.left+40,position.top+100,size,size);
+        }
+    } 
+  })
+var hccanvas = document.createElement("canvas");
+  $("#laststep").click(function(){
+        var hcctx = hccanvas.getContext("2d");
+        hccanvas.height = 500;
+        hccanvas.width = 500;
+        var canvasnum = parseInt($("#canvasbox").children().length)-1;
+       $("#canvasbox").children().each(function(index){
+          var img = new Image(),
+              ctx = this.getContext("2d");
+          img.src = this.toDataURL("image/png");
+          img.onload = function(){
+            hcctx.drawImage(img,0,0);
+            if(index == canvasnum){
+              var pic = hccanvas.toDataURL("image/png");
+              pic = pic.replace(/^data:image\/(png|jpg);base64,/, "");
+              $.ajax({
+                      type: 'POST',
+                      url: '/cakefox/index.php/Home/Index/savebase64img',
+                      data: {diyimg:pic},
+                      dataType: 'json',
+                      success: function (msg) {
+                      }, 
+                     error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+                });
+            }
+          }
+          
+      })
+      
   })
 </script>

@@ -14,10 +14,13 @@
   position:relative;
   overflow:hidden;
 }
+canvas{
+  position:absolute;
+}
 .canvas{
   width:500px;
   height:500px;
-  position:relative;
+  
   perspective: 10100px;
     perspective-origin: 52% 75%;
   img{
@@ -117,7 +120,7 @@
       width:12.5%;
       height:100%;
       float:left;
-      //border: 1px solid #333;
+      // border: 1px solid #333;
       &:hover{
         background-color:rgba(0,0,0,0.3);
       }

@@ -22,7 +22,7 @@
     <script>
         $("#fakeloader").fakeLoader({
             zIndex:"9999",//
-            bgColor:"#2ecc71", //加载时的背景颜色
+            bgColor:"#000", //加载时的背景颜色
           });
      </script>
     <div class="header" style="" controller="HeaderController">
