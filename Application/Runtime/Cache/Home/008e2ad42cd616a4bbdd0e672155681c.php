@@ -25,24 +25,25 @@
       </ul>
       <ul class="header-nav" style="float:right;">
         
-        <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
-        <li id="cartli" ng-init="cartdialogshow=0;" ng-mouseenter="cartdialogshow=1;" ng-mouseleave="cartdialogshow=0;">
-          <a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>
+        <li>
+          <a href="/cakefox/index.php/Home/Index/user.html">
+            <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($detail["user_img"]); ?>" />
+            <span class="headusername">陈世雷</span>
+          </a>
+        </li>
+        <li>
+          <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
+            <i class="fa fa-fw fa-cog"></i>
+          </a>
+        </li>
+        <li id="cartli">
+          <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
            <div id="cartdialogbox" style="display:none;">
             <div class="loadingbox">
               <i class="fa fa-spinner fa-spin"></i>
             </div>
             <div class="cartdialog"></div>
-            <script>
-              //   if(typeof jQuery == "function"){
-              //     $("#cartdialogbox").show();
-              //      if($(".cartdialog").children().length==0){
-              //         $(".cartdialog").load("cartdialog.html",function(){
-              //             $(".loadingbox").hide();
-              //          });
-              //      }
-              // }
-            </script>
+            
           </div> 
         </li>
       </ul>
@@ -53,8 +54,8 @@
   <div class="fullbox" style="margin-top:20px;">
     <div class="centerbox">
       <div class="column one-fourth">
-        <a class="portrait" href=""><img src="/cakefox/Public/img/portrait.jpg" alt="portrait"></a>
-        <h3 class="username">快乐佐伊</h3>
+        <a class="portrait" href="/cakefox/index.php/Home/Index/userinfo.html"><img src="/cakefox/Public/img/portrait.jpg" alt="portrait"></a>
+        <h3 class="username">Mr.Leo</h3>
         <ul class="userdetail">
           <li><i class="fa fa-fw fa-map-marker"></i>杭州市</li>
           <li><i class="fa fa-fw fa-envelope-o"></i>511912708@qq.com</li>

@@ -54,7 +54,7 @@ $(".addtocartbtn").click(function(){
 function cartdialogshow(){
     if(typeof cartdialogtimeout){clearTimeout(cartdialogtimeout);}
     $("#cartdialogbox").stop(true).show().animate({"opacity":"1"}, 600);
-    $(".cartdialog").load("__ROOT__/index.php/Home/Index/cartdialog.html",function(){
+    $(".cartdialog").load("/index.php/Home/Index/cartdialog.html",function(){
         $(".loadingbox").hide();
     });
 }

@@ -28,7 +28,7 @@
 <div class="fullbox">
     <div class="centerbox">
       <div class="tips">
-        <span><i class='fa fa-lightbulb-o fa-fw'></i>您的购物车中共有3件商品</span>
+        <span><i class='fa fa-lightbulb-o fa-fw'></i>您的购物车中共有{$cart|count} 件商品</span>
       </div>
     </div>
 </div>
@@ -45,58 +45,41 @@
             <th>小计/元</th>
             <th>操作</th>
           </tr>
-          <tr>
+
+<volist name="cart" id="vocart">
+
+ <tr>
             <td class="imgtd">
-              <img src="__PUBLIC__/img/top-lirong1.png" alt="商品图">
-              <a class="goodtitle">丽蓉暗香</a>
+              <img src="__ROOT__/Uploads/{$vocart.img}" alt="商品图">
+              <a class="goodtitle">{$vocart.name}</a>
             </td>
-            <td>8磅</td>
-            <td>288</td>
-            <td><i class="fa fa-minus-square-o fa-fw"></i><span style="padding:0 5px;">1</span><i class="fa fa-plus-square-o fa-fw"></1i></td>
-            <td>288</td>
+
+
+<if condition="$vocart.subtype eq 1 "><td>{$vocart.cart_cakesize}磅
+    <else /> <td>非蛋糕类，见商品详情</td>
+</if>
+
+            
+            <td>{$vocart.singleprice}</td>
+            <td><a class="subicon"><i class="fa fa-minus-square-o fa-fw"></i></a><span style="padding:0 5px;">{$vocart.cart_number}</span><a class="addicon"><i class="fa fa-plus-square-o fa-fw"></i></a></td>
+            <td>{$vocart['cart_number']*$vocart['singleprice']}</td>
             <td>删除</td>
           </tr>
-          <tr>
-            <td class="imgtd">
-              <img src="__PUBLIC__/img/redwire.png" alt="商品图">
-              <a class="goodtitle">达菲尼亚红葡萄酒1986</a>
-            </td>
-            <td>520ml</td>
-            <td>628</td>
-            <td><i class="fa fa-minus-square-o fa-fw"></i><span style="padding:0 5px;">1</span><i class="fa fa-plus-square-o fa-fw"></td>
-            <td>628</td>
-            <td>删除</td>
-          </tr>
-          <tr>
-            <td class="imgtd">
-              <img src="__PUBLIC__/img/snake.png" alt="商品图">
-              <a class="goodtitle">张君雅小妹妹零食大礼包</a>
-            </td>
-            <td>8磅</td>
-            <td>18</td>
-            <td><i class="fa fa-minus-square-o fa-fw"></i><span style="padding:0 5px;">1</span><i class="fa fa-plus-square-o fa-fw"></td>
-            <td>18</td>
-            <td>删除</td>
-          </tr>
+
+</volist>
+
+
+         
+          
         </table>
-        <div class="column one-third couponblock">
-          <span>可使用的优惠券</span>
-          <label><input type="radio" id="couponid0" name="coupon" />不使用优惠</label>
-          <label><input type="radio" id="couponid1" name="coupon" checked />定制蛋糕满200-25</label>
-          <label><input type="radio" id="couponid2" name="coupon" />新人满100-10</label>
-        </div>
+        
         <div class="column two-third price">
-            <label style="border-bottom:1px dashed #daae6c;font-size:12px;">免配送费<span>￥ 0</span></label>
-            <div class="clear"></div>
-            <label>优惠<span>￥ 0</span></label>
-            <div class="clear"></div>
+            
             <label class="total">合计<span>￥ 557</span></label>
         </div>
         <div class="clear"></div>
       </div>
-      <a href="__ROOT__/index.php/Home/Index/order.html" class="btn greenbtn" style="float:right;margin-left:20px;">确定订单</a>
-      <a class="btn" style="float:right;">继续购物</a>
-      
+      <a href="__ROOT__/index.php/Home/Index/order.html" class="btn greenbtn" style="float:right;margin-left:20px;">提交订单</a>
     </div>
   </div>
   <include file="foot" />
@@ -111,7 +94,22 @@
 <!-- <include file="loginwindow" /> -->
 
 <script>
-
+  $(".addicon").click(function(){
+     var num = parseInt($(this).siblings('span').text());
+     if(num<10){
+       num++;
+       $(this).siblings('span').text(num);
+     }
+     else{}
+  })
+  $(".subicon").click(function(){
+     var num = parseInt($(this).siblings('span').text());
+     if(num>1){
+       num--;
+       $(this).siblings('span').text(num);
+     }
+     else{}
+  })
 </script>
 
   </body>

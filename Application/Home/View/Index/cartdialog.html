@@ -1,33 +1,30 @@
 <h4 id="cartdialogtitle">您购物车中的商品</h4>
-<div class="cartitem">
-  <img src="__PUBLIC__/img/main-ice-xs.png" />
+<volist name="cart" id="cartitem">
+
+<div class="cartitem" style="margin-bottom:5px;">
+  <img src="__ROOT__/Uploads/{$cartitem.img}" />
   <div class="cartcont">
-    <div class="carttitle">商品名，如果很长会出现省略号</div>
-    <div class="cartprice">￥200</div>
-    <div class="cartspecs">一段描述，一般是规格</div>
-    <div class="cartcount">1</div>
+    <div class="carttitle">{$cartitem.name}</div>
+    <div class="cartprice">￥{$cartitem.singleprice}</div>
+    <div class="cartspecs"> 规格：<if condition="$cartitem.subtype eq 1 "><td>{$cartitem.cart_cakesize}磅
+    <else /> <td>非蛋糕类，见商品详情</td>
+</if></div>
+    <div class="cartcount">×{$cartitem.cart_number}</div>
   </div>
 </div>
-<div class="cartitem">
-  <img src="__PUBLIC__/img/main-ice-xs.png" />
-  <div class="cartcont">
-    <div class="carttitle">商品名，如果很长会出现省略号</div>
-    <div class="cartprice">￥200</div>
-    <div class="cartspecs">一段描述，一般是规格</div>
-    <div class="cartcount">1</div>
-  </div>
-</div>
-<div class="cartitem">
-  <img src="__PUBLIC__/img/main-ice-xs.png" />
-  <div class="cartcont">
-    <div class="carttitle">商品名，如果很长会出现省略号</div>
-    <div class="cartprice">￥200</div>
-    <div class="cartspecs">一段描述，一般是规格</div>
-    <div class="cartcount">1</div>
-  </div>
-</div>
+
+
+
+</volist>
+
 <div class="checkbox">
-  <span>您的购物车里还有1件商品</span>
-  <a class="btn">去结算</a>
+  <div class="carttotalprice">总计：￥<span>{$totalprice}</span></div>
+  <span id="cartrest" style="display:none;">您的购物车里还有{$number-3}件商品</span>
+  <a href="__ROOT__/index.php/Home/Index/cart.html" class="btn">去结算</a>
   <div class="clear"></div>
 </div>
+<script>
+  if({$number-3}>0){
+    $("#cartrest").show();
+  }
+</script>
