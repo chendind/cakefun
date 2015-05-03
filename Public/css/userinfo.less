@@ -19,7 +19,7 @@ dl.dlitem{
 	}
 	dd{
 		padding-left:2px;
-		img{
+		img#user_img{
 			display:block;
 			float:left;
 			width:70px;
@@ -68,3 +68,91 @@ dl.dlitem{
 		}
 	}
 }
+.ordergroup{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  .orderlist{
+    width:60%;
+    float:left;
+    table{
+    	tr{
+    		border-bottom:1px solid #eee;
+		    &:last-child{
+		    	border:0;
+		    }
+    	}
+    	
+    }
+    img{
+    	width:100%;
+    }
+  }
+  .orderblock{
+  	width:20%;
+  	position:absolute;
+  	height:100%;
+  	border-left:1px solid #eee;
+  	padding:15px 0 0;
+  	a{
+  		width:100%;
+  		display: block;
+  		padding:2px 10px;
+  		margin:0;
+  		text-align: center;
+  	}
+  	span{
+  		display: block;
+  		width:100%;
+  		margin:0;
+  		text-align: center;
+  	}
+  	#price{
+  		font-size:23px;
+  	}
+  }
+}
+.orderstate{
+	width:100%;
+	overflow:hidden;
+	border-top:1px solid #eee;
+	padding:0;
+	ul{
+		width:100%;
+		li{
+			width:25%;
+			float:left;
+			height:30px;
+			line-height:30px;
+			background:#fff;
+			color:#333;
+			font-weight: bold;
+			text-align: center;
+			border-bottom:2px solid @gold;
+		}
+	}
+}
+.orderinfo{
+	width:100%;
+	overflow:hidden;
+	padding:0 10px;
+	table#orderinfotable{
+		text-align:left;
+		width:60%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

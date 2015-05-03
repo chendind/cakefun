@@ -5,7 +5,7 @@
 			<dl class="dlitem">
 				<dt><span>头像</span></dt>
 				<dd>
-					<img src="/cakefox/Uploads/<?php echo ($detail["user_img"]); ?>" />
+					<img id="user_img" src="/cakefox/Uploads/<?php echo ($detail["user_img"]); ?>" />
 					<a id="trigger" class="btn">上传新头像</a><input name="photo" id="photo" type="file" />
 					<span>头像尺寸请小于10M，支持jpg、jpeg、png、gif格式</span>
 				</dd>
@@ -17,7 +17,7 @@
 				</dd>
 			</dl>
 			<dl class="dlitem">
-				<dt><span>昵称</span></dt>
+				<dt><span>姓名</span></dt>
 				<dd>
 					<input id="name" class="pinput" type="text" value="<?php echo ($detail["user_name"]); ?>" />
 				</dd>
@@ -33,7 +33,7 @@
 			<dl class="dlitem">
 				<dt><span>我的生日</span></dt>
 				<dd>
-					<input id="date" class="pinput" type="text" value="<?php echo ($detail["user_birth"]); ?>" placeholder="点击此处设置生日">
+					<input id="date" class="pinput start data" type="text" value="<?php echo ($detail["user_birth"]); ?>" placeholder="点击此处设置生日">
 				</dd>
 			</dl>
 			
@@ -57,7 +57,7 @@
 	</div>
 </h3>
 
-
+<script src="/cakefox/Public/js/bootstrap-datepicker.min.js"></script>
 <script>
 $("#trigger").click(function(){
     $("#photo").trigger('click');

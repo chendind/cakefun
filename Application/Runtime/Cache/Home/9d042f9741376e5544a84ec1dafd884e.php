@@ -33,12 +33,22 @@
         <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
         <li id="cartli" ng-init="cartdialogshow=0;" ng-mouseenter="cartdialogshow=1;" ng-mouseleave="cartdialogshow=0;">
           <a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>
-          <div id="cartdialogbox" ng-if="cartdialogshow==1" ng-hide="cartdialogshow==0;">
+           <div id="cartdialogbox" style="display:none;">
             <div class="loadingbox">
               <i class="fa fa-spinner fa-spin"></i>
             </div>
             <div class="cartdialog"></div>
-          </div>
+            <script>
+              //   if(typeof jQuery == "function"){
+              //     $("#cartdialogbox").show();
+              //      if($(".cartdialog").children().length==0){
+              //         $(".cartdialog").load("cartdialog.html",function(){
+              //             $(".loadingbox").hide();
+              //          });
+              //      }
+              // }
+            </script>
+          </div> 
         </li>
       </ul>
       </div>
@@ -88,7 +98,7 @@
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
  <script src="/cakefox/Public/js/angular-route.min.js"></script>
  <script src="/cakefox/Public/js/userinfo.js"></script>
- <script src="/cakefox/Public/js/bootstrap-datepicker.min.js"></script>
+ 
  <script src="/cakefox/Public/js/public.js"></script>
 <script src="/cakefox/Public/js/ajaxfileupload.js"></script>
   </body>

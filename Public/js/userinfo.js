@@ -17,8 +17,12 @@ app.config(['$routeProvider', function($routeProvider) {
                 templateUrl: './address.html',
                 controller:'UserinfoCtrl'
             })
-            .when('/order', {
-                templateUrl: './order.html',
+            .when('/myorder', {
+                templateUrl: './myorder.html',
+                controller:'UserinfoCtrl'
+            })
+            .when('/myorderinfo', {
+                templateUrl: './myorderinfo.html',
                 controller:'UserinfoCtrl'
             })
             .when('/coupon', {
