@@ -30,24 +30,25 @@
       </ul>
       <ul class="header-nav" style="float:right;">
         
-        <li><a href="/cakefox/index.php/Home/Index/user.html">个人中心</a></li>
-        <li id="cartli" ng-init="cartdialogshow=0;" ng-mouseenter="cartdialogshow=1;" ng-mouseleave="cartdialogshow=0;">
-          <a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>
+        <li>
+          <a href="/cakefox/index.php/Home/Index/user.html">
+            <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($userimg); ?>" />
+            <span class="headusername"><?php echo ($username); ?></span>
+          </a>
+        </li>
+        <li>
+          <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
+            <i class="fa fa-fw fa-cog"></i>
+          </a>
+        </li>
+        <li id="cartli">
+          <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
            <div id="cartdialogbox" style="display:none;">
             <div class="loadingbox">
               <i class="fa fa-spinner fa-spin"></i>
             </div>
             <div class="cartdialog"></div>
-            <script>
-              //   if(typeof jQuery == "function"){
-              //     $("#cartdialogbox").show();
-              //      if($(".cartdialog").children().length==0){
-              //         $(".cartdialog").load("cartdialog.html",function(){
-              //             $(".loadingbox").hide();
-              //          });
-              //      }
-              // }
-            </script>
+            
           </div> 
         </li>
       </ul>
@@ -60,7 +61,7 @@
       <div class="column one-fourth">
         <h3 class="title" style="margin-top:20px;">账户设置</h3>
         <div class="cont" style="padding:0;">
-          <a class="menuitem" href="#/baseinfo.html">个人资料</a>
+          <a class="menuitem" href="#/baseinfo">个人资料</a>
           <a class="menuitem" href="#/account">账户设置</a>
           <a class="menuitem" href="#/address">送货地址</a>
           <a class="menuitem" href="#/myorder">我的订单</a>
@@ -76,12 +77,13 @@
   <div class="fullbox foot" style="margin-top:20px;">
 	<div class="centerbox">
 			<ul class="footleft">
-				<li>回到顶部</li>
-				<li>关于购买</li>
-				<li>关于配送</li>
-				<li>商业合作</li>
-				<li>条款协议</li>
-				<li>招贤纳士</li>
+				<li><a>回到顶部</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/about.html" target="_blank">关于我们</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/buy&delivery.html" target="_blank">购买&配送</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/complain&right.html" target="_blank">投诉&维权</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/agreement.html" target="_blank">条款协议</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/serviceforbusiness.html" target="_blank">企业服务</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/job.html" target="_blank">招贤纳士</a></li>
 				<li></li>
 				<li></li>
 				<li>浙ICP备12036459号-2</li>
