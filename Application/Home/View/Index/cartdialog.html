@@ -1,4 +1,11 @@
+
+<if condition="$number eq 0 ">
+  <!-- 没有商品时输出这个 -->
+<h4 id="cartdialogtitle" style="padding:15px 10px 20px;text-align:center;">您的购物车中暂时没有商品</h4>
+
+    <else /> <!-- 有商品时输出下面 -->
 <h4 id="cartdialogtitle">您购物车中的商品</h4>
+
 <volist name="cart" id="cartitem">
 
 <div class="cartitem" style="margin-bottom:5px;">
@@ -23,6 +30,13 @@
   <a href="__ROOT__/index.php/Home/Index/cart.html" class="btn">去结算</a>
   <div class="clear"></div>
 </div>
+
+    
+</if>
+
+
+
+
 <script>
   if({$number-3}>0){
     $("#cartrest").show();

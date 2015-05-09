@@ -13,7 +13,20 @@
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/about.less">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
-     
+     <style>
+        .column img{
+          width:100%;
+          height:300px;
+          display:block;
+          float:left;
+        }
+        .column h1{
+          font-size:30px;
+        }
+        .column h2{
+          font-size:25px;
+        }
+     </style>
   </head>
   <body>
     <div class="header" style="" controller="HeaderController">
@@ -69,43 +82,16 @@
 </div>
 
     <div class="fullbox" style="height:300px;overflow:hidden;">
-      <img class="aboutheader" src="/cakefox/Public/img/aboutheader.jpg" alt="aboutheader" />
+      <div class="centerbox">
+        <div class="column one-half">
+        <img src="/cakefox/Public/img/aboutheader.jpg" alt="aboutheader" />
+      </div>
+        <div class="column one-half">
+        <h1>404</h1>
+        <h2>找不到页面</h2>
+      </div>
+      </div>
     </div> 
-    <div class="fullbox" style="border-bottom:1px solid #e5e5e5;">
-      <div class="centerbox">
-        <ul class="nav-step">
-        <li style="width:17.5%;" class="stephere"><a href="/cakefox/index.php/Home/Index/about.html">Cakewith.ME</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/buy&delivery.html">购买&配送</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/complain&right.html">投诉&维权</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/agreement.html">条款协议</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/serviceforbusiness.html">企业服务</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/job.html">招贤纳士</a></li>
-      </ul>
-      </div>
-    </div>
-    <div class="fullbox">
-      <div class="centerbox">
-        <p class="aboutlead">
-            Cakewith.ME 专注于烘焙与分享美味的蛋糕。同所有纯正的蛋糕一样，Cakewith.ME使用真正的乳脂奶油，杜绝任何色素、香精和添加剂一次次的旅行，一次次的寻找，一次次的尝试，挑剔近50种国外的地道原料
-        </p>
-          <div class="column one-half" style="padding:0 50px 0 0;">
-            <h1>定制蛋糕</h1>
-            <p>
-              源自于热爱制作美味又漂亮的蛋糕并希望每个人都能享受制作蛋糕的乐趣，Cakewith.ME首推蛋糕在线定制服务。
-              我们精选56种优质原材料，拣选当季成熟的水果，记录裱花师绘制出的斑驳多姿的裱花样式以及各种巧克力饰品，
-              只为提供您更优雅的网上定制服务。您现在就可以开始<a>定制</a>一款蛋糕了！
-            </p>
-          </div>
-          <div class="column one-half" style="padding:0 0 0 50px;">
-            <h1>下午茶</h1>
-            <p>
-              一罐刚刚出烤箱的杏仁酥，一壶香醇微烫的洛神红茶，Cakewith.ME为您提供优雅、便捷的下午茶服务。
-              我们为您提供32种精致可口的小糕点，还有我们精心准备的零食大礼包，让您的下午时光更加美妙。
-              您需要做的只是进入我们的<a>商城</a>在线选购，快来和我们一起分享吧！
-            </p>
-          </div>
-      </div>
-    </div>
 <div class="fullbox foot" style="margin-top:20px;">
 	<div class="centerbox">
 			<ul class="footleft">
@@ -117,7 +103,7 @@
 				<li><a href="/cakefox/index.php/Home/Index/serviceforbusiness.html" target="_blank">企业服务</a></li>
 				<li><a href="/cakefox/index.php/Home/Index/job.html" target="_blank">招贤纳士</a></li>
 				<li></li>
-				<li>© 2015 Cakewith.ME, Inc.</li>
+				<li></li>
 				<li>浙ICP备12036459号-2</li>
 			</ul>
 			<div class="shareiconbox">

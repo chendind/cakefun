@@ -75,8 +75,8 @@
       <div class="centerbox">
         <ul class="nav-step">
         <li style="width:17.5%;"><a href="/cakefox/index.php/Home/Index/about.html">Cakewith.ME</a></li>
-        <li class="stephere"><a href="/cakefox/index.php/Home/Index/buy&delivery.html">购买&配送</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/complain&right.html">投诉&维权</a></li>
+        <li><a href="/cakefox/index.php/Home/Index/buy&delivery.html">购买&配送</a></li>
+        <li class="stephere"><a href="/cakefox/index.php/Home/Index/complain&right.html">投诉&维权</a></li>
         <li><a href="/cakefox/index.php/Home/Index/agreement.html">条款协议</a></li>
         <li><a href="/cakefox/index.php/Home/Index/serviceforbusiness.html">企业服务</a></li>
         <li><a href="/cakefox/index.php/Home/Index/job.html">招贤纳士</a></li>
@@ -86,43 +86,43 @@
     <div class="fullbox">
       <div class="centerbox">
         <p class="aboutlead">
-          Cakewith.ME 致力于提高您的购物体验，您在Cakewith.ME的任何一次购买都会产生电子账单，并且将由配送专员送货上门。我们会认真对待每一份订单，保质、保量、准时地为您提供服务。
-            
+            Cakewith.ME 乐于互利共赢
         </p>
           <div class="column three-fourth" style="padding-right:30px;">
-            <h1 class="aboutquestion">问题1</h1>
+            <h1 class="aboutquestion">联系方式</h1>
+            <p style="border-bottom:1px solid #d8d8d8;padding-bottom:20px;">
+              客服电话：0571-62229388（周一至周五，上午9：00-下午5：00）<br />
+              客服邮箱：hi@cakefun.me（3个工作日内给您回件）<br />
+            </p>
+            <h1 class="aboutquestion">常见问题解决方案</h1>
+            <p>
+              我们例举出了一些可能比较常见的问题以及解决方法，在投诉前您可以适当了解。
+            </p>
+            <h2 class="complaintitle">快递员配送不及时</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>
-            <h1 class="aboutquestion">问题1</h1>
+            <h2 class="complaintitle">问题1</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>
-            <h1 class="aboutquestion">问题1</h1>
+            <h2 class="complaintitle">问题1</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>
-            <h1 class="aboutquestion">问题1</h1>
+            <h2 class="complaintitle">问题1</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>
-            <h1 class="aboutquestion">问题1</h1>
+            <h2 class="complaintitle">问题1</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>
-            <h1 class="aboutquestion">问题1</h1>
+            <h2 class="complaintitle">问题1</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>
-            <h1 class="aboutquestion">问题1</h1>
-            <p>
-              回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
-            </p>
-            <h1 class="aboutquestion">问题1</h1>
-            <p>
-              回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
-            </p>
-            <h1 class="aboutquestion">问题1</h1>
+            <h2 class="complaintitle">问题1</h2>
             <p>
               回答1：有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字有很多很多的字。
             </p>

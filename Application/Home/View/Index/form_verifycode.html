@@ -1,0 +1,13 @@
+<div class="form-group">
+<label>验证码</label>
+        <div class="clear"></div>
+        <input type="text" id="verifyCode" class="form-input" name="verifyCode" ng-model="signup.verifyCode" placeholder="验证码" ng-minlength="4" ng-maxlength="4" required ng-focus />
+        <div class="verifyCode"><img id="yzm" onclick="fleshVerify()" src="__ROOT__/index.php/Home/Index/verify" /></div>
+        <div class="clear"></div>
+        <div class="error" ng-class="{errorshow: !form.verifyCode.$focused && form.submit}">
+              <span ng-show="form.verifyCode.$invalid">验证码应为4位字符</span>
+             <span ng-show="form.verifyCode.$error.error1">验证码不正确</span>
+             <span ng-show="form.verifyCode.$error.error2">24小时内发送次数不能大于5</span>
+           </div>
+           
+      </div>

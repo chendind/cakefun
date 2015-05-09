@@ -79,7 +79,7 @@ ul{
 }
 .goodpadbox{
   padding:100px 0;
-  border-bottom:1px solid #eee;
+  //border-bottom:1px solid #eee;
 }
 .tumbctrl{
   font-size:80px;
@@ -118,7 +118,12 @@ ul{
   padding-top:30px;
   // transition: all 1s linear;
   // -webkit-transition: all 1s linear ;
-
+  span{
+    width:100%;
+    text-align: center;
+    display: block;
+      font-family:lantingqianhei;
+  }
   .goodimgbox{
     width:100%;
     height:253px;
@@ -188,6 +193,8 @@ ul{
             display:block;
             width:20px;
             height:20px;
+            border-radius: 10px;
+            overflow:hidden;
             float:left;
           }
           .headusername{
@@ -203,17 +210,40 @@ ul{
             color:#666;
           }
       }
-      #cartdialogbox{
+      .headdialogbox{
         position:absolute;
         top:28px;
-        width:270px;
+        width:100px;
         overflow:hidden;
         border:1px solid #d8d8d8;
         right:0;
         background-color: #fff;
-        padding:5px 0 0;
+        padding:5px 0;
         z-index: 999;
         opacity: 0;
+      }
+      #userinfodialogbox{
+        padding:0;
+        ul{
+          li{
+              width:100%;
+              padding:2px 5px;
+              cursor:pointer;
+              a{
+                width:100%;
+                height:100%;
+                display: block;
+                font-size:13px;
+                font-weight: bold;
+              }
+              &:hover{
+                background-color:#eee;
+              }
+          }
+        }
+      }
+      #cartdialogbox{
+        width:270px;
         .loadingbox{
           width:100%;
           height:100px;
@@ -311,6 +341,7 @@ ul{
 }
 .logo-sm{
   height:28px;
+  display: block;
   img{
     height:100%;
   }
@@ -334,6 +365,7 @@ ul{
       line-height: 30px;
       width:100%;
       text-align:center;
+      cursor:default;
     }
   }
   .stephere{
@@ -350,18 +382,22 @@ ul{
 }
 .title{
   width:100%;
-  border:1px solid #d8d8d8;
   padding:9px 10px 10px;
-  border-radius:5px 5px 0 0;
+  // border-radius:5px 5px 0 0;
+  border:1px solid #d8d8d8;
   background-color:#f5f5f5;
+  // background-color:#829aa8;
+  // border:1px solid #768995;
+  // color:#fff;
   font-size:14px;
   line-height:17px;
+  cursor:default;
 }
 .cont{
   width:100%;
   overflow:hidden;
   border:1px solid #d8d8d8;
-  border-radius:0 0 5px 5px;
+  // border-radius:0 0 5px 5px;
   border-width:0 1px 1px;
   padding:10px 0;
   .menuitem{
@@ -503,34 +539,60 @@ a.greenbtn{
   }
 }
 .foot{
-    background:#666;
-    
-        
+     //这里是foot1的样式 
+    //background:#393b3f;
+    //     ul.footleft{
+    //       width:30%;
+    //       padding:40px 0;
+    //       color:#ddd;
+    //       li{
+    //         padding:4px 0;
+    //       }
+    //     }
+    // .shareiconbox{
+    //   position:absolute;
+    //   bottom:50px;
+    //   right:0;
+    //   width:auto;
+    //       div{
+    //         width:35px;
+    //         height: 35px;
+    //         border-radius:50%;
+    //         // border:1px solid #eee;
+    //         text-align:center;
+    //         line-height: 30px;
+    //         font-size:25px;
+    //         color:#eee;
+    //         margin-right:10px;
+    //         float: left;
+    //       }
+    // }
+
+    //foot2的样式
         ul.footleft{
-          width:30%;
+          width:60%;
           padding:40px 0;
-          color:#ddd;
+          color:#666;
+          overflow: hidden;
+          font-size:12px;
+          float: left;
           li{
-            padding:4px 0;
+            padding:0 5px;
+            float: left;
+
           }
         }
-    .shareiconbox{
-      position:absolute;
-      bottom:40px;
-      right:0;
-      width:auto;
-          div{
-            width:35px;
-            height: 35px;
-            border-radius:50%;
-            border:1px solid #eee;
-            text-align:center;
-            line-height: 30px;
-            font-size:20px;
-            color:#eee;
-            margin-right:10px;
-            float: left;
-          }
+    ul.footright{
+      width:40%;
+      padding:40px 0;
+          color:#666;
+          overflow: hidden;
+          font-size:12px;
+          float: left;
+      li{
+        padding:0 5px;
+        float: right;
+      }
     }
 }
 .dashedbox{
@@ -546,6 +608,5 @@ a.greenbtn{
     }
   }
 }
-
 
 

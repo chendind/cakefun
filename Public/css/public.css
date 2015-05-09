@@ -143,6 +143,13 @@ logIn code
   font-weight:normal;
   cursor:pointer;
 }  
+.form-foot{
+  text-align: center;
+  font-size:13px;
+  margin-top:10px;
+  color:#666;
+}
+
 .logIn-title{
   font-size:18px;
   margin:0;

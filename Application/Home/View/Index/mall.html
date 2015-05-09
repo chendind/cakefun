@@ -24,47 +24,70 @@
        <div class="item"><span id="item1" ng-click="goodshow='cake'">生日蛋糕</span></div>
        <div class="item"><span id="item2" ng-click="goodshow='desert'">甜点</span></div>
        <div class="item"><span id="item3" ng-click="goodshow='drink'">酒水</span></div>
+       <div class="item"><span id="item4" ng-click="goodshow='others'">其他</span></div>
      </div>
    </div>
  </div>
  <div class="fullbox" ng-init="goodshow='all'" style="min-height:500px;">
    <div class="centerbox">
+
     <div class="goodbox" ng-hide="goodshow!='cake'">
-     <a class="goodpad" ng-repeat="good in goods | filter:{'kind' : 'cake'}" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
-      <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+     <volist name="cakes" id="vocake">
+<a class="goodpad"  href="__ROOT__/index.php/Home/Index/detail/id/{$vocake.good_id}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+      <div class="goodimgbox"><img ng-src="__ROOT__/Uploads/{$vocake.img}" alt="{$vocake.good_name}" /></div>
       <div class="goodms">
-        <span>{{good.name}}</span>
-        <span>{{good.price}}</span>
+        <span>{$vocake.good_name}</span>
+        <span>{$vocake.good_price}</span>
       </div>
     </a>
+
+</volist>
   </div>
+
   <div class="goodbox" ng-hide="goodshow!='desert'">
-    <a class="goodpad" ng-repeat="good in goods | filter:{'kind' : 'desert'}" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
-      <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+     <volist name="xidian" id="voxd">
+<a class="goodpad"  href="__ROOT__/index.php/Home/Index/detail/id/{$voxd.good_id}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+      <div class="goodimgbox"><img ng-src="__ROOT__/Uploads/{$voxd.img}" alt="{$voxd.good_name}" /></div>
       <div class="goodms">
-        <span>{{good.name}}</span>
-        <span>{{good.price}}</span>
+        <span>{$voxd.good_name}</span>
+        <span>{$voxd.good_price}</span>
       </div>
     </a>
+
+</volist>
   </div>
+
   <div class="goodbox" ng-hide="goodshow!='drink'">
-    <a class="goodpad" ng-repeat="good in goods | filter:{'kind' : 'drink'}" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
-      <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+    <volist name="jiushui" id="vojs">
+<a class="goodpad"  href="__ROOT__/index.php/Home/Index/detail/id/{$vojs.good_id}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+      <div class="goodimgbox"><img ng-src="__ROOT__/Uploads/{$vojs.img}" alt="{$vojs.good_name}" /></div>
       <div class="goodms">
-        <span>{{good.name}}</span>
-        <span>{{good.price}}</span>
+        <span>{$vojs.good_name}</span>
+        <span>{$vojs.good_price}</span>
       </div>
     </a>
+
+</volist>
   </div>
+
   <div class="goodbox" ng-hide="goodshow!='all'">
-    <a class="goodpad" ng-repeat="good in goods" ng-href="__ROOT__/index.php/Home/Index/{{good.link}}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
-      <div class="goodimgbox"><img ng-src="__PUBLIC__/img/{{good.src}}" alt="{{good.name}}" /></div>
+
+<volist name="allgoods" id="voall">
+<a class="goodpad"  href="__ROOT__/index.php/Home/Index/detail/id/{$voall.good_id}" onmouseenter="$(this).children('.goodms').css('opacity','1');" onmouseleave="$(this).children('.goodms').css('opacity','0');">
+      <div class="goodimgbox"><img ng-src="__ROOT__/Uploads/{$voall.img}" alt="{$voall.good_name}" /></div>
       <div class="goodms">
-        <span>{{good.name}}</span>
-        <span>{{good.price}}</span>
+        <span>{$voall.good_name}</span>
+        <span>{$voall.good_price}</span>
       </div>
     </a>
+
+</volist>
+
+
+
+    
   </div>
+
 </div>
 </div> 
 <include file="foot" />

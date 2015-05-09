@@ -50,27 +50,19 @@
         </div>
       </div> -->
     </div> 
+    
+
+
     <div class="fullbox goodpadbox">
       <div class="centerbox">
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="__PUBLIC__/img/top-hetao.png" alt="核桃心酥"></div>
-          <div class="goodms">
-            <span>核桃心酥</span>
-            <span>2磅·￥179</span>
-          </div>
+
+        <volist name="goods" id="vogoods">
+<div class="goodpad">
+          <div class="goodimgbox"><img src="__ROOT__/Uploads/{$vogoods.img}" alt=""></div>
+            <span>{$vogoods.detail.good_name}</span>
+            <span>￥{$vogoods.detail.good_price}</span>
         </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="__PUBLIC__/img/top-lirong1.png" alt="核桃心酥"></div>
-          <span>开心棉花糖</span>
-          <span>hobby de'happy</span>
-          <span>2磅·￥179</span>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="__PUBLIC__/img/main-ice.png" alt="核桃心酥"></div>
-          <span>曼城果心</span>
-          <span>man dur' hotheart</span>
-          <span>2磅·￥179</span>
-        </div>
+      </volist>
       </div>
     </div>
     <div class="fullbox goodpadbox">
@@ -97,12 +89,6 @@
 <!--<script src="__PUBLIC__/js/slide.js"></script>-->
  <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
  <script src="__PUBLIC__/js/angular-animate.min.js"></script>
- <script src="__PUBLIC__/js/public.js"></script>
-<script src="__PUBLIC__/js/tumbflash.js"></script>
-<script src="__PUBLIC__/js/md5.js"></script>
-
-<!-- <include file="loginwindow" /> -->
-
 <script>
 var h = $(window).height();
 $(".tumbbox").css("height",h);
@@ -117,7 +103,16 @@ $(window).scroll(function(){
     $(".header").css({"background":"rgba(255,255,255,0.2)"});
   }
 })
+var islogin = {$islogin};
 </script>
+
+ <script src="__PUBLIC__/js/public.js"></script>
+<script src="__PUBLIC__/js/tumbflash.js"></script>
+<script src="__PUBLIC__/js/md5.js"></script>
+
+<!-- <include file="loginwindow" /> -->
+
+
 
   </body>
 

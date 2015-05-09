@@ -32,31 +32,46 @@
         <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
         <li><a href="/cakefox/index.php/Home/Index/customize.html">定制蛋糕</a></li>
         <li><a href="/cakefox/index.php/Home/Index/mall.html">商城</a></li>
-        <li><a>关于我们</a></li>
+        <li><a href="/cakefox/index.php/Home/Index/about.html">关于我们</a></li>
       </ul>
       <ul class="header-nav" style="float:right;">
-        
-        <li>
-          <a href="/cakefox/index.php/Home/Index/user.html">
-            <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($userimg); ?>" />
-            <span class="headusername"><?php echo ($username); ?></span>
-          </a>
-        </li>
-        <li>
-          <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
-            <i class="fa fa-fw fa-cog"></i>
-          </a>
-        </li>
-        <li id="cartli">
-          <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
-           <div id="cartdialogbox" style="display:none;">
-            <div class="loadingbox">
-              <i class="fa fa-spinner fa-spin"></i>
-            </div>
-            <div class="cartdialog"></div>
-            
-          </div> 
-        </li>
+          
+      <!-- 未登录 -->
+          <li>
+            <a href="/cakefox/index.php/Home/Index/login.html" style="padding:4px;">
+              <span class="headusername">登录</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cakefox/index.php/Home/Index/register.html" style="padding:4px;">
+              <span class="headusername">注册</span>
+            </a>
+          </li>
+      <!-- 未登录 -->
+
+
+       <!-- 已登录 -->
+          <li>
+            <a href="/cakefox/index.php/Home/Index/user.html">
+              <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($userimg); ?>" />
+              <span class="headusername"><?php echo ($username); ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
+              <i class="fa fa-fw fa-cog"></i>
+            </a>
+          </li>
+          <li id="cartli">
+            <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
+             <div id="cartdialogbox" style="display:none;">
+              <div class="loadingbox">
+                <i class="fa fa-spinner fa-spin"></i>
+              </div>
+              <div class="cartdialog"></div>
+            </div> 
+          </li>
+        <!-- 已登录 -->
       </ul>
       </div>
     </div>
@@ -86,27 +101,17 @@
         </div>
       </div> -->
     </div> 
+    
+
+
     <div class="fullbox goodpadbox">
       <div class="centerbox">
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Public/img/top-hetao.png" alt="核桃心酥"></div>
-          <div class="goodms">
-            <span>核桃心酥</span>
-            <span>2磅·￥179</span>
-          </div>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Public/img/top-lirong1.png" alt="核桃心酥"></div>
-          <span>开心棉花糖</span>
-          <span>hobby de'happy</span>
-          <span>2磅·￥179</span>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Public/img/main-ice.png" alt="核桃心酥"></div>
-          <span>曼城果心</span>
-          <span>man dur' hotheart</span>
-          <span>2磅·￥179</span>
-        </div>
+
+        <?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vogoods): $mod = ($i % 2 );++$i;?><div class="goodpad">
+          <div class="goodimgbox"><img src="/cakefox/Uploads/<?php echo ($vogoods["img"]); ?>" alt=""></div>
+            <span><?php echo ($vogoods["detail"]["good_name"]); ?></span>
+            <span>￥<?php echo ($vogoods["detail"]["good_price"]); ?></span>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?>
       </div>
     </div>
     <div class="fullbox goodpadbox">
@@ -129,7 +134,7 @@
       </div>
     </div>
 <div class="fullbox foot" style="margin-top:20px;">
-	<div class="centerbox">
+	<div class="centerbox" style="border-top:1px solid #eee;">
 			<ul class="footleft">
 				<li><a>回到顶部</a></li>
 				<li><a href="/cakefox/index.php/Home/Index/about.html" target="_blank">关于我们</a></li>
@@ -138,28 +143,18 @@
 				<li><a href="/cakefox/index.php/Home/Index/agreement.html" target="_blank">条款协议</a></li>
 				<li><a href="/cakefox/index.php/Home/Index/serviceforbusiness.html" target="_blank">企业服务</a></li>
 				<li><a href="/cakefox/index.php/Home/Index/job.html" target="_blank">招贤纳士</a></li>
-				<li></li>
-				<li></li>
-				<li>浙ICP备12036459号-2</li>
 			</ul>
-			<div class="shareiconbox">
-				<div><i class="fa fa-weibo"></i></div>
-				<div><i class="fa fa-weixin"></i></div>
-				<div><i class="fa fa-tencent-weibo"></i></div>
-				<div><i class="fa fa-tumblr"></i></div>
-			</div>
+			<ul class="footright">
+				<li><a href="">浙ICP备12036459号-2</a></li>
+				<li><a href="">© 2015 Cakewith.ME, Inc.</a></li>
+
+			</ul>
 	</div>
 </div>
 
 <!--<script src="/cakefox/Public/js/slide.js"></script>-->
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
- <script src="/cakefox/Public/js/public.js"></script>
-<script src="/cakefox/Public/js/tumbflash.js"></script>
-<script src="/cakefox/Public/js/md5.js"></script>
-
-<!--  -->
-
 <script>
 var h = $(window).height();
 $(".tumbbox").css("height",h);
@@ -174,7 +169,16 @@ $(window).scroll(function(){
     $(".header").css({"background":"rgba(255,255,255,0.2)"});
   }
 })
+var islogin = <?php echo ($islogin); ?>;
 </script>
+
+ <script src="/cakefox/Public/js/public.js"></script>
+<script src="/cakefox/Public/js/tumbflash.js"></script>
+<script src="/cakefox/Public/js/md5.js"></script>
+
+<!--  -->
+
+
 
   </body>
 
