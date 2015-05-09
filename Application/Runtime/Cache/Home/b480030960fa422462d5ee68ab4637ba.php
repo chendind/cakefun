@@ -1,12 +1,12 @@
 <?php if (!defined('THINK_PATH')) exit();?><div class="fullbox" style="border-bottom:1px solid #e5e5e5;">
     <div class="centerbox">
       <ul class="nav-step">
-        <li class="stephere"><a>初始化</a></li>
-        <li><a>第一步</a></li>
-        <li><a>第二步</a></li>
-        <li><a>第三步</a></li>
-        <li><a>第四步</a></li>
-        <li><a>完成！</a></li>
+        <li class="stephere"><a>选择模具</a></li>
+        <li><a>烘烤蛋糕胚</a></li>
+        <li><a>嵌入夹心</a></li>
+        <li><a>打奶油</a></li>
+        <li><a>裱花</a></li>
+        <li><a>完成</a></li>
       </ul>
       
   </div>
@@ -14,7 +14,7 @@
 <div class="fullbox">
     <div class="centerbox">
       <div class="tips">
-        <span><i class='fa fa-lightbulb-o fa-fw'></i>初始化：选择蛋糕的尺寸、形状</span>
+        <span><i class='fa fa-lightbulb-o fa-fw'></i>您想要怎样的蛋糕吖？</span>
       </div>
     </div>
 </div>
@@ -28,7 +28,7 @@
       </div>
       <div class="leftbox">
             <div class="controllbox">
-              <h3 class="title">蛋糕样式</h3>
+              <h3 class="title">蛋糕形状</h3>
               <div class="cont">
                 <div class="selectbar">
                   <label for="shape-1"><input type="radio" name="shape" ng-model="e[0]" id="shape-1"  ng-value="0" />方形</label>
@@ -39,7 +39,7 @@
               </div>
               </div>
             <div class="controllbox">
-              <h3 class="title" ng-click="test()">蛋糕尺寸选择</h3>
+              <h3 class="title" ng-click="test()">蛋糕尺寸</h3>
               <div class="cont">
                 <div class="selectbar">
                   <label for="size-1"><input type="radio" name="size"  ng-model="e[1]" id="size-1" ng-value="0" />1磅，可供2-4人食用</label>

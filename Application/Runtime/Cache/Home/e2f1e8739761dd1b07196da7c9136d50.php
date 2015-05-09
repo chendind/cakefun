@@ -21,8 +21,7 @@
         <li><a href="/cakefox/index.php/Home/Index/about.html">关于我们</a></li>
       </ul>
       <ul class="header-nav" style="float:right;">
-          
-      <!-- 未登录 -->
+       <?php if($islogin == 0 ): ?><!-- 未登录 -->
           <li>
             <a href="/cakefox/index.php/Home/Index/login.html" style="padding:4px;">
               <span class="headusername">登录</span>
@@ -35,37 +34,53 @@
           </li>
       <!-- 未登录 -->
 
-
-       <!-- 已登录 -->
+    <?php else: ?> 
+<!-- 已登录 -->
           <li>
             <a href="/cakefox/index.php/Home/Index/user.html">
               <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($userimg); ?>" />
               <span class="headusername"><?php echo ($username); ?></span>
             </a>
           </li>
-          <li>
+          <li id="userinfo">
             <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
               <i class="fa fa-fw fa-cog"></i>
             </a>
+            <div class="headdialogbox" id="userinfodialogbox" style="display:none;">
+              <ul>
+                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/baseinfo">个人资料</a></li>
+                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/account">账户设置</a></li>
+                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/address">送货地址</a></li>
+                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/myorder">我的订单</a></li>
+                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/coupon">优惠码</a></li>
+              </ul>
+            </div> 
           </li>
-          <li id="cartli">
+          <li id="cart">
             <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
-             <div id="cartdialogbox" style="display:none;">
+             <div class="headdialogbox" id="cartdialogbox" style="display:none;">
               <div class="loadingbox">
                 <i class="fa fa-spinner fa-spin"></i>
               </div>
               <div class="cartdialog"></div>
             </div> 
           </li>
-        <!-- 已登录 -->
+        <!-- 已登录 --><?php endif; ?>   
+      
+
+
+       
       </ul>
       </div>
     </div>
 </div>
 
   <div class="fullbox">
-   <div class="centerbox">
-    <div class="one-third" style="margin:50px auto;">
+   <div class="centerbox" style="padding:50px 0 100px;">
+    <!-- <div class="column two-third imgbox">
+      <img src="/cakefox/Public/logo/logo2.jpg" alt="logo">
+    </div> -->
+    <div class="one-third" style="margin:0 auto;">
      <h3 class="title">
        创建新账户
      </h3>
@@ -121,6 +136,24 @@
    </div>
    
  </div>
+</div>
+<div class="fullbox foot" style="margin-top:30px;">
+	<div class="centerbox" style="border-top:1px solid #eee;">
+			<ul class="footleft">
+				<li><a>回到顶部</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/about.html" target="_blank">关于我们</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/buy&delivery.html" target="_blank">购买&配送</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/complain&right.html" target="_blank">投诉&维权</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/agreement.html" target="_blank">条款协议</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/serviceforbusiness.html" target="_blank">企业服务</a></li>
+				<li><a href="/cakefox/index.php/Home/Index/job.html" target="_blank">招贤纳士</a></li>
+			</ul>
+			<ul class="footright">
+				<li>浙ICP备12036459号-2</li>
+				<li>© 2015 Cakewith.ME, Inc.</li>
+
+			</ul>
+	</div>
 </div>
 <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
 <script src="/cakefox/Public/js/angular-1.3.min.js"></script>

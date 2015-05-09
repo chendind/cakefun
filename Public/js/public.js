@@ -1,27 +1,27 @@
 
-if(typeof window.localStorage === 'undefined'){}
-else{
-    if(window.localStorage.islogin=="1"&&islogin=="0"){
-        var phone = window.localStorage.phone,
-            password = window.localStorage.password;
-        $.ajax({ 
-           type: "post", 
-           url: "./loginapi", 
-           dataType: "json",
-           data:{phone:phone,password:password},
-           success: function (data) { 
-               switch(data.state) {
-                  case "1":window.location.reload(); break ;                     
-                  default:;
-               }
-           }, 
-           error: function (XMLHttpRequest, textStatus, errorThrown) {} 
-        });
-    }
-    else{
-        console.log("本地存储的数据是"+window.localStorage.islogin);
-    }
-}
+// if(typeof window.localStorage === 'undefined'){}
+// else{
+//     if(window.localStorage.islogin=="1"&&islogin=="0"){
+//         var phone = window.localStorage.phone,
+//             password = window.localStorage.password;
+//         $.ajax({ 
+//            type: "post", 
+//            url: "./loginapi", 
+//            dataType: "json",
+//            data:{phone:phone,password:password},
+//            success: function (data) { 
+//                switch(data.state) {
+//                   case "1":window.location.reload(); break ;                     
+//                   default:;
+//                }
+//            }, 
+//            error: function (XMLHttpRequest, textStatus, errorThrown) {} 
+//         });
+//     }
+//     else{
+//         console.log("本地存储的数据是"+window.localStorage.islogin);
+//     }
+// }
 
 // $(".controllIcon").click(function(){
 //  //  function openmenu(it){
