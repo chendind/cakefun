@@ -18,7 +18,7 @@
   <div class="fullbox" style="margin-top:20px;">
     <div class="centerbox">
       <div class="column one-fourth">
-        <a class="portrait" href="__ROOT__/index.php/Home/Index/userinfo.html"><img src="__ROOT__/Uploads/{$userimg}" alt="portrait"></a>
+        <a class="portrait" href="__ROOT__/index.php/Home/Index/baseinfo.html"><img src="__ROOT__/Uploads/{$userimg}" alt="portrait"></a>
         <h3 class="username">Mr.Leo</h3>
         <ul class="userdetail">
           <li><i class="fa fa-fw fa-map-marker"></i>杭州市</li>
@@ -30,13 +30,13 @@
             <b>4</b>
             <span>收藏</span>
           </a>
-          <a href="">
-            <b>1</b>
-            <span>定制</span>
+          <a href="__ROOT__/index.php/Home/Index/myorder.html">
+            <b>3</b>
+            <span>订单</span>
           </a>
-          <a href="">
-            <b>0</b>
-            <span>优惠码</span>
+          <a href="__ROOT__/index.php/Home/Index/coupon.html">
+            <b>2</b>
+            <span>优惠券</span>
           </a>
         </div>
       </div>
@@ -85,83 +85,13 @@
             您的账户等级为0；定制第一款蛋糕后，您的账户将升级为lv1会员；成为lv1会员，我们会在每年您生日时，赠送您20元Cakewith.ME优惠券。
           </div>
         </div>
-        <h3 class="title" style="margin-top:20px;">我的优惠券</h3>
+        <h3 class="title" style="margin-top:20px;">最近的一笔订单</h3>
         <div class="cont">
-          <ul id="coupon">
-            <li>
-              <a href="">
-                <div>
-                  <span class="amount">29</span>
-                  <span class="pricesymbol">RMB</span>
-                  <span class="scope">仅限购买蛋糕使用</span>
-                  <span class="limittimetitle">使用期限</span>
-                  <span class="limittime">2015.04.18至2015.04.25</span>
-                </div>
-            </a>
-          </li>
-            <li>
-              <a href="">
-                <div>
-                  <span class="amount">29</span>
-                  <span class="pricesymbol">RMB</span>
-                  <span class="scope">仅限购买蛋糕使用</span>
-                  <span class="limittimetitle">使用期限</span>
-                  <span class="limittime">2015.04.18至2015.04.25</span>
-                </div>
-            </a>
-          </li>
-            <li>
-              <a href="">
-                <div>
-                  <span class="amount">29</span>
-                  <span class="pricesymbol">RMB</span>
-                  <span class="scope">仅限购买蛋糕使用</span>
-                  <span class="limittimetitle">使用期限</span>
-                  <span class="limittime">2015.04.18至2015.04.25</span>
-                </div>
-            </a>
-          </li>
-          </ul>
+          
         </div>
-        <h3 class="title" style="margin-top:20px;">我的收货地址</h3>
+        <h3 class="title" style="margin-top:20px;">最近浏览</h3>
         <div class="cont">
-          <ul id="addressbox">
-            <li>
-              <div class="address" ng-hide="inedit">
-                <a class="addblock" ng-click="inedit=!inedit">新增收货地址<i class="fa fa-plus fa-fw"></i></a>
-              </div>
-              <div class="address" ng-show="inedit">
-                <div class="name" style="border-bottom:0;">
-                  <input type="text" placeholder="收货人姓名" />
-                </div>
-                <div class="phone"><input type="text" placeholder="11位手机号" /></div>
-                <div class="city">
-                  您所在的城市<select>
-                    <option>杭州</option>
-                    <option>上海</option>
-                  </select>
-                </div>
-                <div class="street">
-                  <textarea placeholder="请输入您的街道地址"></textarea>
-                </div>
-                <button ng-click="inedit=!inedit">确定</button>
-                <button ng-click="inedit=!inedit">取消</button>
-              </div>
-            </li>
-            <li>
-              <div class="address">
-                <div class="name">
-                  王克
-                  <span>设为默认</span>
-                </div>
-                <div class="phone">13606531232</div>
-                <div class="city">浙江 杭州市 西湖区</div>
-                <div class="street">西城纪4幢225烦烦烦烦烦烦烦烦烦</div>
-                <button>编辑</button>
-                <button>删除</button>
-              </div>
-            </li>
-          </div>
+
         </div>
       </div>
     </div>

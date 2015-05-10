@@ -1,43 +1,49 @@
 <volist name="orders" id="vo">
-<h3 class="title ordertitle" style="margin-top:20px;">
-	<span style="font-weight:normal;font-size:14px;">订单号：{$vo.order_id}</span>
-	<span style="float:right;">配送时间：{$vo.order_sendtime}</span>
-</h3>
-<div class="cont" style="padding:0;">
-	<div class="column" style="padding:0;">
-		<dl class="dlitem">
-			<dd style="padding:0;">
-				<div class="ordergroup">
-					<volist name="vo['detail']" id="sub">
-					<div class="orderlist">
-						<table>
-							
-							<tr>
+	<h3 class="title ordertitle" style="margin-top:20px;">
+		<span style="font-weight:normal;font-size:14px;">订单号：{$vo.order_id}</span>
+		<span style="float:right;">配送时间：{$vo.order_sendtime}</span>
+	</h3>
+	<div class="cont" style="padding:0;">
+		<div class="column" style="padding:0;">
+			<dl class="dlitem">
+				<dd style="padding:0;">
+					<div class="ordergroup">
+						<volist name="vo['detail']" id="sub">
+							<div class="orderlist">
+								<table>
 
-								<td style="width:15%;"><img style="margin:0;" src="__ROOT__/Uploads/{$sub.img}" alt="商品图"></td>
-								<td style="width:20%;">{$sub.name}</td>
-								<td style="width:10%;">{$sub.ogl_cakesize}磅</td>
-								<td style="width:10%;">￥{$sub.ogl_singleprice}</td>
-								<td style="width:10%;">×{$sub.ogl_number}</td>
-							</tr>
-						  
-						</table>
+									<tr>
+
+										<td style="width:15%;"><img style="margin:0;" src="__ROOT__/Uploads/{$sub.img}" alt="商品图"></td>
+										<td style="width:20%;">{$sub.name}</td>
+										<td style="width:10%;">{$sub.ogl_cakesize}磅</td>
+										<td style="width:10%;">￥{$sub.ogl_singleprice}</td>
+										<td style="width:10%;">×{$sub.ogl_number}</td>
+									</tr>
+
+								</table>
+							</div>
+							<div class="orderblock" style="right:20%;top:0;">
+								<span id="price">{$vo.order_payprice}</span>
+								<span>（已优惠：{$vo['order_totalprice']-$vo['order_payprice']}元）</span>
+							</div>
+							<div class="orderblock" style="right:0;top:0;">
+								<a class="ddxqbtn" data-id="{$vo.order_id}">订单详情</a>
+								<a>申请售后</a>
+								<a>取消订单</a>
+							</div>
+						</volist>
 					</div>
-					<div class="orderblock" style="right:20%;top:0;">
-						<span id="price">{$vo.order_payprice}</span>
-						<span>（已优惠：{$vo['order_totalprice']-$vo['order_payprice']}元）</span>
-					</div>
-					<div class="orderblock" style="right:0;top:0;">
-						<a href="#/myorderinfo">订单详情</a>
-						<a>申请售后</a>
-						<a>取消订单</a>
-					</div>
-					 </volist>
-				</div>
-			</dd>
-		</dl>
+				</dd>
+			</dl>
+		</div>
 	</div>
-</div>
 
 
 </volist>
+<script>
+$("a.ddxqbtn").click(function(){
+	var url = "__ROOT__/index.php/Home/Index/myorderinfo/id/"+$(this).attr("data-id");
+	$("#orderajax").load(url);
+})
+</script>

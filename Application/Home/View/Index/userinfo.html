@@ -1,5 +1,5 @@
  <!DOCTYPE html>
-<html lang="zh-CN" ng-app="userinfo">
+<html lang="zh-CN">
   <head> 
     <meta charset="utf-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,24 +25,22 @@
       <div class="column one-fourth">
         <h3 class="title" style="margin-top:20px;">账户设置</h3>
         <div class="cont" style="padding:0;">
-          <a class="menuitem" href="#/baseinfo">个人资料</a>
-          <a class="menuitem" href="#/account">账户设置</a>
-          <a class="menuitem" href="#/address">送货地址</a>
-          <a class="menuitem" href="#/myorder">我的订单</a>
-          <a class="menuitem" href="#/coupon">优惠码信息</a>
+          <a class="menuitem" href="__ROOT__/index.php/Home/Index/baseinfo.html">个人资料</a>
+          <a class="menuitem" href="__ROOT__/index.php/Home/Index/account.html">账户安全</a>
+          <a class="menuitem" href="__ROOT__/index.php/Home/Index/address.html">送货地址</a>
+          <a class="menuitem" href="__ROOT__/index.php/Home/Index/myorder.html">我的订单</a>
+          <a class="menuitem" href="__ROOT__/index.php/Home/Index/coupon.html">优惠码信息</a>
         </div>
       </div>
-      <div class="column three-fourth" ng-view></div>
+      <div class="column three-fourth">
+        
+      </div>
     </div>
   </div>
   <div id="dialogbox" class="dialogbox" style="display:none;">
     
   </div>
   <include file="foot" />
- <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
- <script src="__PUBLIC__/js/angular-animate.min.js"></script>
- <script src="__PUBLIC__/js/angular-route.min.js"></script>
- <script src="__PUBLIC__/js/userinfo.js"></script>
  
  <script src="__PUBLIC__/js/public.js"></script>
 <script src="__PUBLIC__/js/ajaxfileupload.js"></script>

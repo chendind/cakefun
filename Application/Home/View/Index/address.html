@@ -1,97 +1,143 @@
-<h3 class="title" style="margin-top:20px;">我的送货地址</h3>
-	<div class="cont" style="padding:0;">
-		<div class="column" style="padding:0;">
-			<dl class="dlitem">
-				<dd style="padding:0;">
-					<table>
-						<tr>
-							<th style="width:11%">收货人</th>
-							<th style="width:14%">手机号码</th>
-							<th style="width:22%">地区</th>
-							<th style="width:32%">街道地址</th>
-							<th style="width:21%">操作</th>
-						</tr>
-						
-							<volist name="address" id="voaddress">
-                             <tr 
+ <!DOCTYPE html>
+ <html lang="zh-CN">
+ <head> 
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ 	<meta name="description" content="蛋糕狐在线蛋糕DIY，现做蛋糕送货上门">
+ 	<title>cakefun</title>
+ 	<link href="__PUBLIC__/css/public.css" rel="stylesheet">
+ 	<link href="__PUBLIC__/css/font-awesome.min.css" rel="stylesheet">
+ 	<!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
+ 	<script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
 
-<if condition="$key%2 eq 1 ">style="background:#f5f5f5"
-    <else /> 
-</if>
+ 	<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/jquery.Jcrop.css">
+ 	<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/public.less">
+ 	<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/userinfo.less">
+ 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/bootstrap-datepicker.css">
+ 	<script src="__PUBLIC__/less/dist/less.js" type="text/javascript"></script>
+
+ </head>
+ <body>
+ 	<include file="head" />
+ 	<div class="fullbox" style="margin-top:20px;">
+ 		<div class="centerbox">
+ 			<div class="column one-fourth">
+ 				<h3 class="title" style="margin-top:20px;">账户设置</h3>
+ 				<div class="cont" style="padding:0;">
+ 					<a class="menuitem" href="__ROOT__/index.php/Home/Index/baseinfo.html">个人资料</a>
+ 					<a class="menuitem" href="__ROOT__/index.php/Home/Index/account.html">账户安全</a>
+ 					<a class="menuitem" href="__ROOT__/index.php/Home/Index/address.html">送货地址</a>
+ 					<a class="menuitem" href="__ROOT__/index.php/Home/Index/myorder.html">我的订单</a>
+ 					<a class="menuitem" href="__ROOT__/index.php/Home/Index/coupon.html">优惠码信息</a>
+ 				</div>
+ 			</div>
+ 			<div class="column three-fourth">
+
+ 				<h3 class="title" style="margin-top:20px;">我的送货地址</h3>
+ 				<div class="cont" style="padding:0;">
+ 					<div class="column" style="padding:0;">
+ 						<dl class="dlitem">
+ 							<dd style="padding:0;">
+ 								<table>
+ 									<tr>
+ 										<th style="width:11%">收货人</th>
+ 										<th style="width:14%">手机号码</th>
+ 										<th style="width:22%">地区</th>
+ 										<th style="width:32%">街道地址</th>
+ 										<th style="width:21%">操作</th>
+ 									</tr>
+
+ 									<volist name="address" id="voaddress">
+ 										<tr 
+
+ 										<if condition="$key%2 eq 1 ">style="background:#f5f5f5"
+ 											<else /> 
+ 										</if>
 
 
-                             >
+ 										>
 
-                            <td>{$voaddress.address_name}</td>
-							<td>{$voaddress.address_phone}</td>
-							<td>{$voaddress.address_area1} {$voaddress.address_area2} {$voaddress.address_area3}</td>
-							<td>{$voaddress.address_detail}</td>
-							<td>
-								 
-<if condition="$voaddress.address_main eq 0 "><a class="swmrbtn" data-addressid="{$voaddress.address_id}">设为默认</a> 
-    <else /> <a>默认</a> 
-</if>
+ 										<td>{$voaddress.address_name}</td>
+ 										<td>{$voaddress.address_phone}</td>
+ 										<td>{$voaddress.address_area1} {$voaddress.address_area2} {$voaddress.address_area3}</td>
+ 										<td>{$voaddress.address_detail}</td>
+ 										<td>
+
+ 											<if condition="$voaddress.address_main eq 0 "><a class="swmrbtn" data-addressid="{$voaddress.address_id}">设为默认</a> 
+ 												<else /> <a>默认</a> 
+ 											</if>
 
 
-								| 
-								<a class="bjbtn" data-name="{$voaddress.address_name}" data-phone="{$voaddress.address_phone}" data-area-a="{$voaddress.address_area1}" data-area-b="{$voaddress.address_area2}" data-area-c="{$voaddress.address_area3}" data-detail="{$voaddress.address_detail}" data-addressid="{$voaddress.address_id}">编辑</a> | 
-								<a class="scbtn" data-addressid="{$voaddress.address_id}">删除</a>
-							</td>
-                              </tr>
-                           </volist>
+ 											| 
+ 											<a class="bjbtn" data-name="{$voaddress.address_name}" data-phone="{$voaddress.address_phone}" data-area-a="{$voaddress.address_area1}" data-area-b="{$voaddress.address_area2}" data-area-c="{$voaddress.address_area3}" data-detail="{$voaddress.address_detail}" data-addressid="{$voaddress.address_id}">编辑</a> | 
+ 											<a class="scbtn" data-addressid="{$voaddress.address_id}">删除</a>
+ 										</td>
+ 									</tr>
+ 								</volist>
 
-						
-					</table>
-				</dd>
-			</dl>
-		</div>
-	</div>
-</h3>
-<h3 id="xzdzbox" class="title" style="margin-top:20px;">新增/编辑收货地址</h3>
-	<div class="cont">
-		<div class="two-third column">
-			<dl class="dlitem">
-				<dt><span>收货人姓名</span></dt>
-				<dd>
-					<input id="name" class="pinput" type="text" />
-				</dd>
-			</dl>
-			<dl class="dlitem">
-				<dt><span>手机号码</span></dt>
-				<dd>
-					<input id="phonenum" class="pinput" type="text" />
-				</dd>
-			</dl>
-			<dl class="dlitem">
-				<dt><span>地区</span></dt>
-				<dd>
-					<select id="sheng">
-						<option value="浙江省">浙江省</option>
-					</select>
-					<select id="shi">
-						<option value="杭州市">杭州市</option>
-					</select>
-					<select id="qu">
-						<option value="西湖区">西湖区</option>
-						<option value="拱墅区">拱墅区</option>
-						<option value="江干区">江干区</option>
-						<option value="上城区">上城区</option>
-						<option value="下城区">下城区</option>
-					</select>
-				</dd>
-			</dl>
-			<dl class="dlitem">
-				<dt><span>详细地址</span></dt>
-				<dd>
-					<input id="detail" class="pinput" type="text" />
-					<div class="clear"></div>
-					<a id="zjbtn" class="btn" style="margin-top:10px;">增加</a>
-					<a id="bcbtn" class="btn" style="margin-top:10px;display:none;">保存</a>
-				</dd>
-			</dl>
-		</div>
-	</div>
-</h3>
+
+ 							</table>
+ 						</dd>
+ 					</dl>
+ 				</div>
+ 			</div>
+ 		</h3>
+ 		<h3 id="xzdzbox" class="title" style="margin-top:20px;">新增/编辑收货地址</h3>
+ 		<div class="cont">
+ 			<div class="two-third column">
+ 				<dl class="dlitem">
+ 					<dt><span>收货人姓名</span></dt>
+ 					<dd>
+ 						<input id="name" class="pinput" type="text" />
+ 					</dd>
+ 				</dl>
+ 				<dl class="dlitem">
+ 					<dt><span>手机号码</span></dt>
+ 					<dd>
+ 						<input id="phonenum" class="pinput" type="text" />
+ 					</dd>
+ 				</dl>
+ 				<dl class="dlitem">
+ 					<dt><span>地区</span></dt>
+ 					<dd>
+ 						<select id="sheng">
+ 							<option value="浙江省">浙江省</option>
+ 						</select>
+ 						<select id="shi">
+ 							<option value="杭州市">杭州市</option>
+ 						</select>
+ 						<select id="qu">
+ 							<option value="西湖区">西湖区</option>
+ 							<option value="拱墅区">拱墅区</option>
+ 							<option value="江干区">江干区</option>
+ 							<option value="上城区">上城区</option>
+ 							<option value="下城区">下城区</option>
+ 						</select>
+ 					</dd>
+ 				</dl>
+ 				<dl class="dlitem">
+ 					<dt><span>详细地址</span></dt>
+ 					<dd>
+ 						<input id="detail" class="pinput" type="text" />
+ 						<div class="clear"></div>
+ 						<a id="zjbtn" class="btn" style="margin-top:10px;">增加</a>
+ 						<a id="bcbtn" class="btn" style="margin-top:10px;display:none;">保存</a>
+ 					</dd>
+ 				</dl>
+ 			</div>
+ 		</div>
+ 	</h3>
+
+ </div>
+</div>
+</div>
+<div id="dialogbox" class="dialogbox" style="display:none;">
+
+</div>
+<include file="foot" />
+
+<script src="__PUBLIC__/js/public.js"></script>
 <script>
 //删除api
 $(".scbtn").click(function(){
@@ -142,61 +188,63 @@ $("#zjbtn").click(function(){
 	}
 });
 	//编辑api
-$(".bjbtn").click(function(){
-	$(window).scrollTop($("#xzdzbox").offset().top);
-	var id = $(this).attr("data-addressid");
-	$("#zjbtn").hide();
-	$("#bcbtn").show();
-	$("#name").val($(this).attr("data-name"));
-	$("#phonenum").val($(this).attr("data-phone"));
-	$("sheng").val($(this).attr("data-area-a"));
-	$("shi").val($(this).attr("data-area-b"));
-	$("qu").val($(this).attr("data-area-c"));
-	$("#detail").val($(this).attr("data-detail"));
-	$("#bcbtn").click(function(){
-		if($("#name").val()==""){
-			alert("您还未填写收货人姓名");
-		}
-		else if($("#phonenum").val()==""){
-			alert("您还未填写手机号码");
-		}
-		else if($("#detail").val()==""){
-			alert("您还未填写详细地址");
-		}
-		else{
-			$.ajax({ 
-	           type: "post", 
-	           url: "__ROOT__/index.php/Home/Index/editaddress", 
-	           dataType: "json",
-	           data:{phone:$("#phonenum").val(),name:$("#name").val(),area1:$("#sheng").val(),area2:$("#shi").val(),area3:$("#qu").val(),detail:$("#detail").val(),id:id},
-	           success: function (data) { 
-	                switch(data.state){
-	                  case "1":alert("更新成功");window.location.reload();break;
-	                  case "2":alert("更新失败");break;
-	                  case "3":alert("手机号不合法");break;
-	                  case "0":alert("您未登录");break;
-	                }   
-	           }, 
-	           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
-	   		 });
-		}
-	})
-});
+	$(".bjbtn").click(function(){
+		$(window).scrollTop($("#xzdzbox").offset().top);
+		var id = $(this).attr("data-addressid");
+		$("#zjbtn").hide();
+		$("#bcbtn").show();
+		$("#name").val($(this).attr("data-name"));
+		$("#phonenum").val($(this).attr("data-phone"));
+		$("sheng").val($(this).attr("data-area-a"));
+		$("shi").val($(this).attr("data-area-b"));
+		$("qu").val($(this).attr("data-area-c"));
+		$("#detail").val($(this).attr("data-detail"));
+		$("#bcbtn").click(function(){
+			if($("#name").val()==""){
+				alert("您还未填写收货人姓名");
+			}
+			else if($("#phonenum").val()==""){
+				alert("您还未填写手机号码");
+			}
+			else if($("#detail").val()==""){
+				alert("您还未填写详细地址");
+			}
+			else{
+				$.ajax({ 
+					type: "post", 
+					url: "__ROOT__/index.php/Home/Index/editaddress", 
+					dataType: "json",
+					data:{phone:$("#phonenum").val(),name:$("#name").val(),area1:$("#sheng").val(),area2:$("#shi").val(),area3:$("#qu").val(),detail:$("#detail").val(),id:id},
+					success: function (data) { 
+						switch(data.state){
+							case "1":alert("更新成功");window.location.reload();break;
+							case "2":alert("更新失败");break;
+							case "3":alert("手机号不合法");break;
+							case "0":alert("您未登录");break;
+						}   
+					}, 
+					error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+				});
+			}
+		})
+	});
 //设为默认api
 $(".swmrbtn").click(function(){
- $.ajax({ 
-           type: "post", 
-           url: "__ROOT__/index.php/Home/Index/setmainaddress", 
-           dataType: "json",
-           data:{id:$(this).attr("data-addressid")},
-           success: function (data) { 
-                switch(data.state){
-                  case "1":alert("成功");window.location.reload();break;
-                  case "2":alert("网络异常");break;
-                  case "0":alert("您未登录");break;
-                }   
-           }, 
-           error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
-    });
+	$.ajax({ 
+		type: "post", 
+		url: "__ROOT__/index.php/Home/Index/setmainaddress", 
+		dataType: "json",
+		data:{id:$(this).attr("data-addressid")},
+		success: function (data) { 
+			switch(data.state){
+				case "1":alert("成功");window.location.reload();break;
+				case "2":alert("网络异常");break;
+				case "0":alert("您未登录");break;
+			}   
+		}, 
+		error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+	});
 });
 </script>
+</body>
+</html>

@@ -32,11 +32,21 @@
 			var n=f.spinner;
 			d.html(g);
 		});
+		
 		b("body").css({width:"100%",height:"100%",overflow:"hidden"});
-		b(window).load(function(){
-			b(d).fadeOut();
-			b("body").css({width:"",height:"",overflow:"visible"});
-		})
+		if(window.localStorage.isnotfirstvisit == "1"){
+			var mintimeout = setTimeout(function(){
+				b(d).fadeOut();
+				b("body").css({width:"",height:"",overflow:"visible"});
+			},2000);
+		}
+		else{
+			b(window).load(function(){
+				b(d).fadeOut();
+				b("body").css({width:"",height:"",overflow:"visible"});
+			})
+		}
+		
 		return this.css({
 			backgroundColor:f.bgColor,
 			zIndex:f.zIndex

@@ -28,7 +28,7 @@
 						<span>（已优惠：{$vo['order_totalprice']-$vo['order_payprice']}元）</span>
 					</div>
 					<div class="orderblock" style="right:0;top:0;">
-						<a href="#/myorderinfo">订单详情</a>
+						<a class="ddxqbtn" data-id="{$vo.order_id}">订单详情</a>
 						<a>申请售后</a>
 						<a>取消订单</a>
 					</div>
@@ -41,3 +41,9 @@
 
 
 </volist>
+<script>
+$("a.ddxqbtn").click(function(){
+	var url = "__ROOT__/index.php/Home/Index/myorderinfo/id/"+$(this).attr("data-id");
+	$("#orderajax").load(url);
+})
+</script>

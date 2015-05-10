@@ -12,6 +12,11 @@
      <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/public.less">
      <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/cart.less">
      <script src="__PUBLIC__/less/dist/less.js" type="text/javascript"></script>
+     <style>
+        .nav-step li{
+            width:25%;
+        }
+     </style>
   </head>
   <body>
   <include file="head" />
@@ -31,29 +36,30 @@
         <span><i class='fa fa-lightbulb-o fa-fw'></i>请选择适合您的支付方式</span>
       </div>
     </div>
-    <div class="centerbox" style="border-bottom:1px solid #e5e5e5;padding-bottom:20px;">
-      <div class="column three-fourth">
-        <div class="brand"><div><img src="__PUBLIC__/img/zhifubao.png" alt="支付宝logo"></div><span>支付宝</span></div>
+    <div class="centerbox">
+      <div class="column" style="border-bottom:1px solid #e5e5e5;padding-bottom:20px;">
+        <div class="brand" style="border:2px dashed #daae6c"><div><img src="__PUBLIC__/img/zhifubao.png" alt="支付宝logo"></div><span>支付宝</span></div>
         <div class="brand"><div><img src="__PUBLIC__/img/weixinzhifu.png" alt="微信支付logo"></div><span>微信支付</span></div>
-        <div class="brand"><div><img src="__PUBLIC__/img/caifutong.jpg" alt="财付通logo"></div><span>财付通</span></div>
         <div class="brand"><div><img src="__PUBLIC__/img/zhongguoyinlian.png" alt="中国银联logo"></div><span>中国银联</span></div>
         <div class="clear"></div>
       </div>
-      <div class="column one-fourth">
-        <div class="paymenttip">您需支付<span>298元<span></div>
-        <a class="btn greenbtn" style="margin-bottom:10px;">去支付</a>
-        <div class="clear"></div>
-        <a href="__ROOT__/index.php/Home/Index/order.html" class="btn">返回订单</a>
+      <div class="one-fourth" style="margin-left:75%;">
+          <div class="paymenttip">您需支付<span>298元<span></div>
+          <a class="btn greenbtn" style="margin-bottom:10px;">去支付</a>
+          <div class="clear"></div>
+          <a href="__ROOT__/index.php/Home/Index/order.html" class="btn">返回订单</a>
       </div>
     </div>
+    
     <div class="centerbox">
-      <table class="introtable">
+      <!-- <table class="introtable">
         <tr>
           <td class="introimg" style="padding:20px;"><img src="__PUBLIC__/img/erweima.png" alt="二维码" /></td>
           <td><span>关注cakefun官方微信公众平台，查询订单状态、获取最新优惠都有噢～</span></td>
           <td class="introimg"><img src="__PUBLIC__/img/weibo.jpg" alt="新浪微博" /></td>
           <td><span>我们的新浪微博账号是：cakefun我们的蛋糕坊，欢迎关注噢</span></td>
         </tr>
+      </table> -->
     </div>
   </div>
   <include file="foot" />

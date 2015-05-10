@@ -1,6 +1,7 @@
 
-// if(typeof window.localStorage === 'undefined'){}
-// else{
+   if(typeof window.localStorage === 'undefined'){}
+   else{
+        window.localStorage.setItem("isnotfirstvisit","1");
 //     if(window.localStorage.islogin=="1"&&islogin=="0"){
 //         var phone = window.localStorage.phone,
 //             password = window.localStorage.password;
@@ -21,7 +22,7 @@
 //     else{
 //         console.log("本地存储的数据是"+window.localStorage.islogin);
 //     }
-// }
+   }
 
 // $(".controllIcon").click(function(){
 //  //  function openmenu(it){
