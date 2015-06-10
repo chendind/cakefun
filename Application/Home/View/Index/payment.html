@@ -37,17 +37,37 @@
       </div>
     </div>
     <div class="centerbox">
-      <div class="column" style="border-bottom:1px solid #e5e5e5;padding-bottom:20px;">
-        <div class="brand" style="border:2px dashed #daae6c"><div><img src="__PUBLIC__/img/zhifubao.png" alt="支付宝logo"></div><span>支付宝</span></div>
-        <div class="brand"><div><img src="__PUBLIC__/img/weixinzhifu.png" alt="微信支付logo"></div><span>微信支付</span></div>
-        <div class="brand"><div><img src="__PUBLIC__/img/zhongguoyinlian.png" alt="中国银联logo"></div><span>中国银联</span></div>
-        <div class="clear"></div>
+      <div class="column" style="padding-bottom:20px;">
+        <div class="brand" style="border-right:1px solid #d8d8d8;">
+          <label for="zhifubaoradio">
+            <span>支付宝</span>
+            <div>
+              <img src="__PUBLIC__/img/zhifubao.png" alt="支付宝logo">
+            </div>
+            <div class="describe">
+              使用支付宝支付，请确定您拥有支付宝账号；<br />
+              我们会为您跳转到支付宝付款页面。
+            </div>
+            <div  class="paytyperadio"><input type="radio" name="paytype" id="zhifubaoradio" value="zhifubao" checked /></div>
+          </label>
+        </div>
+        <div class="brand">
+          <label for="weixinradio">
+            <span>微信支付</span><div><img src="__PUBLIC__/img/weixinzhifu.png" alt="微信支付logo"></div>
+            <div class="describe">
+              使用微信支付，请确定您已开通微信钱包；<br />
+              您需要通过手机微信扫描付款二维码完成支付；<br />
+              现在通过微信钱包付款，能够获得5%的返现。
+            </div>
+            <div class="paytyperadio"><input type="radio" name="paytype" id="weixinradio" value="weixin" /></div>
+          </label>
+        </div>
+        
       </div>
-      <div class="one-fourth" style="margin-left:75%;">
-          <div class="paymenttip">您需支付<span>298元<span></div>
-          <a class="btn greenbtn" style="margin-bottom:10px;">去支付</a>
-          <div class="clear"></div>
-          <a href="__ROOT__/index.php/Home/Index/order.html" class="btn">返回订单</a>
+      <div class="clear"></div>
+      <div class="quzhifu">
+          <div class="paymenttip">您需支付<span>298元</span><a class="btn greenbtn">去支付</a></div>
+          
       </div>
     </div>
     

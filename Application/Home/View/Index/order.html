@@ -77,18 +77,18 @@
           <input id="date" class="pinput date start" type="text">
         </div>
         <h4>配送时间</h4>
-        <select>
-            <option>10:00-12:00</option>
-            <option>12:00-15:00</option>
-            <option>15:00-17:00</option>
+        <select id="time">
+            <option value="0">10:00-12:00</option>
+            <option value="1">12:00-15:00</option>
+            <option value="2">15:00-17:00</option>
           </select>
-        <h4>开具发票<input type="checkbox" style="margin-left:5px;" /></h4>
+        <h4>开具发票<input id="invoicecheck" type="checkbox" style="margin-left:5px;" /></h4>
         <div>
-          <input class="pinput" type="text" style="width:30%;" placeholder="请输入发票抬头" />
+          <input id="invoicetitle" class="pinput" type="text" style="width:30%;" placeholder="请输入发票抬头" />
           发票内容
-          <select>
-            <option value="">食品</option>
-            <option value="">糕点</option>
+          <select id="invoicetype">
+            <option value="0">食品</option>
+            <option value="1">糕点</option>
           </select>
         </div>
         <h4>确定商品及优惠券</h4>
@@ -135,9 +135,14 @@
         </div>
         <div class="column one-third couponblock">
           <span>可以使用的优惠券</span>
-          <label><input type="radio" id="couponid0" name="coupon" data-a="0" data-b="0" checked />不使用优惠</label>
+          <label for="couponid0">
+            <input type="radio" id="couponid0" name="coupon" data-a="0" data-b="0" checked />不使用优惠
+          </label>
 <volist name="discount" id="vodis">
-<label><input type="radio" id="couponid{$key+1}" name="coupon" value="{$vodis.discount_id}" data-a="{$vodis.discount_least}" data-b="{$vodis.discount_price}" />{$vodis.discount_title} 满{$vodis.discount_least}减{$vodis.discount_price}</label>
+<label for="couponid{$key+1}">
+  <input type="radio" id="couponid{$key+1}" name="coupon" value="{$vodis.discount_id}" data-a="{$vodis.discount_least}" data-b="{$vodis.discount_price}" />
+  {$vodis.discount_title} 满{$vodis.discount_least}减{$vodis.discount_price}
+</label>
 
 </volist>
 
@@ -151,7 +156,7 @@
         </div>
         <div class="clear"></div>
       </div>
-      <a href="__ROOT__/index.php/Home/Index/payment.html" class="btn greenbtn" style="float:right;margin-left:20px;">在线支付</a>
+      <a id="paybtn" class="btn greenbtn" style="float:right;margin-left:20px;">在线支付</a>
       <a href="__ROOT__/index.php/Home/Index/cart.html" class="btn" style="float:right;">返回购物车</a>
       
     </div>
@@ -188,6 +193,28 @@ $("input[name='coupon']").bind('change',function(){
       $("#hejivalue").text("￥ "+totalprice);
     }
     else{}
+
+})
+$("#invoicetitle").one('keyup',function(){
+    var title = $(this).val();
+    if(title){
+      $("#invoicecheck").prop("checked",true);
+    }
+    else{
+      $("#invoicecheck").prop("checked",false);
+    }
+})
+//支付按钮点击
+$("#paybtn").bind('click',function(e){
+  e.preventDefault;
+    var date = $("#date").val(),
+        time = $("#time").val(),
+        invoicecheck = $("#invoicecheck").is("checked"),
+        invoicetitle = $("#invoicetitle").val(),
+        invoicetype = $("#invoicetype").val(),
+        coupontype = $("input[name='coupon']").val();
+        console.log(date,time,invoicecheck,invoicetitle,invoicetype,coupontype);
+
 
 })
 </script>

@@ -13,7 +13,7 @@
      <!--[if lt IE 9]><link href="/cakefox/Public/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
-     <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
+
      
   </head>
   <body ng-controller="homeCtrl">
@@ -126,7 +126,8 @@
 			</ul>
 	</div>
 </div>
-
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0"></script>
+     <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
  <script src="/cakefox/Public/js/jquery.lazyload.js"></script>
@@ -149,7 +150,11 @@ $(window).scroll(function(){
   }
 })
 var islogin = <?php echo ($islogin); ?>;
-
+var myCity = new BMap.LocalCity();  
+    myCity.get(foo);
+    function foo(result){
+      console.log(result.name);
+    }
 </script>
 
  <script src="/cakefox/Public/js/public.js"></script>

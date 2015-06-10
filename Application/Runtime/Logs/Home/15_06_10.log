@@ -1,0 +1,1271 @@
+[ 2015-06-10T21:38:47+08:00 ] ::1 /cakefox/index.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005863s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined variable: goods /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007326s ]
+
+[ 2015-06-10T21:38:47+08:00 ] ::1 /cakefox/index.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined variable: goods /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2015-06-10T21:39:18+08:00 ] ::1 /cakefox/index.php/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 31 行.
+NOTIC: [8] Undefined variable: goods /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 99 行.
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006318s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000138s ]
+
+[ 2015-06-10T21:39:20+08:00 ] ::1 /cakefox/index.php/Home/Index/mall.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/1d39ba3019c6c9d083fbb2536a492144.php 第 27 行.
+NOTIC: [8] Undefined variable: cakes /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/1d39ba3019c6c9d083fbb2536a492144.php 第 94 行.
+NOTIC: [8] Undefined variable: xidian /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/1d39ba3019c6c9d083fbb2536a492144.php 第 104 行.
+NOTIC: [8] Undefined variable: jiushui /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/1d39ba3019c6c9d083fbb2536a492144.php 第 114 行.
+NOTIC: [8] Undefined variable: allgoods /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/1d39ba3019c6c9d083fbb2536a492144.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000128s ]
+
+[ 2015-06-10T21:39:25+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2015-06-10T21:39:32+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000101s ]
+
+[ 2015-06-10T21:39:36+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2015-06-10T21:39:50+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2015-06-10T21:40:52+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2015-06-10T21:41:18+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2015-06-10T21:47:13+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000514s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000241s ]
+
+[ 2015-06-10T21:47:58+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012066s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2015-06-10T21:48:37+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000083s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000127s ]
+
+[ 2015-06-10T21:51:53+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014212s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2015-06-10T21:52:10+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011516s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2015-06-10T21:54:24+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2015-06-10T21:55:28+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000269s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000233s ]
+
+[ 2015-06-10T21:56:23+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000167s ]
+
+[ 2015-06-10T21:56:31+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2015-06-10T21:56:36+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-06-10T21:56:50+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2015-06-10T21:56:58+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000190s ]
+
+[ 2015-06-10T21:57:06+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000236s ]
+
+[ 2015-06-10T21:57:29+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2015-06-10T21:58:08+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2015-06-10T21:59:05+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2015-06-10T21:59:28+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2015-06-10T22:03:02+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000282s ]
+
+[ 2015-06-10T22:03:24+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000157s ]
+
+[ 2015-06-10T22:05:29+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2015-06-10T22:06:11+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2015-06-10T22:07:35+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2015-06-10T22:25:28+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005814s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000134s ]
+
+[ 2015-06-10T22:25:30+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000245s ]
+
+[ 2015-06-10T22:25:46+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2015-06-10T22:27:47+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000149s ]
+
+[ 2015-06-10T22:28:05+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2015-06-10T22:28:17+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2015-06-10T22:28:36+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2015-06-10T22:29:02+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010925s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2015-06-10T22:32:38+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000168s ]
+
+[ 2015-06-10T22:34:29+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2015-06-10T22:46:38+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2015-06-10T22:47:04+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000222s ]
+
+[ 2015-06-10T22:47:30+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-06-10T22:47:44+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2015-06-10T22:48:27+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2015-06-10T22:48:46+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2015-06-10T22:49:00+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000076s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
+
+[ 2015-06-10T22:49:01+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2015-06-10T22:49:12+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-06-10T22:49:44+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000349s ]
+
+[ 2015-06-10T22:49:51+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2015-06-10T22:50:09+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2015-06-10T22:50:53+08:00 ] ::1 /cakefox/index.php/Home/Index/payment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Common/functions.php 第 1261 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Index/loginwindow.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory /Applications/MAMP/htdocs/public/cakefox/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined variable: islogin /Applications/MAMP/htdocs/public/cakefox/Application/Runtime/Cache/Home/ebbd81760b760c36ff225cebd467e34a.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
