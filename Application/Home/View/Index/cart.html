@@ -16,6 +16,23 @@
         .nav-step li{
             width:25%;
         }
+        .column h1{
+          font-size:30px;
+          padding:20px 0;
+          margin:0;
+        }
+        .column h2{
+          font-size:20px;
+          margin:0;
+        }
+        .column h2 a{
+          color:#44a1da;
+        }
+        #noitem{
+          display: none;
+          padding-top:30px;
+          height:350px;
+        }
      </style>
   </head>
   <body>
@@ -38,7 +55,16 @@
     </div>
 </div>
 <div class="fullbox">
-    <div class="centerbox">
+    <div class="centerbox" id="noitem">
+      <div class="column one-half">
+        <img class="logocat" src="__PUBLIC__/logo/logo1.png" alt="aboutheader" />
+      </div>
+      <div class="column one-half">
+        <h1>啊哦，<br />您的购物车里还什么都没有</h1>
+        <h2>去<a href="__ROOT__/index.php/Home/Index/mall.html">商城</a>或<a href="__ROOT__/index.php/Home/Index/customize.html">工坊</a>逛逛</h2>
+      </div>
+    </div>
+    <div class="centerbox" id="cartcont">
       <div class="clear line" style="margin:0;border-bottom-color:#daae6c"></div>
       <div class="cont2" style="border-bottom:1px solid #daae6c;margin-bottom:20px;">
         <table class="ptable" style="border-bottom:1px dashed #daae6c">
@@ -66,9 +92,9 @@
 
             
             <td>{$vocart.singleprice}</td>
-            <td><a class="subicon"><i class="fa fa-minus-square-o fa-fw"></i></a><span style="padding:0 5px;">{$vocart.cart_number}</span><a class="addicon"><i class="fa fa-plus-square-o fa-fw"></i></a></td>
+            <td><a class="subicon"><i class="fa fa-minus-square-o fa-fw"></i></a><span class="itemnumber" data-itemid="{$vocart.cart_id}" data-price="{$vocart.singleprice}" style="padding:0 5px;">{$vocart.cart_number}</span><a class="addicon"><i class="fa fa-plus-square-o fa-fw"></i></a></td>
             <td>{$vocart['cart_number']*$vocart['singleprice']}</td>
-            <td>删除</td>
+            <td><a class="deleteitembtn" data-itemid="{$vocart.cart_id}">删除</a></td>
           </tr>
 
 </volist>
@@ -80,7 +106,7 @@
         
         <div class="column two-third price">
             
-            <label class="total">合计<span>￥ 557</span></label>
+            <label class="total">合计￥ <span id="totalpricevalue">{$totalprice}</span></label>
         </div>
         <div class="clear"></div>
       </div>
@@ -99,22 +125,94 @@
 <!-- <include file="loginwindow" /> -->
 
 <script>
+if({$cart|count}==0){
+  $("#cartcont").hide();
+  $("#noitem").show();
+}
   $(".addicon").click(function(){
-     var num = parseInt($(this).siblings('span').text());
-     if(num<10){
-       num++;
-       $(this).siblings('span').text(num);
+     var span = $(this).siblings('span');
+     var num = parseInt(span.text());
+     if(num<20){
+       $.ajax({
+          type:'post',
+          url:'__ROOT__/index.php/Home/Index/addnumber',
+          dataType: "json",
+          data:{id:span.attr("data-itemid")},
+          success: function (data) { 
+            switch(data.state) {
+              case "1":
+                num++;
+                span.text(num);
+                var totalprice = 0;
+                $("span.itemnumber").each(function(){
+                  var xiaoji = $(this).attr('data-price')*$(this).text();
+                  $(this).parents("td").next("td").text(xiaoji);
+                  totalprice = totalprice + xiaoji;
+                })
+                $("#totalpricevalue").text(totalprice);
+              break ;
+              case "2":;break;
+              case "0":alert("登录超时");window.location.reload();break;
+            }
+          }, 
+          error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+       })
      }
      else{}
   })
   $(".subicon").click(function(){
-     var num = parseInt($(this).siblings('span').text());
+    var span = $(this).siblings('span');
+     var num = parseInt(span.text());
+
      if(num>1){
-       num--;
-       $(this).siblings('span').text(num);
+       $.ajax({
+          type:'post',
+          url:'__ROOT__/index.php/Home/Index/reducenumber',
+          dataType: "json",
+          data:{id:span.attr("data-itemid")},
+          success: function (data) { 
+            switch(data.state) {
+              case "1":
+                num--;
+                span.text(num);
+                var totalprice = 0;
+                $("span.itemnumber").each(function(){
+                  var xiaoji = $(this).attr('data-price')*$(this).text();
+                  $(this).parents("td").next("td").text(xiaoji);
+                  totalprice = totalprice + xiaoji;
+                })
+                $("#totalpricevalue").text(totalprice);
+                break ;
+              case "2":;break;//失败
+              case "3":;break;//不能低于1
+              case "0":alert("登录超时");window.location.reload();break;
+            }
+          }, 
+          error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+       })
      }
      else{}
   })
+
+ $(".deleteitembtn").click(function(){
+    if(confirm("您确定删除该商品吗？")){
+      var id = $(this).attr("data-itemid");
+      $.ajax({
+        type:'post',
+            url:'__ROOT__/index.php/Home/Index/delcartgood',
+            dataType: "json",
+            data:{id:id},
+            success: function (data) { 
+              switch(data.state) {
+                case "1":window.location.reload();break ;//成功
+                case "2":;break;//失败
+                case "0":alert("登录超时");window.location.reload();break;
+              }
+            }, 
+            error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+      })
+    }
+ })
 </script>
 
   </body>

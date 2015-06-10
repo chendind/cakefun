@@ -20,9 +20,11 @@ canvas{
 .canvas{
   width:500px;
   height:500px;
-  
+  position: relative;
   perspective: 10100px;
-    perspective-origin: 52% 75%;
+  perspective-origin: 52% 75%;
+  -webkit-perspective: 10100px;
+  -webkit-perspective-origin: 52% 75%;
   img{
     display:block;
     position:absolute;
@@ -114,6 +116,10 @@ canvas{
   top:20px;
   left:20px;
   transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(38deg) skew(0deg, 0deg);
+  -webkit-transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(38deg) skew(0deg, 0deg);
+  -o-transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(38deg) skew(0deg, 0deg);
+  -moz-transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(38deg) skew(0deg, 0deg);
+  -ms-transform: translate3d(67px, 35px, 500px) scale3d(0.9, 0.9, 5) rotateX(53deg) rotateY(0deg) rotateZ(38deg) skew(0deg, 0deg);
   .tr{
     width:100%;
     height: 12.5%;

@@ -11,6 +11,7 @@
      <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
      <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/public.less">
      <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/user.less">
+     <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/userinfo.less">
      <script src="__PUBLIC__/less/dist/less.js" type="text/javascript"></script>
   </head>
   <body ng-controller="UserCtrl">
@@ -18,12 +19,27 @@
   <div class="fullbox" style="margin-top:20px;">
     <div class="centerbox">
       <div class="column one-fourth">
-        <a class="portrait" href="__ROOT__/index.php/Home/Index/baseinfo.html"><img src="__ROOT__/Uploads/{$userimg}" alt="portrait"></a>
-        <h3 class="username">Mr.Leo</h3>
-        <ul class="userdetail">
-          <li><i class="fa fa-fw fa-map-marker"></i>杭州市</li>
-          <li><i class="fa fa-fw fa-envelope-o"></i>511912708@qq.com</li>
-          <li><i class="fa fa-fw fa-birthday-cake"></i>1994年05月02日</li>
+        <a class="portrait" href="__ROOT__/index.php/Home/Index/baseinfo.html"><img src="__ROOT__/Uploads/{$user.user_img}" alt="portrait"></a>
+        <h3 class="username">{$user.user_name}</h3>
+        <ul class="userdetail"><li><i class="fa fa-fw fa-map-marker"></i><empty name="address">您的地址尚未 <a href="#" style="color:#0099FF">设置</a>
+<else /> 
+{$address}
+</empty> 
+</li>
+          <li><i class="fa fa-fw fa-envelope-o"></i><empty name="user.user_email">您的邮箱尚未 <a href="#" style="color:#0099FF">设置</a>
+<else /> 
+{$user.user_email}
+</empty> 
+
+          </li>
+          <li><i class="fa fa-fw fa-birthday-cake"></i><empty name="user.user_email">您的生日尚未 <a href="#" style="color:#0099FF">设置</a>
+<else /> 
+{$user.user_birth}
+</empty>             
+
+
+
+          </li>
         </ul>
         <div class="userstats">
           <a href="">
@@ -31,11 +47,11 @@
             <span>收藏</span>
           </a>
           <a href="__ROOT__/index.php/Home/Index/myorder.html">
-            <b>3</b>
+            <b>{$ordernumber}</b>
             <span>订单</span>
           </a>
           <a href="__ROOT__/index.php/Home/Index/coupon.html">
-            <b>2</b>
+            <b>{$discountnumber}</b>
             <span>优惠券</span>
           </a>
         </div>
@@ -85,23 +101,81 @@
             您的账户等级为0；定制第一款蛋糕后，您的账户将升级为lv1会员；成为lv1会员，我们会在每年您生日时，赠送您20元Cakewith.ME优惠券。
           </div>
         </div>
-        <h3 class="title" style="margin-top:20px;">最近的一笔订单</h3>
-        <div class="cont">
-          
-        </div>
-        <h3 class="title" style="margin-top:20px;">最近浏览</h3>
-        <div class="cont">
 
+
+        <h3 style="margin-top:20px;">最近的一笔订单</h3>
+        <h3 class="title ordertitle" style="margin-top:10px;">
+          <span style="font-weight:normal;font-size:14px;">订单号：{$order.order_id}</span>
+          <span style="float:right;">配送时间：{$order.order_sendtime}</span>
+        </h3>
+        <div class="cont" style="padding:0;">
+          <dl class="dlitem">
+            <dd style="padding:0;">
+              <div class="ordergroup">
+      <volist name="order['detail']" id="sub">
+
+                  <div class="orderlist">
+                    <table>
+
+                      <tr>
+
+                        <td style="width:15%;"><img style="margin:0;" src="__ROOT__/Uploads/{$sub.img}" alt="{$sub.name}"></td>
+                        <td style="width:20%;">{$sub.name}</td>
+                        <td style="width:10%;">{$sub.ogl_cakesize}磅</td>
+                        <td style="width:10%;">￥{$sub.ogl_singleprice}</td>
+                        <td style="width:10%;">×{$sub.ogl_number}</td>
+                      </tr>
+
+                    </table>
+                  </div>
+ </volist>
+
+                  <div class="orderblock" style="right:20%;top:0;">
+                    <span id="price">{$order.order_payprice}</span>
+                    <span>（已优惠：{$order['order_totalprice']-$order['order_payprice']}元）</span>
+                  </div>
+                  <div class="orderblock" style="right:0;top:0;">
+                    <a class="ddxqbtn" href="__ROOT__/index.php/Home/Index/myorder.html">我的订单</a>
+                    <a href="__ROOT__/index.php/Home/Index/complain&right.html">申请售后</a>
+                    <a>取消订单</a>
+                  </div>
+              </div>
+            </dd>
+          </dl>
         </div>
+
+
+
+        <h3 style="margin-top:20px;">最近浏览</h3>
+        <a class="goodpad" href="__ROOT__/index.php/Home/Index/itemdetail/id/{$vogoods.ig_gid}">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/cake5.jpg" alt=""></div>
+          <div class="goodms">
+            <span>它说它叫杰瑞</span>
+            <span>￥168</span>
+          </div>
+        </a>
+        <a class="goodpad" href="__ROOT__/index.php/Home/Index/itemdetail/id/{$vogoods.ig_gid}">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/cake6.jpg" alt=""></div>
+          <div class="goodms">
+            <span>大卸4*4块</span>
+            <span>￥188</span>
+          </div>
+        </a>
+        <a class="goodpad" href="__ROOT__/index.php/Home/Index/itemdetail/id/{$vogoods.ig_gid}">
+          <div class="goodimgbox"><img src="__PUBLIC__/img/redwire.png" alt=""></div>
+          <div class="goodms">
+            <span>马猴烧酒</span>
+            <span>￥2333</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
   <include file="foot" />
 <script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
- <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
- <script src="__PUBLIC__/js/angular-animate.min.js"></script>
  <script src="__PUBLIC__/js/user.js"></script>
  <script src="__PUBLIC__/js/public.js"></script>
+ <script src="__PUBLIC__/js/itemlist.js"></script>
  <!--<script src="__PUBLIC__/js/md5.js"></script> -->
 <!-- <include file="loginwindow" /> -->
 

@@ -23,16 +23,17 @@
 						  
 						</table>
 					</div>
+					</volist>
 					<div class="orderblock" style="right:20%;top:0;">
 						<span id="price">{$vo.order_payprice}</span>
 						<span>（已优惠：{$vo['order_totalprice']-$vo['order_payprice']}元）</span>
 					</div>
 					<div class="orderblock" style="right:0;top:0;">
 						<a class="ddxqbtn" data-id="{$vo.order_id}">订单详情</a>
-						<a>申请售后</a>
+						<a href="__ROOT__/index.php/Home/Index/complain&right.html">申请售后</a>
 						<a>取消订单</a>
 					</div>
-					 </volist>
+					 
 				</div>
 			</dd>
 		</dl>

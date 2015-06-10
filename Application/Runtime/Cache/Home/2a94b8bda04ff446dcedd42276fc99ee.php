@@ -14,79 +14,69 @@
      <link rel="stylesheet/less" type="text/css" href="/cakefox/Public/css/public.less">
      <script src="/cakefox/Public/less/dist/less.js" type="text/javascript"></script>
      <script src="/cakefox/Public/js/jquery-1.11.1.min.js"></script>
-     <script src="/cakefox/Public/js/fakeloader.js"></script>
+     
   </head>
   <body ng-controller="homeCtrl">
-    <!-- <div class="loading"></div> -->
-    <div id="fakeloader"></div>
-    <script>
-        $("#fakeloader").fakeLoader({
-            zIndex:"9999",//
-            bgColor:"#fff", //加载时的背景颜色
-          });
-     </script>
-    <div class="header" style="" controller="HeaderController">
-    <div class="centerbox" style="height:28px;overflow:visible;">
-      <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
-      <ul class="header-nav" style="margin-left:200px;">
-        <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/customize.html">定制蛋糕</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/mall.html">商城</a></li>
-        <li><a href="/cakefox/index.php/Home/Index/about.html">关于我们</a></li>
-      </ul>
-      <ul class="header-nav" style="float:right;">
-       <?php if($islogin == 0 ): ?><!-- 未登录 -->
-          <li>
-            <a href="/cakefox/index.php/Home/Index/login.html" style="padding:4px;">
-              <span class="headusername">登录</span>
-            </a>
-          </li>
-          <li>
-            <a href="/cakefox/index.php/Home/Index/register.html" style="padding:4px;">
-              <span class="headusername">注册</span>
-            </a>
-          </li>
+   
+    <div class="header" style="">
+  <div class="centerbox" style="height:28px;overflow:visible;">
+    <div class="logo-sm"><img src="/cakefox/Public/img/cakewithme2.png" /></div>
+    <ul class="header-nav" style="margin-left:200px;">
+      <li><a href="/cakefox/index.php/Home/Index/index.html">主页</a></li>
+      <li><a href="/cakefox/index.php/Home/Index/customize.html">定制蛋糕</a></li>
+      <li><a href="/cakefox/index.php/Home/Index/mall.html">商城</a></li>
+      <li><a href="/cakefox/index.php/Home/Index/about.html">关于我们</a></li>
+    </ul>
+    <ul class="header-nav" style="float:right;">
+     <?php if($islogin == 0 ): ?><!-- 未登录 -->
+      <li>
+        <a href="/cakefox/index.php/Home/Index/login.html" style="padding:4px;">
+          <span class="headusername">登录</span>
+        </a>
+      </li>
+      <li>
+        <a href="/cakefox/index.php/Home/Index/register.html" style="padding:4px;">
+          <span class="headusername">注册</span>
+        </a>
+      </li>
       <!-- 未登录 -->
 
-    <?php else: ?> 
-<!-- 已登录 -->
-          <li>
-            <a href="/cakefox/index.php/Home/Index/user.html">
-              <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($userimg); ?>" />
-              <span class="headusername"><?php echo ($username); ?></span>
-            </a>
-          </li>
-          <li id="userinfo">
-            <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
-              <i class="fa fa-fw fa-cog"></i>
-            </a>
-            <div class="headdialogbox" id="userinfodialogbox" style="display:none;">
-              <ul>
-                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/baseinfo">个人资料</a></li>
-                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/account">账户设置</a></li>
-                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/address">送货地址</a></li>
-                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/myorder">我的订单</a></li>
-                <li><a href="/cakefox/index.php/Home/Index/userinfo.html#/coupon">优惠码</a></li>
-              </ul>
-            </div> 
-          </li>
-          <li id="cart">
-            <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
-             <div class="headdialogbox" id="cartdialogbox" style="display:none;">
-              <div class="loadingbox">
-                <i class="fa fa-spinner fa-spin"></i>
-              </div>
-              <div class="cartdialog"></div>
-            </div> 
-          </li>
-        <!-- 已登录 --><?php endif; ?>   
-      
-
-
-       
-      </ul>
-      </div>
-    </div>
+      <?php else: ?> 
+      <!-- 已登录 -->
+      <li>
+        <a href="/cakefox/index.php/Home/Index/user.html">
+          <img class="headuserimg" id="user_img" src="/cakefox/Uploads/<?php echo ($userimg); ?>" />
+          <span class="headusername"><?php echo ($username); ?></span>
+          <div class="clear"></div>
+        </a>
+      </li>
+      <li id="userinfo">
+        <a href="/cakefox/index.php/Home/Index/userinfo.html" style="padding:4px;">
+          <i class="fa fa-fw fa-cog"></i>
+        </a>
+        <div class="headdialogbox" id="userinfodialogbox" style="display:none;">
+          <ul>
+            <li><a href="/cakefox/index.php/Home/Index/baseinfo.html">个人资料</a></li>
+            <li><a href="/cakefox/index.php/Home/Index/account.html">账户设置</a></li>
+            <li><a href="/cakefox/index.php/Home/Index/address.html">送货地址</a></li>
+            <li><a href="/cakefox/index.php/Home/Index/myorder.html">我的订单</a></li>
+            <li><a href="/cakefox/index.php/Home/Index/coupon.html">优惠码</a></li>
+          </ul>
+        </div> 
+      </li>
+      <li id="cart">
+        <a href="/cakefox/index.php/Home/Index/cart.html" style="padding:4px;"><i class="fa fa-fw fa-shopping-cart"></i></a>
+        <div class="headdialogbox" id="cartdialogbox" style="display:none;">
+          <div class="loadingbox">
+            <i class="fa fa-spinner fa-spin"></i>
+          </div>
+          <div class="cartdialog"></div>
+        </div> 
+      </li>
+      <!-- 已登录 --><?php endif; ?>   
+  </ul>
+</div>
+</div>
 </div>
 
     <div class="fullbox tumbbox" style="z-index:10;">
@@ -99,19 +89,6 @@
           <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
         </div>
       </div>
-      <!-- <div class="p-centerbox">
-        <div class="navbox">
-          <table class="nav">
-            <tr>
-              <td><a href="/cakefox/index.php/Home/Index/index.html">主页</a></td>
-              <td><a href="/cakefox/index.php/Home/Index/customize.html">定制</a></td>
-              <td><a href=""><img class="logo" src="/cakefox/Public/img/logo@2x.png" alt="logo"></a></td>
-              <td><a href="">商城</a></td>
-              <td><a href="">关于我们</a></td>
-            </tr>
-          </table>
-        </div>
-      </div> -->
     </div> 
     
 
@@ -119,32 +96,18 @@
     <div class="fullbox goodpadbox">
       <div class="centerbox">
 
-        <?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vogoods): $mod = ($i % 2 );++$i;?><div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Uploads/<?php echo ($vogoods["img"]); ?>" alt=""></div>
+        <?php if(is_array($goods)): $i = 0; $__LIST__ = $goods;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vogoods): $mod = ($i % 2 );++$i;?><a class="goodpad" href="/cakefox/index.php/Home/Index/itemdetail/id/<?php echo ($vogoods["ig_gid"]); ?>">
+          <div class="goodimgbox"><img data-original="/cakefox/Uploads/<?php echo ($vogoods["img"]); ?>" src="/cakefox/Public/img/transparent.gif" class="lazy" alt=""></div>
+          <div class="goodms">
             <span><?php echo ($vogoods["detail"]["good_name"]); ?></span>
             <span>￥<?php echo ($vogoods["detail"]["good_price"]); ?></span>
-        </div><?php endforeach; endif; else: echo "" ;endif; ?>
+          </div>
+            
+        </a><?php endforeach; endif; else: echo "" ;endif; ?>
       </div>
     </div>
-    <div class="fullbox goodpadbox">
-      <div class="centerbox">
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Public/img/gaodian1.jpg" alt="核桃心酥"></div>
-          <span>果酪</span>
-          <span>￥12</span>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Public/img/gaodian2.jpg" alt="核桃心酥"></div>
-          <span>柠檬片</span>
-          <span>￥12</span>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="/cakefox/Public/img/gaodian3.jpg" alt="核桃心酥"></div>
-          <span>老婆饼</span>
-          <span>￥15</span>
-        </div>
-      </div>
-    </div>
+
+    
 <div class="fullbox foot" style="margin-top:30px;">
 	<div class="centerbox" style="border-top:1px solid #eee;">
 			<ul class="footleft">
@@ -164,10 +127,14 @@
 	</div>
 </div>
 
-<!--<script src="/cakefox/Public/js/slide.js"></script>-->
  <script src="/cakefox/Public/js/angular-1.3.min.js"></script>
  <script src="/cakefox/Public/js/angular-animate.min.js"></script>
+ <script src="/cakefox/Public/js/jquery.lazyload.js"></script>
+ <script src="/cakefox/Public/js/itemlist.js"></script>
 <script>
+$("img.lazy").lazyload({
+         effect : "fadeIn"
+     });
 var h = $(window).height();
 $(".tumbbox").css("height",h);
 $(".angle-left,.angle-right").css("top",h/2-40)
@@ -182,15 +149,12 @@ $(window).scroll(function(){
   }
 })
 var islogin = <?php echo ($islogin); ?>;
+
 </script>
 
  <script src="/cakefox/Public/js/public.js"></script>
 <script src="/cakefox/Public/js/tumbflash.js"></script>
 <script src="/cakefox/Public/js/md5.js"></script>
-
-<!--  -->
-
-
 
   </body>
 

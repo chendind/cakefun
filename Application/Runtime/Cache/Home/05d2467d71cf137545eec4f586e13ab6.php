@@ -5,8 +5,8 @@
         <li><a>第一步</a></li>
         <li><a>第二步</a></li>
         <li><a>第三步</a></li>
-        <li class="stephere"><a>第四步</a></li>
-        <li><a>完成！</a></li>
+        <li><a>第四步</a></li>
+        <li class="stephere"><a>完成！</a></li>
       </ul>
   </div>
 </div>
@@ -22,93 +22,95 @@
       <div class="rightbox" id="rightbox">
           <!-- <img id="bgimg" class="bgimg" src="/cakefox/Public/img/top-hetao.png" alt=""> -->
           
-          <div id="upload" class="canvas" style="border:1px solid #eee;">
+          <div id="upload">
             <div id="canvasbox">
               <canvas id="bgcanvas" width="500" height="500"></canvas>
             </div>
-            
-            <div data-d="{{d[0]}}" class="canvastable">
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-              </div>
-              <div class="tr">
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
-                <div class="td"></div>
+            <div class="canvas">
+              <div data-d="{{d[0]}}" class="canvastable">
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
+                <div class="tr">
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                  <div class="td"></div>
+                </div>
               </div>
             </div>
+            
           </div>
       </div>
       <div class="leftbox">
@@ -178,7 +180,8 @@
           
         <div class="controllbox">
           <div class="button leftbtn" ng-click="tostep3()">上一步</div>
-          <div id="laststep" class="button rightbtn">下一步</div>
+          <div id="laststep" class="button rightbtn">完成</div>
+          <div  id="laststepwait" class="button rightbtn" style="display:none;"><i class="fa fa-fw fa-spinner fa-spin"></i>正在为您生成蛋糕，请稍后</div>
         </div>
       </div>
     </div>
@@ -241,9 +244,13 @@ var     bgcanvas = document.getElementById("bgcanvas"),
   })
 var hccanvas = document.createElement("canvas");
   $("#laststep").click(function(){
+        $(this).hide();
+        $("#laststepwait").show();
+
         var hcctx = hccanvas.getContext("2d");
         hccanvas.height = 500;
         hccanvas.width = 500;
+
         var canvasnum = parseInt($("#canvasbox").children().length)-1;
        $("#canvasbox").children().each(function(index){
           var img = new Image(),
@@ -259,9 +266,12 @@ var hccanvas = document.createElement("canvas");
                       url: '/cakefox/index.php/Home/Index/savebase64img',
                       data: {diyimg:pic},
                       dataType: 'json',
-                      success: function (msg) {
+                      success: function () {
                       }, 
-                     error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);} 
+                     error: function (XMLHttpRequest, textStatus, errorThrown) {console.log(textStatus);},
+                     complete:function(){
+                        window.location.href="/cakefox/index.php/Home/Index/complete.html";
+                     }
                 });
             }
           }

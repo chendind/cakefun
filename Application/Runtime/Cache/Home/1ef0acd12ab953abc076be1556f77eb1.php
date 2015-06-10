@@ -75,8 +75,52 @@
 </div>
 </div>
 
-  <div ng-view></div>
-  <div style="margin-bottom:100px"></div>
+<div>
+<div class="fullbox" style="border-bottom:1px solid #e5e5e5;">
+    <div class="centerbox">
+      <ul class="nav-step">
+        <li><a>初始化</a></li>
+        <li><a>第一步</a></li>
+        <li><a>第二步</a></li>
+        <li><a>第三步</a></li>
+        <li><a>第四步</a></li>
+        <li class="stephere"><a>完成！</a></li>
+      </ul>
+  </div>
+</div>
+
+<div class="fullbox">
+    <div class="centerbox">
+      <div class="tips">
+        <span><i class='fa fa-lightbulb-o fa-fw'></i>您已成功定制蛋糕！</span>
+      </div>
+    </div>
+</div>
+<div class="fullbox">
+    <div class="centerbox">
+      <div class="rightbox" id="rightbox">
+          
+          <div class="canvas">
+            <img src="/cakefox/001.jpg" alt="定制蛋糕图片" />
+          </div>
+      </div>
+      <div class="leftbox">
+        
+          <div class="controllbox">
+            <div class="dashedbox">
+              <p>我们已经将您定制的蛋糕放入您的购物车中，您可以在<a href="/cakefox/index.php/Home/Index/cart.html">购物车</a>中结算</p>
+              <p>我们的商城里还有美味可口的小糕点和酒水，去<a href="/cakefox/index.php/Home/Index/mall.html">商城</a>逛逛</p>
+            </div>
+          </div>
+          
+        <div class="controllbox">
+          
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+ <div style="margin-bottom:100px"></div>
   <div class="fullbox foot" style="margin-top:30px;">
 	<div class="centerbox" style="border-top:1px solid #eee;">
 			<ul class="footleft">

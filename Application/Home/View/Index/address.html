@@ -89,25 +89,25 @@
  				<dl class="dlitem">
  					<dt><span>收货人姓名</span></dt>
  					<dd>
- 						<input id="name" class="pinput" type="text" />
+ 						<input id="name" class="pinput" type="text" autocomplete="off" />
  					</dd>
  				</dl>
  				<dl class="dlitem">
  					<dt><span>手机号码</span></dt>
  					<dd>
- 						<input id="phonenum" class="pinput" type="text" />
+ 						<input id="phonenum" class="pinput" type="text" autocomplete="off" />
  					</dd>
  				</dl>
  				<dl class="dlitem">
  					<dt><span>地区</span></dt>
  					<dd>
- 						<select id="sheng">
+ 						<select id="sheng" autocomplete="off">
  							<option value="浙江省">浙江省</option>
  						</select>
- 						<select id="shi">
+ 						<select id="shi" autocomplete="off">
  							<option value="杭州市">杭州市</option>
  						</select>
- 						<select id="qu">
+ 						<select id="qu" autocomplete="off">
  							<option value="西湖区">西湖区</option>
  							<option value="拱墅区">拱墅区</option>
  							<option value="江干区">江干区</option>
@@ -115,14 +115,15 @@
  							<option value="下城区">下城区</option>
  						</select>
  					</dd>
+ 					<a style="color:#4183c4;font-size:12px;margin-left:5px;" href="__ROOT__/index.php/Home/Index/buy&delivery.html">查看配送范围</a>
  				</dl>
  				<dl class="dlitem">
  					<dt><span>详细地址</span></dt>
  					<dd>
- 						<input id="detail" class="pinput" type="text" />
+ 						<input id="detail" class="pinput" type="text" autocomplete="off" />
  						<div class="clear"></div>
- 						<a id="zjbtn" class="btn" style="margin-top:10px;">增加</a>
- 						<a id="bcbtn" class="btn" style="margin-top:10px;display:none;">保存</a>
+ 						<a id="zjbtn" class="btn" style="margin-top:10px;">保存</a>
+ 						<a id="bcbtn" class="btn" style="margin-top:10px;display:none;">编辑</a>
  					</dd>
  				</dl>
  			</div>
@@ -195,9 +196,9 @@ $("#zjbtn").click(function(){
 		$("#bcbtn").show();
 		$("#name").val($(this).attr("data-name"));
 		$("#phonenum").val($(this).attr("data-phone"));
-		$("sheng").val($(this).attr("data-area-a"));
-		$("shi").val($(this).attr("data-area-b"));
-		$("qu").val($(this).attr("data-area-c"));
+		$("#sheng").val($(this).attr("data-area-a"));
+		$("#shi").val($(this).attr("data-area-b"));
+		$("#qu").val($(this).attr("data-area-c"));
 		$("#detail").val($(this).attr("data-detail"));
 		$("#bcbtn").click(function(){
 			if($("#name").val()==""){

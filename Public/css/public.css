@@ -2,10 +2,10 @@
     font-family: "cakefox";
     src: url('./font/cakefox.min.ttf');
 }
-@font-face {
+/*@font-face {
   font-family:"lantingqianhei";
   src:url("./font/lantingqianhei.ttf");
-}
+}*/
 body,div,a,h3,p,dd,dl,dt,ul{padding:0;margin:0;}
 body,input,button{
   background-color: #fff;

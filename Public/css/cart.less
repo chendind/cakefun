@@ -1,7 +1,7 @@
 @height:650px;//`window.innerHeight+'px'`;
 @navh:200px;
 @goodh : @height - @navh;
-@gold : #daae6c;
+@gold : #daae6c;//218 174 108
 @orange : #ffc106;
 .ptable{
   width:100%;
@@ -40,6 +40,18 @@
 	}
   }
 }
+.addresstable{
+	th,td{
+		text-align: left;
+	}
+	tr.addresstr{
+		cursor:pointer;
+	}
+	tr.addresschoosed{
+		background-color:rgba(218,174,108,0.1);
+	}
+}
+
 .couponblock{
 	span{
 		display:block;

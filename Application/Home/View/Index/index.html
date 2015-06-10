@@ -13,19 +13,11 @@
      <!--[if lt IE 9]><link href="__PUBLIC__/css/font-awesome-ie7.min.css" rel="stylesheet"><![endif]-->
      <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/public.less">
      <script src="__PUBLIC__/less/dist/less.js" type="text/javascript"></script>
-     <script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
+
      
-     <script src="__PUBLIC__/js/fakeloader.js"></script>
   </head>
   <body ng-controller="homeCtrl">
-    <!-- <div class="loading"></div> -->
-    <div id="fakeloader"></div>
-    <script>
-        $("#fakeloader").fakeLoader({
-            zIndex:"9999",//
-            bgColor:"#000", //加载时的背景颜色
-          });
-     </script>
+   
     <include file="head" />
     <div class="fullbox tumbbox" style="z-index:10;">
       <div class="tumb">
@@ -37,19 +29,6 @@
           <div class="angle-right" ng-click="flashgoto(1)"><i class="fa fa-angle-right"></i></div>
         </div>
       </div>
-      <!-- <div class="p-centerbox">
-        <div class="navbox">
-          <table class="nav">
-            <tr>
-              <td><a href="__ROOT__/index.php/Home/Index/index.html">主页</a></td>
-              <td><a href="__ROOT__/index.php/Home/Index/customize.html">定制</a></td>
-              <td><a href=""><img class="logo" src="__PUBLIC__/img/logo@2x.png" alt="logo"></a></td>
-              <td><a href="">商城</a></td>
-              <td><a href="">关于我们</a></td>
-            </tr>
-          </table>
-        </div>
-      </div> -->
     </div> 
     
 
@@ -58,39 +37,30 @@
       <div class="centerbox">
 
         <volist name="goods" id="vogoods">
-<div class="goodpad">
-          <div class="goodimgbox"><img src="__ROOT__/Uploads/{$vogoods.img}" alt=""></div>
+<a class="goodpad" href="__ROOT__/index.php/Home/Index/itemdetail/id/{$vogoods.ig_gid}">
+          <div class="goodimgbox"><img data-original="__ROOT__/Uploads/{$vogoods.img}" src="__PUBLIC__/img/transparent.gif" class="lazy" alt=""></div>
+          <div class="goodms">
             <span>{$vogoods.detail.good_name}</span>
             <span>￥{$vogoods.detail.good_price}</span>
-        </div>
+          </div>
+            
+        </a>
       </volist>
       </div>
     </div>
-    <div class="fullbox goodpadbox">
-      <div class="centerbox">
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="__PUBLIC__/img/gaodian1.jpg" alt="核桃心酥"></div>
-          <span>果酪</span>
-          <span>￥12</span>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="__PUBLIC__/img/gaodian2.jpg" alt="核桃心酥"></div>
-          <span>柠檬片</span>
-          <span>￥12</span>
-        </div>
-        <div class="goodpad">
-          <div class="goodimgbox"><img src="__PUBLIC__/img/gaodian3.jpg" alt="核桃心酥"></div>
-          <span>老婆饼</span>
-          <span>￥15</span>
-        </div>
-      </div>
-    </div>
-<include file="foot" />
 
-<!--<script src="__PUBLIC__/js/slide.js"></script>-->
+    
+<include file="foot" />
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0"></script>
+     <script src="__PUBLIC__/js/jquery-1.11.1.min.js"></script>
  <script src="__PUBLIC__/js/angular-1.3.min.js"></script>
  <script src="__PUBLIC__/js/angular-animate.min.js"></script>
+ <script src="__PUBLIC__/js/jquery.lazyload.js"></script>
+ <script src="__PUBLIC__/js/itemlist.js"></script>
 <script>
+$("img.lazy").lazyload({
+         effect : "fadeIn"
+     });
 var h = $(window).height();
 $(".tumbbox").css("height",h);
 $(".angle-left,.angle-right").css("top",h/2-40)
@@ -105,15 +75,16 @@ $(window).scroll(function(){
   }
 })
 var islogin = {$islogin};
+var myCity = new BMap.LocalCity();  
+    myCity.get(foo);
+    function foo(result){
+      console.log(result.name);
+    }
 </script>
 
  <script src="__PUBLIC__/js/public.js"></script>
 <script src="__PUBLIC__/js/tumbflash.js"></script>
 <script src="__PUBLIC__/js/md5.js"></script>
-
-<!-- <include file="loginwindow" /> -->
-
-
 
   </body>
 

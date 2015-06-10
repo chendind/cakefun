@@ -73,7 +73,7 @@
               <div class="button rightbtn" ng-click="tostep1()">下一步</div>
             </div>
         <div class="clear"></div>
-        
+
       </div>
     </div>
 </div>

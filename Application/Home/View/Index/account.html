@@ -37,21 +37,40 @@
  				<div class="cont">
  					<div class="two-third column">
  						<dl class="dlitem">
- 							<dt><span>请输入您要绑定的邮箱账号</span></dt>
+
+ 							<empty name="email">
+
+ 								<dt><span>请输入您要绑定的邮箱账号</span></dt>
  							<dd>
  								<input id="email" class="pinput" type="email" /><a id="sendemailbtn" class="btn greenbtn" style="float:right;">发送验证邮件</a>
  							</dd>
+
+<else /> 
+
+ 								<dt><span>您绑定的邮箱账号为</span></dt>
+ 							<dd>
+ 								<input id="email" class="pinput" type="email" value="{$email}" disabled style="color:#999;width:100%" />
+ 								<label  id="dyztyj" style="margin-top:5px;font-weight:normal;"><input type="checkbox"   
+<if condition="$needemail eq 1 ">checked
+    <else />
+</if>
+ 									 />订阅主题邮件</label>
+ 							</dd>
+
+</empty>
+ 							
  						</dl>
  					</div>
+
  					<div class="clear"></div>
  					<div class="clear line"></div>
  					<div class="two-third column">
  						<dl class="dlitem">
  							<dt><span>绑定邮箱后，您可以：</span></dt>
  							<dd>
- 								<p>1.完成购买后收到来自cakefun的电子账单</p>
+ 								<p>1.完成购买后收到来自我们的电子账单</p>
  								<p>2.密码被修改和获得优惠券时收到邮件提醒</p>
- 								<p>3.若您需要，可订阅我们的邮件以获取最新的cakefun动态</p>
+ 								<p>3.若您需要，可订阅我们的主题邮件</p>
  							</dd>
  						</dl>
  					</div>
@@ -61,24 +80,23 @@
  			<div class="cont">
  				<div class="two-third column">
  					<dl class="dlitem">
- 						<dt><span>旧密码</span></dt>
+ 						<dt><span>原密码</span></dt>
  						<dd>
- 							<input class="pinput" type="password" />
+ 							<input id="pwd1" class="pinput" type="password" />
  						</dd>
  					</dl>
  					<dl class="dlitem">
  						<dt><span>新密码</span></dt>
  						<dd>
- 							<input class="pinput" type="password" />
+ 							<input id="pwd2" class="pinput" type="password" />
  						</dd>
  					</dl>
  					<dl class="dlitem">
  						<dt><span>确认新密码</span></dt>
  						<dd>
- 							<input class="pinput" type="password" />
+ 							<input id="pwd3" class="pinput" type="password" />
  							<div class="clear"></div>
- 							<a class="btn" style="margin-top:10px;">确定修改</a>
- 							<a style="display:block;float:left;margin-top:10px;height:34px;line-height:34px;margin-left:10px;">忘记密码</a>
+ 							<a id="pwdbtn" class="btn" style="margin-top:10px;">确定修改</a>
  						</dd>
  					</dl>
  				</div>
@@ -94,6 +112,7 @@
 </div>
 <include file="foot" />
 <script src="__PUBLIC__/js/public.js"></script>
+<script src="__PUBLIC__/js/md5.js"></script>
 <script>
 $("#sendemailbtn").click(function(){
 	if($("#email").val()==""){
@@ -107,7 +126,7 @@ $("#sendemailbtn").click(function(){
 			data:{email:$("#email").val()},
 			success: function (data) { 
 				switch(data.state) {
-					case "1":alert("邮件发送成功，请检查您的邮箱"); break ;                     
+					case "1":alert("邮件发送成功，请检查您的邮箱"); break ;
 					case "2":alert("您已经设置过邮箱了");break;
 					case "3":alert("您今天请求次数过多，请明天再试");break;
 					case "4":alert("网络异常，请重试");break;
@@ -117,6 +136,81 @@ $("#sendemailbtn").click(function(){
 			}, 
 			error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
 		});
+	}
+})
+$("#pwdbtn").click(function(){
+	var pwd1 = $("#pwd1").val(),
+		pwd2 = $("#pwd2").val(),
+		pwd3 = $("#pwd3").val();
+	if(pwd1 == ''){
+		alert("您还未填写原密码");
+	}
+	else if(pwd2 == ''){
+		alert("您还未填写新密码");
+	}
+	else if(pwd3 == ''){
+		alert('请确认新密码');
+	}
+	else if(pwd2 != pwd3){
+		alert('两次新密码输入不一致，请检查');
+	}
+	else if(pwd1 == pwd2){
+		alert('新密码不能和原密码一致');
+	}
+	else{
+		$.ajax({
+			type:'post',
+			url:'__ROOT__/index.php/Home/Index/changepassword',
+			dataType: "json",
+			data:{oldpassword:hex_md5(pwd1),newpassword:hex_md5(pwd2)},
+			success: function (data) { 
+				switch(data.state) {
+					case "1":alert("修改成功");window.location.reload();break ;
+					case "2":alert("原密码错误");break;
+					case "3":alert("新密码不能和原密码一致");break;
+					case "0":alert("登录超时");window.location.reload();break;
+				}
+			}, 
+			error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+		})
+	}
+})
+$("#dyztyj").bind('click',function(evt){
+	evt.preventDefault();
+	var checkbox = $(this).children("input[type='checkbox']");
+	if(checkbox.is(':checked')){
+		if(confirm("真的要取消订阅吗？")){
+			$.ajax({
+				type:'post',
+				url:'__ROOT__/index.php/Home/Index/nogetcakemail',
+				dataType: "json",
+				success: function (data) { 
+					switch(data.state) {
+						case "1":alert("取消成功，您不会再收到订阅邮件");checkbox.removeAttr("checked");break ;
+						case "0":alert("登录超时");window.location.reload();break;
+					}
+				}, 
+				error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+			})
+		}
+		else{
+			return false;
+		}
+	}
+	else{
+		$.ajax({
+			type:'post',
+			url:'__ROOT__/index.php/Home/Index/getcakemail',
+			dataType: "json",
+			success: function (data) { 
+				switch(data.state) {
+					case "1":alert("订阅成功");checkbox.prop("checked",true);break ;
+					case "0":alert("登录超时");window.location.reload();break;
+				}
+			}, 
+			error: function (XMLHttpRequest, textStatus, errorThrown) {alert("网络异常");} 
+		})
+		
 	}
 })
 </script>
